@@ -748,4 +748,17 @@ footer {
   border-radius: 0 5px 5px 0;
   cursor: pointer;
 }
+.company-overview {
+  background-color: #f9f9f9;
+  padding: 3rem 2rem;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #333;
+}
+
+.company-overview h2 {
+  text-align: center;
+  color: #003366;
+  margin-bottom: 1.5rem;
+}
 

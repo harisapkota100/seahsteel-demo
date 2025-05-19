@@ -827,3 +827,14 @@ footer {
   width: auto;
   vertical-align: middle;
 }
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}

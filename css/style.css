@@ -822,3 +822,8 @@ footer {
   color: #333;
   line-height: 1.6;
 }
+.logo img {
+  height: 50px; /* adjust as needed */
+  width: auto;
+  vertical-align: middle;
+}

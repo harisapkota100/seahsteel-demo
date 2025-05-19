@@ -823,10 +823,12 @@ footer {
   line-height: 1.6;
 }
 .logo img {
-  height: 50px; /* adjust as needed */
+  height: 70px; /* or try 80px */
+  max-height: 100px;
   width: auto;
-  vertical-align: middle;
+  object-fit: contain;
 }
+
 .main-header {
   display: flex;
   align-items: center;

@@ -823,9 +823,9 @@ footer {
   line-height: 1.6;
 }
 .logo img {
-  height: 70px; /* or try 80px */
+  height: 100px; /* or try 80px */
   max-height: 100px;
-  width: auto;
+  width: 100;
   object-fit: contain;
 }
 

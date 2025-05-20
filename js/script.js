@@ -69,4 +69,33 @@ document.addEventListener("DOMContentLoaded", function () {
       });
   }
 });
+document.addEventListener("DOMContentLoaded", function () {
+  const videoElement = document.getElementById("multiVideo");
+
+  if (videoElement) {
+    const videoParts = [];
+    for (let i = 0; i < 40; i++) {
+      const num = String(i).padStart(3, '0'); // "000" to "039"
+      videoParts.push(`video/company_profile_5sec_${num}.mp4`);
+    }
+
+    let currentPart = 0;
+
+    function playNext() {
+      if (currentPart < videoParts.length) {
+        videoElement.src = videoParts[currentPart];
+        videoElement.load();
+        videoElement.play();
+        currentPart++;
+      } else {
+        // Optional: loop from beginning
+        currentPart = 0;
+        playNext();
+      }
+    }
+
+    videoElement.addEventListener("ended", playNext);
+    playNext();
+  }
+});
 

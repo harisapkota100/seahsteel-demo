@@ -846,3 +846,32 @@ footer {
     height: 50px;
   }
 }
+.news-item {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin-bottom: 2.5rem;
+  padding: 1.5rem;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.news-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.news-item h3 {
+  font-size: 1.6rem;
+  color: #003366;
+  margin-bottom: 0.75rem;
+}
+
+.news-item p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #444;
+}

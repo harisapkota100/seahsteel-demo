@@ -21,4 +21,28 @@ function searchSite(event) {
     alert('No matching content found.');
   }
 }
+document.addEventListener("DOMContentLoaded", function () {
+  const ticker = document.getElementById("newsTicker");
+
+  fetch("news-data.json")
+    .then(res => res.json())
+    .then(news => {
+      news.forEach(item => {
+        const a = document.createElement("a");
+        a.href = item.url;
+        a.className = "news-item";
+
+        const img = document.createElement("img");
+        img.src = item.image;
+        img.alt = item.title;
+
+        const span = document.createElement("span");
+        span.textContent = item.title;
+
+        a.appendChild(img);
+        a.appendChild(span);
+        ticker.appendChild(a);
+      });
+    });
+});
 

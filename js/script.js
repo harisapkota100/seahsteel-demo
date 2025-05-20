@@ -98,4 +98,42 @@ document.addEventListener("DOMContentLoaded", function () {
     playNext();
   }
 });
+document.addEventListener("DOMContentLoaded", function () {
+  const parts = [];
+  for (let i = 0; i < 40; i++) {
+    parts.push(`video/company_profile_5sec_${String(i).padStart(3, '0')}.mp4`);
+  }
+
+  let current = 0;
+  let active = 'A';
+
+  const videoA = document.getElementById('videoA');
+  const videoB = document.getElementById('videoB');
+
+  function playPart(videoEl, source) {
+    videoEl.src = source;
+    videoEl.load();
+    videoEl.play();
+  }
+
+  function swapVideos() {
+    const next = parts[current];
+    const fadingOut = active === 'A' ? videoA : videoB;
+    const fadingIn = active === 'A' ? videoB : videoA;
+
+    active = active === 'A' ? 'B' : 'A';
+    fadingIn.style.opacity = 1;
+    fadingOut.style.opacity = 0;
+
+    current = (current + 1) % parts.length;
+
+    fadingIn.addEventListener('ended', swapVideos, { once: true });
+    playPart(fadingIn, next);
+  }
+
+  // Initial load
+  playPart(videoA, parts[current]);
+  current++;
+  videoA.addEventListener('ended', swapVideos, { once: true });
+});
 

@@ -846,6 +846,11 @@ footer {
     height: 50px;
   }
 }
+.news-container {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
 .news-item {
   background-color: #fff;
   border-radius: 8px;

@@ -777,6 +777,8 @@ footer {
 .main-products {
   padding: 4rem 2rem;
   background-color: #f8f8f8;
+  border-top: 2px solid #003366;
+  border-bottom: 2px solid #003366;
 }
 
 .section-title {

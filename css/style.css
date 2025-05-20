@@ -758,6 +758,8 @@ footer {
   color: #333;
   border-top: 2px solid #003366;
   border-bottom: 2px solid #003366;
+  overflow: hidden;
+
 }
 
 .company-overview .container {

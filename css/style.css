@@ -455,9 +455,6 @@ footer {
   object-fit: cover;
 }
 
-.news-item div {
-  flex: 1;
-}
 
 .news-item h3 {
   font-size: 1.4rem;

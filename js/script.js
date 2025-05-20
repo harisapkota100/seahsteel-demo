@@ -45,4 +45,28 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
 });
+// Load full news list into news.html
+document.addEventListener("DOMContentLoaded", function () {
+  const newsContainer = document.getElementById("dynamicNews");
+
+  if (newsContainer) {
+    fetch("news-data.json")
+      .then(res => res.json())
+      .then(news => {
+        news.forEach(item => {
+          const div = document.createElement("div");
+          div.className = "news-item";
+          div.id = item.id;
+
+          div.innerHTML = `
+            <img src="${item.image}" alt="${item.title}">
+            <h3>${item.title}</h3>
+            <p>${item.description}</p>
+          `;
+
+          newsContainer.appendChild(div);
+        });
+      });
+  }
+});
 

@@ -782,6 +782,8 @@ footer {
   color: #4a637d;
   font-size: 2rem;
   margin-bottom: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 0.5px;
 }
 
 .product-grid {

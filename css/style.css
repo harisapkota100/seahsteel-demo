@@ -451,13 +451,13 @@ footer {
 }
 
 .news-item img {
-  display: block !important;
-  width: 100% !important;
-  max-width: 100%;
+  display: block;
+  max-width: 300px;      /* ✅ allow larger size */
+  width: 100%;
   height: auto;
   margin: 0 auto 1rem;
-  border-radius: 6px;
-  object-fit: contain;
+  border-radius: 8px;
+  object-fit: cover;     /* optional, prevents stretch */
 }
 
 

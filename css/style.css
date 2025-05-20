@@ -866,10 +866,10 @@ footer {
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   margin-bottom: 2.5rem;
-  padding: 1.5rem;
   max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+  text-align: center;
+  padding: 1rem;
 }
 
 .news-item img {
@@ -877,6 +877,7 @@ footer {
   height: auto;
   border-radius: 6px;
   margin-bottom: 1rem;
+   display: block;
 }
 
 .news-item h3 {
@@ -892,10 +893,10 @@ footer {
 }
 .news-ticker {
   overflow: visible;
-  background-color: #f0f0f0;
+  background-color: #f8f8f8;
   border-top: 2px solid #003366;
   border-bottom: 2px solid #003366;
-  padding: 1rem 0;
+  padding: 2rem 1rem;
   margin-top: 4rem;
 }
 

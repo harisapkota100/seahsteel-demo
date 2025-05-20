@@ -992,4 +992,9 @@ footer {
   object-fit: cover;
   transition: opacity 0.1s ease-in-out;
 }
-
+.container h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #003366;
+  margin-bottom: 2rem;
+}

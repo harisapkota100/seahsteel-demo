@@ -421,6 +421,9 @@ footer {
 .news-container .container {
   display: block !important;
   flex-direction: column !important;
+   padding: 4rem 1rem;
+  overflow: visible;  /* ✅ make sure it doesn’t hide overflowing content */
+  background-color: #f9f9f9; /* Optional: better contrast */
 }
 
 .news-section h2 {
@@ -443,6 +446,8 @@ footer {
   overflow: hidden;
   position: relative;
   box-sizing: border-box;
+  height: auto;         /* ✅ allows full natural height */
+  object-fit: contain;  /* ✅ prevents crop */
 }
 
 .news-item img {
@@ -452,7 +457,7 @@ footer {
   height: auto;
   margin: 0 auto 1rem;
   border-radius: 6px;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 

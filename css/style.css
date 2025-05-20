@@ -925,3 +925,12 @@ footer {
     transform: translateX(-100%);
   }
 }
+.news-title {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #003366;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+  font-family: 'Segoe UI', sans-serif;
+}

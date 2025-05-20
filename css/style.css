@@ -447,7 +447,9 @@ footer {
   position: relative;
   box-sizing: border-box;
   height: auto;         /* ✅ allows full natural height */
-  object-fit: contain;  /* ✅ prevents crop */
+  object-fit: cover;  /* ✅ prevents crop */
+  margin-bottom: 1rem;
+  object-fit: cover;
 }
 
 .news-item img {

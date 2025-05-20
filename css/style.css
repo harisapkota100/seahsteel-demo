@@ -85,6 +85,8 @@ body {
   justify-content: space-around;
   padding: 2rem;
   background: #eaeaea;
+  border-top: 2px solid #003366;
+  border-bottom: 2px solid #003366;
 }
 
 .stat-card {

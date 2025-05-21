@@ -485,6 +485,11 @@ footer {
   color: #003366;
   margin-bottom: 0.5rem;
   margin-top: 0;
+   display: -webkit-box;
+  -webkit-line-clamp: 4; /* Show only 4 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .news-item p {

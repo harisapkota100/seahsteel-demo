@@ -472,6 +472,8 @@ footer {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
   text-align: center;
+   width: 100%;
+  max-width: 100%; /* Let it expand fully inside grid */
 }
 .news-item:hover {
   transform: translateY(-4px);
@@ -483,7 +485,7 @@ footer {
 }
 .news-item img {
   width: 100%;
-  height: 220px;
+  height:300px;
   object-fit: cover;
   display: block;
   border-top-left-radius: 10px;

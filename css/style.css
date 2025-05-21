@@ -465,8 +465,7 @@ footer {
   padding: 1rem;
   text-align: center;
   transition: transform 0.3s ease;
-  overflow: hidden;
-  font-size: 0.95rem;
+
 }
 .news-item:hover {
   transform: translateY(-5px);
@@ -496,7 +495,7 @@ footer {
 .news-item p {
   font-size: 0.95rem;
   color: #444;
-  line-height: 1.5;
+  line-height: 1.6;
   margin-bottom: 0.75rem;
 }  
 .news-ticker-section {

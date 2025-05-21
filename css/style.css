@@ -533,14 +533,12 @@ footer {
   display: block;
 }
 .news-grid {
-  display: grid;
-  flex-wrap: Wrap;
-  padding: 1rem;
-  justify-content: center;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* changed 280px to 320px */
+   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); /* increased from 280px or 320px */
   gap: 2rem;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 2rem 1rem;
 }
 /* CONTACT PAGE */
 

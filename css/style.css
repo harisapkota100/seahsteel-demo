@@ -464,13 +464,13 @@ footer {
 }
 
 .news-item {
-  max-width: 320px;
-  margin: auto;
-  background: white;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease;
+   width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-bottom: 0.5rem;
 }
 .news-item:hover {
   transform: translateY(-4px);

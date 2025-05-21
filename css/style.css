@@ -497,6 +497,10 @@ footer {
   color: #444;
   line-height: 1.6;
   margin-bottom: 0.75rem;
+   display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }  
 .news-ticker-section {
   padding: 3rem 1rem;

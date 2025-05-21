@@ -978,16 +978,6 @@ footer {
   gap: 2rem;
   align-items: center;
 }
-
-.news-item {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  text-decoration: none;
-  color: #003366;
-  min-width: 320px;
-}
-
 .news-item img {
   height: 50px;
   width: auto;

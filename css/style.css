@@ -464,14 +464,13 @@ footer {
 }
 
 .news-item {
+  max-width: 320px;
+  margin: auto;
   background: white;
   border-radius: 10px;
   overflow: hidden;
-  text-align: center;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease;
-  max-width: 360px; /* NEW: allow card to grow */
-  margin: 0 auto;   /* NEW: center each card */
 }
 .news-item:hover {
   transform: translateY(-4px);
@@ -530,7 +529,10 @@ footer {
   display: block;
 }
 .news-grid {
-  display: grid;
+  display: flex;
+  flex-wrap: Wrap;
+  padding: 1rem;
+  justify-content: center;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* changed 280px to 320px */
   gap: 2rem;
   max-width: 1200px;

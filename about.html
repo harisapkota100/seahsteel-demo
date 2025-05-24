@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us | SeAH Steel UAE LLC</title>
+<link rel="icon" type="image/png" href="images/favicon.png" />
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<div class="topbar">
+  <ul>
+    <li><a href="careers.html">Careers</a></li>
+    <li><a href="downloads.html">Downloads</a></li>
+    <li><a href="globalseah.html">Global SeAH</a></li>
+  </ul>
+</div>
+  <!-- HEADER -->
+  <header class="main-header">
+    <div class="logo">SeAH Steel UAE LLC</div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="ceo.html">CEO Message</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="manufacturing.html">How We Work</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="quality.html">Quality</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <form class="search-bar" onsubmit="return searchSite(event)">
+      <input type="text" id="searchInput" placeholder="Search..." />
+      <button type="submit">🔍</button>
+    </form>
+    <a href="quote.html" class="quote-btn">Request Quote</a>
+  </header>
+
+  <!-- BANNER -->
+  <section class="about-hero">
+    <div class="hero-content">
+      <h1>About SeAH Steel UAE LLC</h1>
+      <p>Built on legacy. Driven by innovation.</p>
+    </div>
+  </section>
+
+  <!-- ABOUT CONTENT -->
+  <section class="about-us">
+    <div class="container">
+      <h2>Who We Are</h2>
+      <p>Founded in 2011 in Ras Al Khaimah, SeAH Steel UAE LLC is a regional arm of SeAH Steel Corp. (est. 1960, South Korea), a leader in steel pipe manufacturing globally. We produce high-quality carbon steel welded pipes tailored to global infrastructure needs.</p>
+
+      <h2>Our Mission</h2>
+      <p>To deliver innovative and reliable steel solutions that support safe, sustainable, and long-lasting infrastructure development worldwide.</p>
+
+      <h2>Our Vision</h2>
+      <p>To become the most respected and sustainable steel pipe manufacturer in the Middle East by embracing excellence, integrity, and innovation.</p>
+
+      <h2>Key Milestones</h2>
+      <ul class="milestone-list">
+        <li>2011 – Established & began production at RAK FTZ</li>
+        <li>2013 – Received API 5L and ISO 9001 certification</li>
+        <li>2017 – Expanded operations, started exports to Africa & GCC</li>
+        <li>2024 – Implemented EPICOR ERP and completed digital upgrade</li>
+      </ul>
+
+      <h2>Our Facility</h2>
+      <p>Our plant is equipped with cutting-edge machinery, ensuring compliance with global standards. We conduct NDT testing, heat treatment, and implement stringent QC across all phases. Collaborating with top-tier suppliers, we ensure quality from raw material to final output.</p>
+    </div>
+  </section>
+
+  <!-- PHOTO GALLERY -->
+  <section class="photo-gallery">
+    <div class="container">
+      <h2>Our Journey in Photos</h2>
+      <p>Take a closer look at our plant operations, milestones, and achievements.</p>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="images/factory1.jpg" alt="Production Line" onclick="enlargeImage(this)">
+          <p>Production Line</p>
+        </div>
+        <div class="gallery-item">
+          <img src="images/team.jpg" alt="Team Collaboration" onclick="enlargeImage(this)">
+          <p>Team Collaboration</p>
+        </div>
+        <div class="gallery-item">
+          <img src="images/export.jpg" alt="Export Shipment" onclick="enlargeImage(this)">
+          <p>Export Shipment</p>
+        </div>
+        <div class="gallery-item">
+          <img src="images/ndt-testing.jpg" alt="NDT Testing" onclick="enlargeImage(this)">
+          <p>Advanced Testing Lab</p>
+        </div>
+        <div class="gallery-item">
+          <img src="images/certificates.jpg" alt="Certifications" onclick="enlargeImage(this)">
+          <p>API & ISO Certifications</p>
+        </div>
+        <div class="gallery-item">
+          <img src="images/erp.jpg" alt="ERP Integration" onclick="enlargeImage(this)">
+          <p>Digital ERP System</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox" onclick="this.style.display='none'">
+    <img id="lightbox-img" src="" />
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer-nav">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h3>SeAH Steel UAE LLC</h3>
+        <p>Al Ghail Industrial Area,<br>Ras Al Khaimah, UAE</p>
+        <p>Email: <a href="mailto:info@seahuae.com">info@seahuae.com</a></p>
+        <p>Phone: +971 7 258 9440</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="ceo.html">CEO Message</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="quality.html">Quality</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="quote.html">Request Quote</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Connect With Us</h4>
+        <a href="https://wa.me/971XXXXXXXXX" target="_blank">
+          <img src="images/whatsapp-icon.png" alt="WhatsApp" class="footer-icon" /> WhatsApp
+        </a><br>
+        <a href="mailto:info@seahuae.com">
+          <img src="images/email-icon.png" alt="Email" class="footer-icon" /> Email Us
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 SeAH Steel UAE LLC. All rights reserved.</p>
+  </footer>
+
+  <!-- WhatsApp Chat Button -->
+  <a href="https://wa.me/971XXXXXXXXX" class="whatsapp-chat" target="_blank" title="Chat with us on WhatsApp">
+    <img src="images/whatsapp-icon.png" alt="WhatsApp" />
+  </a>
+
+  <!-- Tawk.to Script -->
+  <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+      var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+      s1.async=true;
+      s1.src='https://embed.tawk.to/682974268ec535190f11cf94/1irgurdt8';
+      s1.charset='UTF-8';
+      s1.setAttribute('crossorigin','*');
+      s0.parentNode.insertBefore(s1,s0);
+    })();
+  </script>
+
+  <!-- JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -2,13 +2,37 @@
   {
     "id": "make-it",
     "title": "SeAH Steel UAE at Make It In The Emirates",
-    "image": "images/make-it-in-the-emirates.jpg",
+    "image": "images/make-it-in-the-emirates.jpeg",
     "url": "news.html#make-it"
   },
   {
-    "id": "capacity",
-    "title": "SeAH Steel UAE Expands Capacity in Ras Al Khaimah",
-    "image": "images/capacity-expansion.jpg",
-    "url": "news.html#capacity"
+    "id": "api5l",
+    "title": "API 5L Certification Renewed",
+    "image": "images/news3.jpg",
+    "url": "news.html#api5l"
+  },
+  {
+    "id": "adipec",
+    "title": "SeAH Steel at ADIPEC 2023",
+    "image": "images/news2.jpg",
+    "url": "news.html#adipec"
+  },
+  {
+    "id": "inauguration",
+    "title": "New Facility Inauguration",
+    "image": "images/inaugration.jpg",
+    "url": "news.html#inauguration"
+  },
+  {
+    "id": "award",
+    "title": "Awarded Top Exporter 2024",
+    "image": "images/award.jpg",
+    "url": "news.html#award"
+  },
+  {
+    "id": "expansion",
+    "title": "Capacity Expansion Completed",
+    "image": "images/capacity.jpg",
+    "url": "news.html#expansion"
   }
 ]

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us | SeAH Steel UAE LLC</title>
+<link rel="icon" type="image/png" href="images/favicon.png" />
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<div class="topbar">
+  <ul>
+    <li><a href="careers.html">Careers</a></li>
+    <li><a href="downloads.html">Downloads</a></li>
+    <li><a href="globalseah.html">Global SeAH</a></li>
+  </ul>
+</div>
+  <!-- HEADER -->
+  <header class="main-header">
+     <a href="index.html" class="logo">
+  <img src="images/logo.png" alt="SeAH Steel UAE LLC Logo" style="height: 40px; background-color: #d3d3d3; padding: 4px; border-radius: 4px;" />
+</a>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="ceo.html">CEO Message</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="manufacturing.html">How We Work</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="quality.html">Quality</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <form class="search-bar" onsubmit="return searchSite(event)">
+      <input type="text" id="searchInput" placeholder="Search..." />
+      <button type="submit">🔍</button>
+    </form>
+    <a href="quote.html" class="quote-btn">Request Quote</a>
+  </header>
+
+  <!-- BANNER -->
+  <section class="about-hero">
+    <div class="hero-content">
+      <h1>About SeAH Steel UAE LLC</h1>
+      <p>Built on legacy. Driven by innovation.</p>
+    </div>
+  </section>
+
+  <!-- ABOUT CONTENT -->
+  <section class="about-us">
+  <div class="container">
+    <h2>Who We Are</h2>
+    <p>SeAH Steel UAE LLC, established in 2011 in Ras Al Khaimah, is a critical regional manufacturing arm of SeAH Steel Holdings, a global steel leader founded in South Korea in 1960. With a strong presence across Asia, the United States, and Europe, SeAH is globally recognized for producing carbon steel and stainless steel tubes and pipes of the highest quality. SeAH Steel UAE was strategically launched to meet the growing demand for premium-grade steel pipes in the Middle East, North Africa, and beyond. Our facility was built with a significant investment to ensure a high-tech production environment capable of serving energy, construction, water transmission, and infrastructure sectors with absolute precision and reliability. As part of a multinational group, SeAH Steel UAE combines global standards with local responsiveness, enabling us to deliver unmatched steel pipe solutions to some of the region's most ambitious projects.</p>
+
+    <h2>Our Mission</h2>
+    <p>Our mission is to provide technically advanced and durable steel pipe solutions that not only meet but exceed customer expectations. We aim to support long-term infrastructure development across oil & gas, water, and industrial sectors through safe, efficient, and environmentally conscious production practices. By continually innovating and improving our manufacturing systems, we ensure reliability, compliance, and excellence in every product we deliver. Customer satisfaction, operational integrity, and sustainable growth are the pillars that guide every step of our operations.</p>
+
+    <h2>Our Vision</h2>
+    <p>We envision SeAH Steel UAE as a regional leader in steel manufacturing that embodies sustainability, innovation, and excellence. Our vision is to be recognized not only as a manufacturer but also as a long-term partner contributing to the development of critical infrastructure across the Middle East and Africa. We aim to achieve this by integrating smart manufacturing, quality assurance, digital transformation, and environmental stewardship into our daily operations. Through continuous investment in technology and human capital, we strive to create a manufacturing ecosystem that aligns with global best practices and contributes meaningfully to industrial growth and regional development.</p>
+
+    <h2>Key Milestones</h2>
+    <ul class="milestone-list">
+      <li>2011 – Established & began production at RAK FTZ</li>
+      <li>2013 – Received API 5L and ISO 9001 certification</li>
+      <li>2017 – Expanded operations, started exports to Africa & GCC</li>
+      <li>2024 – Implemented EPICOR ERP and completed digital upgrade</li>
+    </ul>
+
+    <h2>Our Facility</h2>
+    <p>Our Ras Al Khaimah facility is a modern manufacturing unit equipped with state-of-the-art technology, capable of producing electric resistance welded (ERW) carbon steel pipes ranging from 2” to 24” in diameter. The production process includes slitting, forming, welding, heat treatment, hydrotesting, beveling, and rigorous non-destructive testing such as ultrasonic and radiographic inspection. We maintain a closed-loop quality control system aligned with international certifications such as API 5L, ISO 9001, ISO 14001, and ISO 45001. By leveraging smart automation and integrated ERP systems, we are able to deliver high-quality products efficiently while maintaining full traceability and transparency. The plant operates with strict safety protocols and is designed to meet the evolving demands of customers in oil & gas, construction, and infrastructure development throughout the region.</p>
+  </div>
+</section>
+  <!-- PHOTO GALLERY -->
+  <section class="photo-gallery">
+    <div class="container">
+      <h2>Our Journey in Photos</h2>
+      <p>Take a closer look at our plant operations, milestones, and achievements.</p>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="images/factory1.jpg" alt="Production Line" onclick="enlargeImage(this)">
+          <p>Production Line</p>
+        </div>
+        <div class="gallery-item">
+          <img src="images/team.jpg" alt="Team Collaboration" onclick="enlargeImage(this)">
+          <p>Team Collaboration</p>
+        </div>
+        <div class="gallery-item">
+          <img src="images/export.jpg" alt="Export Shipment" onclick="enlargeImage(this)">
+          <p>Export Shipment</p>
+        </div>
+        <div class="gallery-item">
+          <img src="images/ndt-testing.jpg" alt="NDT Testing" onclick="enlargeImage(this)">
+          <p>Advanced Testing Lab</p>
+        </div>
+        <div class="gallery-item">
+          <img src="images/certificates.jpg" alt="Certifications" onclick="enlargeImage(this)">
+          <p>API & ISO Certifications</p>
+        </div>
+        <div class="gallery-item">
+          <img src="images/erp.jpg" alt="ERP Integration" onclick="enlargeImage(this)">
+          <p>Digital ERP System</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox" onclick="this.style.display='none'">
+    <img id="lightbox-img" src="" />
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer-nav">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h3>SeAH Steel UAE LLC</h3>
+        <p>Al Ghail Industrial Area,<br>Ras Al Khaimah, UAE</p>
+        <p>Email: <a href="mailto:ssuae@seah.co.kr">ssuae@seah.co.kr</a></p>
+        <p>Phone: +971 7 258 9440</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="ceo.html">CEO Message</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="quality.html">Quality</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="quote.html">Request Quote</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Connect With Us</h4>
+        <a href="https://wa.me/971XXXXXXXXX" target="_blank">
+          <img src="images/whatsapp-icon.png" alt="WhatsApp" class="footer-icon" /> WhatsApp
+        </a><br>
+        <a href="mailto:ssuae@seah.co.kr">
+          <img src="images/email-icon.png" alt="Email" class="footer-icon" /> Email Us
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 SeAH Steel UAE LLC. All rights reserved.</p>
+  </footer>
+
+  <!-- WhatsApp Chat Button -->
+  <a href="https://wa.me/971XXXXXXXXX" class="whatsapp-chat" target="_blank" title="Chat with us on WhatsApp">
+    <img src="images/whatsapp-icon.png" alt="WhatsApp" />
+  </a>
+
+  <!-- Tawk.to Script -->
+  <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+      var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+      s1.async=true;
+      s1.src='https://embed.tawk.to/682974268ec535190f11cf94/1irgurdt8';
+      s1.charset='UTF-8';
+      s1.setAttribute('crossorigin','*');
+      s0.parentNode.insertBefore(s1,s0);
+    })();
+  </script>
+
+  <!-- JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+</html>

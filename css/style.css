@@ -1250,7 +1250,16 @@ body {
   font-weight: bold;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
-
+.careers-btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #003366;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
 .see-all-news-btn:hover {
   background-color: #C8102E;
   transform: translateY(-2px);

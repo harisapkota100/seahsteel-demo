@@ -104,3 +104,32 @@ function initUaeMap() {
     marker.addListener("click", () => window.open(loc.url, "_blank"));
   });
 }
+// Handle opening the application modal when "Apply Now" is clicked
+document.addEventListener("DOMContentLoaded", function () {
+  const applyButtons = document.querySelectorAll(".apply-btn");
+  const modal = document.getElementById("applicationModal");
+  const modalJobTitle = document.getElementById("modalJobTitle");
+  const jobTitleInput = document.getElementById("jobTitleInput");
+  const closeBtn = document.querySelector(".modal-close");
+
+  applyButtons.forEach(button => {
+    button.addEventListener("click", () => {
+      const jobTitle = button.getAttribute("data-job");
+      modal.classList.add("open");
+      modalJobTitle.textContent = jobTitle;
+      jobTitleInput.value = jobTitle;
+    });
+  });
+
+  // Close modal on "×" click
+  closeBtn.addEventListener("click", () => {
+    modal.classList.remove("open");
+  });
+
+  // Close modal on outside click
+  window.addEventListener("click", (e) => {
+    if (e.target === modal) {
+      modal.classList.remove("open");
+    }
+  });
+});

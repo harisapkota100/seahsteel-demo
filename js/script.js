@@ -399,4 +399,3 @@ function openMachineModal(id) {
 function closeMachineModal() {
   document.getElementById('machineModal').classList.remove('open');
 }
-

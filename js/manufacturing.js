@@ -53,20 +53,25 @@ servo bending system</li>
     body: `
 <strong>Process Detail:</strong>
       <ul>
-        <li>Automated tack welding for joint alignment</li>
-        <li>Minimizes weld distortion</li>
-        <li>Quick cycle time for high throughput</li>
+        <li>Guide Roller in tack welding
+machine make attached meeting
+point for welding with set the
+position and feed pipe continuously</li>
+        <li>GMAW Welding with CO2
+or Argon gas to shield the
+welding area</li>
+        
       </ul>
 <strong>Key Equipment:</strong>
       <ul>
-        <li>Forming Type
-: JCO air bent pressing type</li>
-        <li>Capacity : 65,000 KN</li>
-        <li>High-precision angle adjustment</li>
-<li>Length : 6.0 ~ 12.8m</li>
-<li>Thickness : Max. 60mm</li>
-<li>Out diameter : 18"~ 64"</li>
-<li>Maker : YSD (CHINA)</li>
+        <li>Type : 5 Rolls Guide Type</li>
+        <li>Capacity : DC Max. 45V , AC Max. 500A</li>
+        <li>Capacity : 25 Ton</li>
+<li>Type : O.D : 18" ~ 64"</li>
+        <li>Length : 6.0m ~ 12.8m</li>
+        <li>Thickness : Max. 60mm</li>
+<li>Maker : SEOKWANG (KOREA)</li>
+
       </ul>`
   },
   'jco-insidewelding': {
@@ -74,20 +79,26 @@ servo bending system</li>
     body: `
 <strong>Process Detail:</strong>
       <ul>
-        <li>Submerged arc welding inside seam</li>
-        <li>Consistent penetration and fusion</li>
-        <li>Optimized for thicker walls</li>
+        <li>The pipe is carried on movable
+Carts per two line and advance
+along entire length of boom</li>
+        <li>Two wires (D.C and A.C) and
+utilizes laser for seam tracking</li>
+        <li>All of welding consumable
+control according to specification
+or customer request</li>
       </ul>
 <strong>Key Equipment:</strong>
       <ul>
-        <li>Forming Type
-: JCO air bent pressing type</li>
-        <li>Capacity : 65,000 KN</li>
-        <li>High-precision angle adjustment</li>
-<li>Length : 6.0 ~ 12.8m</li>
+        <li>Capacity
+: DC Max. 1650A (2 Set)
+: AC Max. 1250 (2 Set)</li>
+        <li>O.D : 18" ~ 64"</li>
+        <li>Length : 6.0m ~ 12.8m</li>
+<li>Weight : 30 ton</li>
 <li>Thickness : Max. 60mm</li>
-<li>Out diameter : 18"~ 64"</li>
-<li>Maker : YSD (CHINA)</li>
+<li>Maker : ESAB (KOREA)</li>
+
       </ul>`
   },
   'jco-outsidewelding': {
@@ -95,20 +106,25 @@ servo bending system</li>
     body: `
 <strong>Process Detail:</strong>
       <ul>
-        <li>Submerged arc welding on exterior seam</li>
-        <li>High deposition rates</li>
-        <li>Ensures perfect seam profile</li>
+        <li>The pipe is carried on movable
+carts per two line and weld the
+seam at set welding station</li>
+        <li>Two wires (D.C and A.C) and
+utilizes laser for seam tracking</li>
+        <li>All of welding consumable
+control according to specification
+or customer request</li>
       </ul>
 <strong>Key Equipment:</strong>
       <ul>
-        <li>Forming Type
-: JCO air bent pressing type</li>
-        <li>Capacity : 65,000 KN</li>
-        <li>High-precision angle adjustment</li>
-<li>Length : 6.0 ~ 12.8m</li>
+        <li>Capacity
+: DC Max -1650A (2 set)
+: AC Max-1250A (2 set)</li>
+        <li>O.D : 18" ~ 64"</li>
+        <li>Length : 6.0 ~ 12.8m</li>
+<li>Weight : 30 ton</li>
 <li>Thickness : Max. 60mm</li>
-<li>Out diameter : 18"~ 64"</li>
-<li>Maker : YSD (CHINA)</li>
+<li>Maker : ESAB (KOREA)</li>
       </ul>`
   },
   'jco-xray': {
@@ -116,41 +132,72 @@ servo bending system</li>
     body: `
 <strong>Process Detail:</strong>
       <ul>
-        <li>Non-destructive radiographic testing</li>
-        <li>Detects internal weld defects</li>
-        <li>Complies with EN 1435 standards</li>
+        <li>X-Ray test machine tests the
+pipe welding seam with x-ray
+source</li>
+        <li>Sensitivity is achieved using
+the ASTM wire "A" or "B" wire
+type image quality indicator</li>
+        <li>All of acceptance image are
+saved digitally into a hard disk</li>
       </ul>
 <strong>Key Equipment:</strong>
       <ul>
-        <li>Forming Type
-: JCO air bent pressing type</li>
+        <li>Type : Real time image
+(Digital X-RAY System)</li>
         <li>Capacity : 65,000 KN</li>
-        <li>High-precision angle adjustment</li>
-<li>Length : 6.0 ~ 12.8m</li>
-<li>Thickness : Max. 60mm</li>
-<li>Out diameter : 18"~ 64"</li>
-<li>Maker : YSD (CHINA)</li>
+        <li>Thickness : Max 50mm</li>
+<li>O.D : 18"~ 64"</li>
+<li>Length : 6.0~12.8m</li>
+<li>- Weight : 30 Ton</li>
+<li>Welding seam Test : Long Seam</li>
       </ul>`
   },
   'jco-expander': {
-    title: 'Cold Expanding (JCO Line)',
+    title: 'Calibration Press / Cold Expanding (JCO Line)',
     body: `
-<strong>Process Detail:</strong>
+<strong>Process Detail-Calibration Press:</strong>
       <ul>
-        <li>Roll expansion to correct ovality</li>
-        <li>Improves dimensional tolerances</li>
-        <li>Ensures roundness before testing</li>
+        <li>All of pipes are calibrated with
+O type press tool for
+exactly diameter.</li>
+        <li>The calibration press is used to
+expert pressure to long pipe
+to rectify.</li>
+        <li>Also can be used to rectify the
+straightness of the pipes</li>
       </ul>
-<strong>Key Equipment:</strong>
+<strong>Key Equipment-Calibration Press:</strong>
       <ul>
-        <li>Forming Type
-: JCO air bent pressing type</li>
-        <li>Capacity : 65,000 KN</li>
-        <li>High-precision angle adjustment</li>
+        <li>- Forming Type
+: Mold shape type/li>
+        <li>Capacity : Max. 12500KN</li>
+        <li>O.D : 18" ~ 64"</li>
 <li>Length : 6.0 ~ 12.8m</li>
-<li>Thickness : Max. 60mm</li>
-<li>Out diameter : 18"~ 64"</li>
-<li>Maker : YSD (CHINA)</li>
+<li>Weight : 21 ton</li>
+<li>Thickness : 8 ~ 60mm</li>
+<li>Maker : TSD (CHINA)</li>
+<strong>Process Detail-Cold Expander:</strong>
+      <ul>
+        <li>All of pipes are calibrated with
+O type press tool for
+exactly diameter.</li>
+        <li>The calibration press is used to
+expert pressure to long pipe
+to rectify.</li>
+        <li>Also can be used to rectify the
+straightness of the pipes</li>
+      </ul>
+<strong>Key Equipment-Cold Expander:</strong>
+      <ul>
+        <li>- Forming Type
+: Mold shape type/li>
+        <li>Capacity : Max. 12500KN</li>
+        <li>O.D : 18" ~ 64"</li>
+<li>Length : 6.0 ~ 12.8m</li>
+<li>Weight : 21 ton</li>
+<li>Thickness : 8 ~ 60mm</li>
+<li>Maker : TSD (CHINA)</li>
       </ul>`
   },
   'jco-hydro': {

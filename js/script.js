@@ -204,8 +204,9 @@ const machineDetails = {
     body: `
       <ul>
         <li>Bevel edge preparation using rotating heads</li>
-        <li>Root face: 3–5 mm; Angles: 27° (outside), 32° (inside)</li>
-        <li><strong>Key Equipment:</strong><br>- Double head<br>- 6–12.8m, 1,200–5,300mm, Max 60mm<br>- SEOKWANG (Korea)</li>
+        <li>Root face: 3–5 mm; Angles: 27°/32°</li>
+        <li><strong>Key Equipment:</strong><br>
+        - Double head<br>- 6–12.8m, 1,200–5,300mm, Max 60mm<br>- SEOKWANG (Korea)</li>
       </ul>`
   },
   'jco-jcopress': {
@@ -214,7 +215,8 @@ const machineDetails = {
       <ul>
         <li>CNC-controlled J-C-O step forming</li>
         <li>Air-bent hydraulic press system</li>
-        <li><strong>Key Equipment:</strong><br>- 65,000KN capacity<br>- OD 18"–64", Max thickness 60mm<br>- YSD (China)</li>
+        <li><strong>Key Equipment:</strong><br>
+        - 65,000KN capacity<br>- OD 18"–64", Max thickness 60mm<br>- YSD (China)</li>
       </ul>`
   },
   'jco-tackwelding': {
@@ -390,12 +392,20 @@ const machineDetails = {
 function openMachineModal(id) {
   const data = machineDetails[id];
   if (data) {
-    document.getElementById('modal-title').innerText = data.title;
-    document.getElementById('modal-body').innerHTML = data.body;
-    document.getElementById('machineModal').classList.add('open');
+    const modal = document.getElementById("machineModal");
+    document.getElementById("modal-title").innerText = data.title;
+    document.getElementById("modal-body").innerHTML = data.body;
+    modal.classList.add("open");
+
+    // Optional: close modal when clicking outside content
+    modal.addEventListener("click", function (e) {
+      if (e.target === modal) {
+        closeMachineModal();
+      }
+    });
   }
 }
 
 function closeMachineModal() {
-  document.getElementById('machineModal').classList.remove('open');
+  document.getElementById("machineModal").classList.remove("open");
 }

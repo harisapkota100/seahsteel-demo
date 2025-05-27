@@ -1436,6 +1436,8 @@ margin-left: 15rem;
   max-width: 90%;
   max-height: 90%;
   border-radius: 8px;
+  transition: transform 0.2s ease-in-out;
+  cursor: zoom-in;
 }
 /*top bar */
 .topbar {

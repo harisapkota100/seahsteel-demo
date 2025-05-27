@@ -139,4 +139,25 @@ function enlargeImage(imgElement) {
   const lightboxImg = document.getElementById('lightbox-img');
   lightboxImg.src = imgElement.src;
   lightbox.style.display = 'flex';
+
+  // Reset zoom level when image is changed
+  lightboxImg.style.transform = "scale(1)";
+  zoomLevel = 1;
 }
+
+// Initialize zoom level
+let zoomLevel = 1;
+
+// Enable scroll-to-zoom inside lightbox
+document.getElementById('lightbox-img').addEventListener('wheel', function (e) {
+  e.preventDefault();
+  const scaleStep = 0.1;
+
+  if (e.deltaY < 0) {
+    zoomLevel += scaleStep; // zoom in
+  } else {
+    zoomLevel = Math.max(1, zoomLevel - scaleStep); // zoom out
+  }
+
+  this.style.transform = `scale(${zoomLevel})`;
+});

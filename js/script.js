@@ -198,3 +198,40 @@ window.addEventListener('mousemove', function (e) {
 function updateTransform() {
   lightboxImg.style.transform = `scale(${zoomLevel}) translate(${offsetX}px, ${offsetY}px)`;
 }
+const machineDetails = {
+  'jco-edgemilling': {
+    title: 'Edge Milling (JCO Line)',
+    body: `
+      <ul>
+        <li>Bevel edge preparation</li>
+        <li>Root face: 3–5 mm; Angles: 27°/32°</li>
+        <li><strong>Key Equipment:</strong><br>
+        - Double head<br>- 6–12.8m, 1,200–5,300mm, Max 60mm<br>- SEOKWANG (Korea)</li>
+      </ul>`
+  },
+  'jco-jcopress': {
+    title: 'JCO Press',
+    body: `
+      <ul>
+        <li>CNC air-bent forming</li>
+        <li>J-C-O step pressing</li>
+        <li><strong>Key Equipment:</strong><br>
+        - 65,000KN<br>- OD 18"–64"<br>- YSD (China)</li>
+      </ul>`
+  },
+  // Add all other machines here...
+};
+
+function openMachineModal(id) {
+  const data = machineDetails[id];
+  if (data) {
+    document.getElementById('modal-title').innerText = data.title;
+    document.getElementById('modal-body').innerHTML = data.body;
+    document.getElementById('machineModal').classList.add('open');
+  }
+}
+
+function closeMachineModal() {
+  document.getElementById('machineModal').classList.remove('open');
+}
+

@@ -203,23 +203,188 @@ const machineDetails = {
     title: 'Edge Milling (JCO Line)',
     body: `
       <ul>
-        <li>Bevel edge preparation</li>
-        <li>Root face: 3–5 mm; Angles: 27°/32°</li>
-        <li><strong>Key Equipment:</strong><br>
-        - Double head<br>- 6–12.8m, 1,200–5,300mm, Max 60mm<br>- SEOKWANG (Korea)</li>
+        <li>Bevel edge preparation using rotating heads</li>
+        <li>Root face: 3–5 mm; Angles: 27° (outside), 32° (inside)</li>
+        <li><strong>Key Equipment:</strong><br>- Double head<br>- 6–12.8m, 1,200–5,300mm, Max 60mm<br>- SEOKWANG (Korea)</li>
       </ul>`
   },
   'jco-jcopress': {
     title: 'JCO Press',
     body: `
       <ul>
-        <li>CNC air-bent forming</li>
-        <li>J-C-O step pressing</li>
-        <li><strong>Key Equipment:</strong><br>
-        - 65,000KN<br>- OD 18"–64"<br>- YSD (China)</li>
+        <li>CNC-controlled J-C-O step forming</li>
+        <li>Air-bent hydraulic press system</li>
+        <li><strong>Key Equipment:</strong><br>- 65,000KN capacity<br>- OD 18"–64", Max thickness 60mm<br>- YSD (China)</li>
       </ul>`
   },
-  // Add all other machines here...
+  'jco-tackwelding': {
+    title: 'Tack Welding',
+    body: `
+      <ul>
+        <li>GMAW welding using CO₂/Argon with 5-roll guide</li>
+        <li><strong>Key Equipment:</strong><br>- 25 Ton<br>- DC Max 45V / AC Max 500A<br>- SEOKWANG (Korea)</li>
+      </ul>`
+  },
+  'jco-insidewelding': {
+    title: 'Inside Welding',
+    body: `
+      <ul>
+        <li>SAW with DC & AC wires and laser seam tracking</li>
+        <li><strong>Key Equipment:</strong><br>- 1650A DC ×2, 1250A AC ×2<br>- ESAB (Korea)</li>
+      </ul>`
+  },
+  'jco-outsidewelding': {
+    title: 'Outside Welding',
+    body: `
+      <ul>
+        <li>External SAW, same system as inside weld</li>
+        <li><strong>Key Equipment:</strong><br>- Matches inside welding specs<br>- ESAB (Korea)</li>
+      </ul>`
+  },
+  'jco-xray': {
+    title: 'X-ray (Intermediate/Final)',
+    body: `
+      <ul>
+        <li>Real-time X-ray for L and G seams</li>
+        <li><strong>Key Equipment:</strong><br>- 325Kvp, 45A<br>- Digital system</li>
+      </ul>`
+  },
+  'jco-Expander': {
+    title: 'Calibration / Cold Expanding',
+    body: `
+      <ul>
+        <li>Diameter calibration and cold expansion</li>
+        <li><strong>Key Equipment:</strong><br>- OD: 18"–56", Max thickness 60mm<br>- Fontijine Grotness</li>
+      </ul>`
+  },
+  'jco-hydro': {
+    title: 'Hydro Testing',
+    body: `
+      <ul>
+        <li>High-pressure water seal test</li>
+        <li><strong>Key Equipment:</strong><br>- Max 60 MPa<br>- OD: Max 64"<br>- TSD (China)</li>
+      </ul>`
+  },
+  'jco-UT': {
+    title: 'Auto UT',
+    body: `
+      <ul>
+        <li>Pulse-echo ultrasonic weld testing</li>
+        <li><strong>Key Equipment:</strong><br>- Speed: 50–60 m/min<br>- GEIT</li>
+      </ul>`
+  },
+  'jco-furnace': {
+    title: 'Heat Treatment',
+    body: `
+      <ul>
+        <li>Stress relief gas furnace</li>
+        <li><strong>Key Equipment:</strong><br>- Max Temp: 970°C<br>- DONGSUNG (Korea)</li>
+      </ul>`
+  },
+  'jco-inspection': {
+    title: 'Final Inspection',
+    body: `
+      <ul>
+        <li>Dimensional, roundness, and QA marking</li>
+        <li><strong>Key Equipment:</strong><br>- Visual and digital measuring tools</li>
+      </ul>`
+  },
+  'rb-gascutting': {
+    title: 'Plate Gas Cutting',
+    body: `
+      <ul>
+        <li>O₂ + LPG cutting with beveling</li>
+        <li><strong>Key Equipment:</strong><br>- 15 Ton, Max 50mm<br>- SeShine (Korea)</li>
+      </ul>`
+  },
+  'rb-rollbending': {
+    title: '3 Roll Bending',
+    body: `
+      <ul>
+        <li>Forming pipe using top and bottom rolls</li>
+        <li><strong>Key Equipment:</strong><br>- OD: 40"–120", Max 50mm<br>- SEOKWANG (Korea)</li>
+      </ul>`
+  },
+  'rb-tackwelding': {
+    title: 'Tack Welding (Roll Bender)',
+    body: `
+      <ul>
+        <li>Manual GMAW process</li>
+        <li><strong>Key Equipment:</strong><br>- Handheld GMAW<br>- Seam holding only</li>
+      </ul>`
+  },
+  'rb-123longitudionalwelding': {
+    title: '12M Longitudinal Welding (Inside)',
+    body: `
+      <ul>
+        <li>SAW welding with laser tracking</li>
+        <li><strong>Key Equipment:</strong><br>- DC 1600A / AC 1500A<br>- ESAB (Korea)</li>
+      </ul>`
+  },
+  'rb-12mlongitudionalweldingo': {
+    title: '12M Longitudinal Welding (Outside)',
+    body: `
+      <ul>
+        <li>Same as inside longitudinal weld</li>
+        <li><strong>Key Equipment:</strong><br>- Matches inside weld<br>- ESAB (Korea)</li>
+      </ul>`
+  },
+  'rb-fittingup': {
+    title: 'Fitting Up',
+    body: `
+      <ul>
+        <li>Alignment for girth welds</li>
+        <li><strong>Key Equipment:</strong><br>- 30 Ton turning roll<br>- Adjustable width</li>
+      </ul>`
+  },
+  'rb-girthwelding': {
+    title: '12M Girth Welding (Inside)',
+    body: `
+      <ul>
+        <li>SAW welding on girth seam (inside)</li>
+        <li><strong>Key Equipment:</strong><br>- Same as SAW<br>- ESAB</li>
+      </ul>`
+  },
+  'rb-girthweldingo': {
+    title: '12M Girth Welding (Outside)',
+    body: `
+      <ul>
+        <li>SAW welding on girth seam (outside)</li>
+        <li><strong>Key Equipment:</strong><br>- Same as inside<br>- ESAB</li>
+      </ul>`
+  },
+  'rb-120inhydro': {
+    title: '120" Hydro Testing',
+    body: `
+      <ul>
+        <li>Water pressure test using rubber sealing</li>
+        <li><strong>Key Equipment:</strong><br>- Max 250 bar<br>- OD: Max 120"<br>- SEOKWANG (Korea)</li>
+      </ul>`
+  },
+  'rb-xray': {
+    title: 'X-ray Test',
+    body: `
+      <ul>
+        <li>Final seam check with digital system</li>
+        <li><strong>Key Equipment:</strong><br>- 325Kvp, real-time<br>- GEIT</li>
+      </ul>`
+  },
+  'rb-furnacerb': {
+    title: 'Heat Treatment',
+    body: `
+      <ul>
+        <li>Stress relief gas furnace for RB line</li>
+        <li><strong>Key Equipment:</strong><br>- Max Temp: 970°C<br>- DONGSUNG (Korea)</li>
+      </ul>`
+  },
+  'rb-inspectionrb': {
+    title: 'Final Inspection (Roll Bender)',
+    body: `
+      <ul>
+        <li>QA check of size, roundness, and weld quality</li>
+        <li><strong>Key Equipment:</strong><br>- Dimensional tools<br>- Visual QA systems</li>
+      </ul>`
+  }
 };
 
 function openMachineModal(id) {

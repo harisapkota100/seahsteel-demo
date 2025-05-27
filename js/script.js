@@ -140,15 +140,21 @@ function enlargeImage(imgElement) {
   lightboxImg.src = imgElement.src;
   lightbox.style.display = 'flex';
 
-  // Reset zoom level when image is changed
-  lightboxImg.style.transform = "scale(1)";
+  // Reset zoom and transform
   zoomLevel = 1;
+  offsetX = 0;
+  offsetY = 0;
+  lightboxImg.style.transform = `scale(${zoomLevel}) translate(0px, 0px)`;
 }
 
-// Initialize zoom level
+// Initialize zoom and pan variables
 let zoomLevel = 1;
+let offsetX = 0;
+let offsetY = 0;
+let isDragging = false;
+let startX, startY;
 
-// Enable scroll-to-zoom inside lightbox
+// Zoom on mouse wheel
 document.getElementById('lightbox-img').addEventListener('wheel', function (e) {
   e.preventDefault();
   const scaleStep = 0.1;
@@ -157,7 +163,38 @@ document.getElementById('lightbox-img').addEventListener('wheel', function (e) {
     zoomLevel += scaleStep; // zoom in
   } else {
     zoomLevel = Math.max(1, zoomLevel - scaleStep); // zoom out
+    if (zoomLevel === 1) {
+      offsetX = 0;
+      offsetY = 0;
+    }
   }
 
-  this.style.transform = `scale(${zoomLevel})`;
+  updateTransform();
 });
+
+// Mouse drag to pan
+const lightboxImg = document.getElementById('lightbox-img');
+
+lightboxImg.addEventListener('mousedown', function (e) {
+  if (zoomLevel <= 1) return;
+  isDragging = true;
+  startX = e.clientX - offsetX;
+  startY = e.clientY - offsetY;
+  lightboxImg.style.cursor = 'grabbing';
+});
+
+window.addEventListener('mouseup', function () {
+  isDragging = false;
+  lightboxImg.style.cursor = 'zoom-in';
+});
+
+window.addEventListener('mousemove', function (e) {
+  if (!isDragging) return;
+  offsetX = e.clientX - startX;
+  offsetY = e.clientY - startY;
+  updateTransform();
+});
+
+function updateTransform() {
+  lightboxImg.style.transform = `scale(${zoomLevel}) translate(${offsetX}px, ${offsetY}px)`;
+}

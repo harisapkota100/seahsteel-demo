@@ -133,3 +133,10 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+// Enable image lightbox on click
+function enlargeImage(imgElement) {
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  lightboxImg.src = imgElement.src;
+  lightbox.style.display = 'flex';
+}

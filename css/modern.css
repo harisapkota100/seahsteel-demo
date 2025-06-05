@@ -8,10 +8,11 @@ body {
   background: #f0f0f0;
   color: #003366;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   gap: 1.5rem;
   padding: 0.5rem 2rem;
   font-size: 0.9rem;
+  margin-left: -1.2rem;
 }
 
 .topbar ul {
@@ -19,6 +20,7 @@ body {
   margin: 0;
   display: flex;
   gap: 1.2rem;
+  padding-left: 9.5rem;
 }
 
 .topbar ul li a {

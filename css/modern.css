@@ -12,7 +12,8 @@ body {
   gap: 1.5rem;
   padding: 0.5rem 2rem;
   font-size: 0.9rem;
-  margin-left: -1.2rem;
+  /* Remove left offset so items can truly center */
+  margin-left: 0;
 }
 
 .topbar ul {
@@ -20,7 +21,8 @@ body {
   margin: 0;
   display: flex;
   gap: 1.2rem;
-  padding-left: 9.5rem;
+  /* Remove extra padding to allow centering */
+  padding-left: 0;
 }
 
 .topbar ul li a {

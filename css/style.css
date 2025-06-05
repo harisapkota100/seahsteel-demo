@@ -1463,7 +1463,8 @@ margin-left: 15rem;
   padding: 5px 0;
   display: flex;
   justify-content: center;
-  margin-left: -1.2rem;
+  /* Remove left offset so items center */
+  margin-left: 0;
   color:  #002244;
 }
 
@@ -1471,7 +1472,8 @@ margin-left: 15rem;
 .topbar ul {
   list-style: none;
   margin: 0;
-  padding-left: 9.5rem;
+  /* Remove extra padding to allow centering */
+  padding-left: 0;
   display: flex;
   gap: 20px;
 }
@@ -3171,7 +3173,8 @@ margin-left: 15rem;
   padding: 5px 0;
   display: flex;
   justify-content: center;
-  margin-left: -1.2rem;
+  /* Remove left offset so items center */
+  margin-left: 0;
   color:  #002244;
 }
 
@@ -3179,7 +3182,8 @@ margin-left: 15rem;
 .topbar ul {
   list-style: none;
   margin: 0;
-  padding-left: 9.5rem;
+  /* Remove extra padding to allow centering */
+  padding-left: 0;
   display: flex;
   gap: 20px;
 }

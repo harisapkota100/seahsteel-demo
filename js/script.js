@@ -7,15 +7,6 @@ function searchSite(event) {
     { title: 'Products', url: 'products.html', keywords: ['pipe', 'steel', 'ssaw', 'lsaw'] },
     { title: 'Projects', url: 'projects.html', keywords: ['project', 'clients', 'portfolio'] },
     { title: 'Quality', url: 'quality.html', keywords: ['quality', 'certification', 'inspection'] },
-    { title: 'CEO Message', url: 'ceo.html', function searchSite(event) {
-  event.preventDefault();
-  const keyword = document.getElementById('searchInput').value.toLowerCase();
-
-  const pages = [
-    { title: 'About', url: 'about.html', keywords: ['about', 'history', 'company'] },
-    { title: 'Products', url: 'products.html', keywords: ['pipe', 'steel', 'ssaw', 'lsaw'] },
-    { title: 'Projects', url: 'projects.html', keywords: ['project', 'clients', 'portfolio'] },
-    { title: 'Quality', url: 'quality.html', keywords: ['quality', 'certification', 'inspection'] },
     { title: 'CEO Message', url: 'ceo.html', keywords: ['ceo', 'leadership', 'vision'] },
     { title: 'News', url: 'news.html', keywords: ['news', 'events', 'updates'] },
     { title: 'Contact', url: 'contact.html', keywords: ['contact', 'location', 'email'] },
@@ -842,4 +833,25 @@ function closeMachineModal() {
   const modal = document.getElementById("machineModal");
   modal.classList.remove("open");
 }
+
+// Theme toggle
+document.addEventListener('DOMContentLoaded', function () {
+  const toggle = document.getElementById('theme-toggle');
+  if (!toggle) return;
+  const saved = localStorage.getItem('theme');
+  if (saved === 'dark') {
+    document.body.classList.add('dark-mode');
+    toggle.textContent = '☀️';
+  }
+  toggle.addEventListener('click', function () {
+    document.body.classList.toggle('dark-mode');
+    if (document.body.classList.contains('dark-mode')) {
+      localStorage.setItem('theme', 'dark');
+      toggle.textContent = '☀️';
+    } else {
+      localStorage.setItem('theme', 'light');
+      toggle.textContent = '🌙';
+    }
+  });
+});
 

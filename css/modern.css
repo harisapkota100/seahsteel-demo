@@ -35,9 +35,6 @@ body {
 .topbar ul li a:hover {
   text-decoration: underline;
 }
-.language-switcher {
-  margin-left: auto;
-}
 
 .main-header {
   /* Match the top bar background */

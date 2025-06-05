@@ -1460,18 +1460,17 @@ margin-left: 15rem;
 /*top bar */
 .topbar {
   background-color: #d3d3d3;
-  padding: 5px 0;
+  padding: 5px 2rem;
   display: flex;
-  justify-content: center;
- margin-left: -1.2rem;
-color:  #002244;
+  justify-content: flex-end;
+  color:  #002244;
 }
 
 
 .topbar ul {
   list-style: none;
   margin: 0;
-  padding-left: 9.5rem;
+  padding-right: 9rem;
   display: flex;
   gap: 20px;
 }
@@ -3168,18 +3167,17 @@ margin-left: 15rem;
 /*top bar */
 .topbar {
   background-color: #d3d3d3;
-  padding: 5px 0;
+  padding: 5px 2rem;
   display: flex;
-  justify-content: center;
- margin-left: -1.2rem;
-color:  #002244;
+  justify-content: flex-end;
+  color:  #002244;
 }
 
 
 .topbar ul {
   list-style: none;
   margin: 0;
-  padding-left: 9.5rem;
+  padding-right: 9rem;
   display: flex;
   gap: 20px;
 }

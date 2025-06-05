@@ -27,7 +27,8 @@ body {
 
 /* HEADER */
 .main-header {
-  background: #d3d3d3;
+  /* Align header color with the top bar */
+  background: #f0f0f0;
   color:  #002244;
   padding: 1rem 2rem;
   display: flex;
@@ -981,9 +982,10 @@ footer {
   line-height: 1.6;
 }
 .logo img {
-  height: 100px; /* or try 80px */
-  max-height: 100px;
-  width: 100;
+  /* Smaller logo to fit the header better */
+  height: 40px;
+  max-height: 100%;
+  width: auto;
   object-fit: contain;
 }
 
@@ -1001,7 +1003,7 @@ footer {
 }
 @media (max-width: 768px) {
   .logo img {
-    height: 50px;
+    height: 30px;
   }
 }
 .news-container .container {
@@ -2688,9 +2690,10 @@ footer {
   line-height: 1.6;
 }
 .logo img {
-  height: 100px; /* or try 80px */
-  max-height: 100px;
-  width: 100;
+  /* Smaller logo to fit the header better */
+  height: 40px;
+  max-height: 100%;
+  width: auto;
   object-fit: contain;
 }
 
@@ -2708,7 +2711,7 @@ footer {
 }
 @media (max-width: 768px) {
   .logo img {
-    height: 50px;
+    height: 30px;
   }
 }
 .news-container .container {

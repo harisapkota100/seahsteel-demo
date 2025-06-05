@@ -758,19 +758,17 @@ footer {
 .whatsapp-chat img:hover {
   transform: scale(1.1);
 }
-/* HERO VIDEO — Wide and Short Layout */
+/* HERO VIDEO */
 .hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  max-width: 1000px;      /* Wider screen space */
-  height: 280px;           /* Shorter height */
-  object-fit: contain;     /* ✅ No cropping — show full frame */
-  background-color: #000;  /* Black bars around if aspect ratio differs */
-  margin-top: 1.5rem;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  height: 100%;
+  max-width: none;
+  margin: 0;
+  object-fit: cover;
+  z-index: 1;
 }
 /* FULLSCREEN HERO VIDEO BACKGROUND */
 
@@ -2546,88 +2544,6 @@ footer {
 
 .whatsapp-chat img:hover {
   transform: scale(1.1);
-}
-/* HERO VIDEO — Wide and Short Layout */
-.hero-video {
-  width: 100%;
-  max-width: 1000px;      /* Wider screen space */
-  height: 280px;           /* Shorter height */
-  object-fit: contain;     /* ✅ No cropping — show full frame */
-  background-color: #000;  /* Black bars around if aspect ratio differs */
-  margin-top: 1.5rem;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-/* FULLSCREEN HERO VIDEO BACKGROUND */
-
-.hero-section {
-  position: relative;
-  width: 100%;
-  height: 100vh; /* Full viewport height */
-  overflow: hidden;
-}
-
-.bg-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  min-height: 100%;
-  object-fit: cover;
-  z-index: 1;
-}
-
-/* Overlaying Text on Top of Video */
-.hero-overlay {
-  position: relative;
-  z-index: 2;
-  color: #FFD700;
-  text-align: center;
-  padding-top: 20vh;
-}
-
-.hero-overlay h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
-}
-
-.hero-overlay p {
-  font-size: 1.3rem;
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
-}
-/* BOTTOM NAVIGATION */
-
-.bottom-nav {
-  background-color: #f4f4f4;
-  padding: 1rem 0;
-  text-align: center;
-  border-top: 1px solid #ddd;
-}
-
-.bottom-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1.5rem;
-}
-
-.bottom-nav li a {
-  text-decoration: none;
-  color: #003366;
-  font-size: 0.95rem;
-  transition: color 0.2s ease;
-}
-
-.bottom-nav li a:hover {
-   text-decoration: underline;
-  color: #fff;
 }
 /* ENHANCED FOOTER NAVIGATION */
 

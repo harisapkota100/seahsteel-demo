@@ -40,6 +40,7 @@
   </style>
 </head>
 <body>
+<div id="google_translate_element"></div>
   <!-- TOPBAR -->
   <div class="topbar">
     <ul>
@@ -253,6 +254,12 @@
 
   <!-- SCRIPTS -->
   <!-- keep your shared script for search/map/etc -->
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: "en", includedLanguages: "en,ar,ko", layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, "google_translate_element");
+}
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
   <script src="js/script.js"></script>
   <!-- then the manufacturing-only modal logic -->
   <script src="js/manufacturing.js"></script>

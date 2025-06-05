@@ -1460,9 +1460,10 @@ margin-left: 15rem;
 /*top bar */
 .topbar {
   background-color: #d3d3d3;
-  padding: 5px 0;
+  padding: 5px 20px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
   /* Remove left offset so items center */
   margin-left: 0;
   color:  #002244;
@@ -1493,6 +1494,9 @@ font-weight: bold;
 .topbar ul li a:hover {
   text-decoration: underline;
   color: #fff;
+}
+.language-switcher {
+  margin-left: auto;
 }
 .navbar ul li a:hover {
     text-decoration: underline;
@@ -3170,9 +3174,10 @@ margin-left: 15rem;
 /*top bar */
 .topbar {
   background-color: #d3d3d3;
-  padding: 5px 0;
+  padding: 5px 20px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
   /* Remove left offset so items center */
   margin-left: 0;
   color:  #002244;
@@ -3203,6 +3208,9 @@ font-weight: bold;
 .topbar ul li a:hover {
   text-decoration: underline;
   color: #fff;
+}
+.language-switcher {
+  margin-left: auto;
 }
 .navbar ul li a:hover {
     text-decoration: underline;

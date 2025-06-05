@@ -20,6 +20,7 @@
     <li><a href="downloads.html">Downloads</a></li>
     <li><a href="globalseah.html" class="active">Global SeAH</a></li>
   </ul>
+  <div class="language-switcher" id="google_translate_element"></div>
 </div>
 
 <!-- HEADER -->
@@ -94,6 +95,12 @@
 
 <!-- SCRIPTS -->
 <script src="js/script.js"></script>
+<!-- Google Translate --><script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: "en", includedLanguages: "en,ko,ar", layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, "google_translate_element");
+}
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6jeni5WjsZMffUdFjNe5TGUmC1C-FDWU&callback=initGlobalMap" async defer></script>
 
 </body>

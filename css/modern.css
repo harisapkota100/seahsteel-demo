@@ -8,7 +8,8 @@ body {
   background: #f0f0f0;
   color: #003366;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
   gap: 1.5rem;
   padding: 0.5rem 2rem;
   font-size: 0.9rem;
@@ -33,6 +34,9 @@ body {
 
 .topbar ul li a:hover {
   text-decoration: underline;
+}
+.language-switcher {
+  margin-left: auto;
 }
 
 .main-header {

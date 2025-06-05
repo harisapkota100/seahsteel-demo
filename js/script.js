@@ -843,12 +843,4 @@ function closeMachineModal() {
   modal.classList.remove("open");
 }
 
-// Language switcher using Google Translate
-function setLanguage(lang) {
-  var translateCookie = '/en/' + lang;
-  document.cookie = 'googtrans=' + translateCookie + ';path=/';
-  document.cookie = 'googtrans=' + translateCookie + ';domain=' + window.location.hostname + ';path=/';
-  window.location.reload();
-}
-window.setLanguage = setLanguage;
 

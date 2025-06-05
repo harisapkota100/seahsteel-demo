@@ -104,7 +104,8 @@ function initUaeMap() {
     marker.addListener("click", () => window.open(loc.url, "_blank"));
   });
 }
-// Handle opening the application modal when "Apply Now" is clicked
+// js/script.js
+
 document.addEventListener("DOMContentLoaded", function () {
   const applyButtons = document.querySelectorAll(".apply-btn");
   const modal = document.getElementById("applicationModal");
@@ -112,27 +113,73 @@ document.addEventListener("DOMContentLoaded", function () {
   const jobTitleInput = document.getElementById("jobTitleInput");
   const closeBtn = document.querySelector(".modal-close");
 
+  // 1) Open modal on “Apply Now” click
   applyButtons.forEach(button => {
     button.addEventListener("click", () => {
       const jobTitle = button.getAttribute("data-job");
       modal.classList.add("open");
       modalJobTitle.textContent = jobTitle;
       jobTitleInput.value = jobTitle;
+      // Clear any previous feedback
+      const feedbackEl = document.getElementById("formFeedback");
+      feedbackEl.textContent = "";
+      feedbackEl.classList.remove("error");
+      feedbackEl.style.display = "none";
+      // Reset form fields
+      document.getElementById("applicationForm").reset();
+      jobTitleInput.value = jobTitle;
     });
   });
 
-  // Close modal on "×" click
+  // 2) Close modal on “×” click
   closeBtn.addEventListener("click", () => {
     modal.classList.remove("open");
   });
 
-  // Close modal on outside click
+  // 3) Close modal on outside click
   window.addEventListener("click", (e) => {
     if (e.target === modal) {
       modal.classList.remove("open");
     }
   });
+
+  // 4) Handle form submission via EmailJS
+  const applicationForm = document.getElementById("applicationForm");
+  applicationForm.addEventListener("submit", function (e) {
+    e.preventDefault(); // Prevent default form submit
+
+    const feedbackEl = document.getElementById("formFeedback");
+    feedbackEl.textContent = "Sending your application…";
+    feedbackEl.classList.remove("error");
+    feedbackEl.style.display = "block";
+
+    // Your EmailJS Service ID & Template ID
+    const serviceID = "service_r7829om";
+    const templateID = "template_ztdooje";
+
+    emailjs.sendForm(serviceID, templateID, this)
+      .then(
+        (response) => {
+          console.log("SUCCESS!", response.status, response.text);
+          feedbackEl.textContent = "Your application has been submitted successfully. We will be in touch soon!";
+          feedbackEl.classList.remove("error");
+          feedbackEl.style.display = "block";
+
+          // Auto‐close modal after 2.5 seconds
+          setTimeout(() => {
+            modal.classList.remove("open");
+          }, 2500);
+        },
+        (error) => {
+          console.log("FAILED…", error);
+          feedbackEl.textContent = "Oops! Something went wrong. Please try again later.";
+          feedbackEl.classList.add("error");
+          feedbackEl.style.display = "block";
+        }
+      );
+  });
 });
+
 // Enable image lightbox on click
 function enlargeImage(imgElement) {
   const lightbox = document.getElementById('lightbox');

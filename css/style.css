@@ -49,6 +49,10 @@ body {
   font-size: 1rem;
 }
 
+.navbar {
+  background-color: #f0f0f0;
+}
+
 .quote-btn {
   background: #003366;
   padding: 0.5rem 1rem;
@@ -983,7 +987,7 @@ footer {
 }
 .logo img {
   /* Smaller logo to fit the header better */
-  height: 40px;
+  height: 30px;
   max-height: 100%;
   width: auto;
   object-fit: contain;
@@ -2691,7 +2695,7 @@ footer {
 }
 .logo img {
   /* Smaller logo to fit the header better */
-  height: 40px;
+  height: 30px;
   max-height: 100%;
   width: auto;
   object-fit: contain;

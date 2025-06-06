@@ -4,7 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta name="google" content="notranslate">
-  <title>Careers | SeAH Steel UAE LLC</title>
+
+  <!-- 1) Page title now uses a careers‐specific key -->
+  <title data-i18n-careers="CAREERS_PAGE_TITLE">Careers | SeAH Steel UAE LLC</title>
+
   <link rel="icon" type="image/png" href="images/favicon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,220 +17,233 @@
   <link rel="stylesheet" href="css/careers.css" />
 </head>
 <body>
-  <!-- TOPBAR -->
+  <!-- TOPBAR (shared) -->
   <div class="topbar">
     <ul>
-      <li><a href="careers.html" class="active">Careers</a></li>
-      <li><a href="downloads.html">Downloads</a></li>
-      <li><a href="globalseah.html">Global SeAH</a></li>
+      <li><a href="careers.html" class="active" data-i18n-common="TOP_CAREERS">Careers</a></li>
+      <li><a href="downloads.html" data-i18n-common="TOP_DOWNLOADS">Downloads</a></li>
+      <li><a href="globalseah.html" data-i18n-common="TOP_GLOBAL">Global SeAH</a></li>
     </ul>
   </div>
 
-  <!-- HEADER -->
+  <!-- HEADER + NAVBAR (shared) -->
   <header class="main-header">
     <a href="index.html" class="logo">
       <img src="images/logo.png" alt="SeAH Steel UAE LLC Logo" />
     </a>
     <nav class="navbar">
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="ceo.html">CEO Message</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="products.html">Products</a></li>
-        <li><a href="manufacturing.html">How We Work</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="quality.html">Quality</a></li>
-        <li><a href="news.html">News</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="index.html" data-i18n-common="NAV_HOME">Home</a></li>
+        <li><a href="ceo.html" data-i18n-common="NAV_CEO">CEO Message</a></li>
+        <li><a href="about.html" data-i18n-common="NAV_ABOUT">About</a></li>
+        <li><a href="products.html" data-i18n-common="NAV_PRODUCTS">Products</a></li>
+        <li><a href="manufacturing.html" data-i18n-common="NAV_MANUFACTURING">How We Work</a></li>
+        <li><a href="projects.html" data-i18n-common="NAV_PROJECTS">Projects</a></li>
+        <li><a href="quality.html" data-i18n-common="NAV_QUALITY">Quality</a></li>
+        <li><a href="news.html" data-i18n-common="NAV_NEWS">News</a></li>
+        <li><a href="contact.html" data-i18n-common="NAV_CONTACT">Contact</a></li>
       </ul>
     </nav>
     <form class="search-bar" onsubmit="return searchSite(event)">
       <input type="text" id="searchInput" placeholder="Search..." />
       <button type="submit">🔍</button>
     </form>
-    <a href="quote.html" class="quote-btn">Request Quote</a>
+    <a href="quote.html" class="quote-btn" data-i18n-common="NAV_QUOTE">Request Quote</a>
+
+    <!-- Language-switcher (shared) -->
+    <div class="lang-switcher">
+      <a href="#" id="lang-en">English</a> |
+      <a href="#" id="lang-ar">العربية</a> |
+      <a href="#" id="lang-ko">한국어</a>
+    </div>
   </header>
 
-  <!-- HERO BANNER -->
+  <!-- HERO BANNER (page-specific) -->
   <section class="about-hero">
     <div class="hero-content">
-      <h1>Careers</h1>
-      <p>Join our team at SeAH Steel UAE LLC</p>
+      <h1 data-i18n-careers="HERO_TITLE">Careers</h1>
+      <p data-i18n-careers="HERO_SUBTEXT">Join our team at SeAH Steel UAE LLC</p>
     </div>
   </section>
 
-  <!-- SECTION 1: GENERAL CV SUBMISSION -->
+  <!-- SECTION 1: GENERAL CV SUBMISSION (page-specific) -->
   <section class="careers-apply">
     <div class="container">
-      <h2 class="section-title">Submit Your CV</h2>
+      <h2 class="section-title" data-i18n-careers="CV_TITLE">Submit Your CV</h2>
       <form id="cvForm" class="career-form">
         <div class="form-group">
-          <label for="cv_name">Full Name</label>
+          <label for="cv_name" data-i18n-careers="CV_LABEL_NAME">Full Name</label>
           <input type="text" id="cv_name" name="name" required />
         </div>
         <div class="form-group">
-          <label for="cv_email">Email Address</label>
+          <label for="cv_email" data-i18n-careers="CV_LABEL_EMAIL">Email Address</label>
           <input type="email" id="cv_email" name="email" required />
         </div>
         <div class="form-group">
-          <label for="cv_phone">Phone Number</label>
+          <label for="cv_phone" data-i18n-careers="CV_LABEL_PHONE">Phone Number</label>
           <input type="tel" id="cv_phone" name="phone" required />
         </div>
         <div class="form-group">
-         <label for="cv_resume_link">Link to Your Resume (Google Drive, Dropbox, etc.)</label>
-<input type="url"
-       id="cv_resume_link"
-       name="resume_link"
-       placeholder="https://drive.google.com/your-resume.pdf"
-       required />
-        </div>
-        <button type="submit" class="careers-btn">Submit</button>
-      </form>
-    </div>
-  </section>
-
-  <!-- SECTION 2: VACANCY ANNOUNCEMENTS -->
-  <section class="vacancies">
-    <div class="container">
-      <h2 class="section-title">Current Vacancies</h2>
-      <div class="vacancy-grid">
-        <!-- Example Vacancy Card -->
-        <div class="vacancy-card">
-          <h3>Mechanical Engineer</h3>
-          <p>Design, test and oversee manufacturing processes for steel pipe systems.</p>
-          <button class="btn apply-btn" data-job="Mechanical Engineer">Apply Now</button>
-        </div>
-        <div class="vacancy-card">
-          <h3>International Welding Engineer</h3>
-          <p>Drive business development and manage key client relationships across the GCC.</p>
-          <button class="btn apply-btn" data-job="International Welding Engineer">Apply Now</button>
-        </div>
-        <!-- Add more .vacancy-card blocks as needed -->
-      </div>
-    </div>
-  </section>
-<!-- ──────────────────────────────────────────────────────────────────────── -->
-<!-- APPLICATION MODAL (must be placed outside the .vacancies section)      -->
-<!-- ──────────────────────────────────────────────────────────────────────── -->
-<div id="applicationModal" class="modal">
-  <div class="modal-content">
-    <div class="modal-header">
-      <span class="modal-close">&times;</span>
-      <h2>Apply for <span id="modalJobTitle"></span></h2>
-    </div>
-
-    <!-- Wrap the form in a .modal-body as before -->
-    <div class="modal-body">
-      <form id="applicationForm">
-        <input type="hidden" name="post" id="jobTitleInput" />
-
-        <label>
-          Full Name
-          <input type="text" name="name" required />
-        </label>
-
-        <label>
-          Address
-          <input type="text" name="address" required />
-        </label>
-
-        <label>
-          Date of Birth
-          <input type="date" name="dob" required />
-        </label>
-
-        <label>
-          Gender
-          <select name="gender" required>
-            <option value="">– Select –</option>
-            <option>Male</option>
-            <option>Female</option>
-            <option>Other</option>
-          </select>
-        </label>
-
-        <label>
-          Contact Phone
-          <input type="tel" name="phone" required />
-        </label>
-
-        <label>
-          Contact Email
-          <input type="email" name="email" required />
-        </label>
-
-        <label>
-          Education Details
-          <textarea name="education" rows="3" required></textarea>
-        </label>
-
-        <label>
-          Experience Details
-          <textarea name="experience" rows="3" required></textarea>
-        </label>
-
-        <label>
-          Expected Salary
-          <input type="text" name="salary" required />
-        </label>
-
-        <label>
-          CV Link
+          <label for="cv_resume_link" data-i18n-careers="CV_LABEL_RESUME_LINK">
+            Link to Your Resume (Google Drive, Dropbox, etc.)
+          </label>
           <input
             type="url"
+            id="cv_resume_link"
             name="resume_link"
             placeholder="https://drive.google.com/your-resume.pdf"
             required
           />
-        </label>
-
-        <label>
-          Certificates Link
-          <input
-            type="url"
-            name="certificates_link"
-            placeholder="https://drive.google.com/your-certificates.pdf"
-          />
-        </label>
-
-        <button type="submit" class="btn">Submit Application</button>
+        </div>
+        <button type="submit" class="careers-btn" data-i18n-careers="CV_BUTTON">Submit</button>
       </form>
     </div>
-  </div>
-</div>
-  <!-- A place for form‐submission feedback (initially hidden) -->
-  <p id="formFeedback" style="display: none; margin-bottom: 1rem; color: red;"></p>
 
-  <!-- FOOTER NAVIGATION -->
+    <!-- Feedback paragraph (initially hidden) -->
+    <p id="formFeedback" style="display:none; margin-top:1rem; color: green;"></p>
+  </section>
+
+  <!-- SECTION 2: VACANCY ANNOUNCEMENTS (page-specific) -->
+  <section class="vacancies">
+    <div class="container">
+      <h2 class="section-title" data-i18n-careers="VACANCIES_TITLE">Current Vacancies</h2>
+      <div class="vacancy-grid">
+        <!-- Vacancy Card 1 -->
+        <div class="vacancy-card">
+          <h3 data-i18n-careers="VACANCY1_TITLE">Mechanical Engineer</h3>
+          <p data-i18n-careers="VACANCY1_DESC">
+            Design, test and oversee manufacturing processes for steel pipe systems.
+          </p>
+          <button class="btn apply-btn" data-job="Mechanical Engineer" data-i18n-careers="VACANCY1_BUTTON">
+            Apply Now
+          </button>
+        </div>
+
+        <!-- Vacancy Card 2 -->
+        <div class="vacancy-card">
+          <h3 data-i18n-careers="VACANCY2_TITLE">International Welding Engineer</h3>
+          <p data-i18n-careers="VACANCY2_DESC">
+            Drive business development and manage key client relationships across the GCC.
+          </p>
+          <button class="btn apply-btn" data-job="International Welding Engineer" data-i18n-careers="VACANCY2_BUTTON">
+            Apply Now
+          </button>
+        </div>
+
+        <!-- Add more .vacancy-card blocks as needed, following the same pattern -->
+      </div>
+    </div>
+  </section>
+
+  <!-- APPLICATION MODAL (page-specific) -->
+  <div id="applicationModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="modal-close">&times;</span>
+        <h2>
+          <span data-i18n-careers="MODAL_APPLY_FOR">Apply for </span>
+          <span id="modalJobTitle"></span>
+        </h2>
+      </div>
+      <div class="modal-body">
+        <form id="applicationForm">
+          <input type="hidden" name="post" id="jobTitleInput" />
+
+          <label data-i18n-careers="MODAL_LABEL_NAME">Full Name
+            <input type="text" name="name" required />
+          </label>
+
+          <label data-i18n-careers="MODAL_LABEL_ADDRESS">Address
+            <input type="text" name="address" required />
+          </label>
+
+          <label data-i18n-careers="MODAL_LABEL_DOB">Date of Birth
+            <input type="date" name="dob" required />
+          </label>
+
+          <label data-i18n-careers="MODAL_LABEL_GENDER">Gender
+            <select name="gender" required>
+              <option value="">– Select –</option>
+              <option data-i18n-careers="MODAL_OPTION_MALE">Male</option>
+              <option data-i18n-careers="MODAL_OPTION_FEMALE">Female</option>
+              <option data-i18n-careers="MODAL_OPTION_OTHER">Other</option>
+            </select>
+          </label>
+
+          <label data-i18n-careers="MODAL_LABEL_PHONE">Contact Phone
+            <input type="tel" name="phone" required />
+          </label>
+
+          <label data-i18n-careers="MODAL_LABEL_EMAIL">Contact Email
+            <input type="email" name="email" required />
+          </label>
+
+          <label data-i18n-careers="MODAL_LABEL_EDUCATION">Education Details
+            <textarea name="education" rows="3" required></textarea>
+          </label>
+
+          <label data-i18n-careers="MODAL_LABEL_EXPERIENCE">Experience Details
+            <textarea name="experience" rows="3" required></textarea>
+          </label>
+
+          <label data-i18n-careers="MODAL_LABEL_SALARY">Expected Salary
+            <input type="text" name="salary" required />
+          </label>
+
+          <label data-i18n-careers="MODAL_LABEL_RESUME_LINK">CV Link
+            <input type="url" name="resume_link" placeholder="https://drive.google.com/your-resume.pdf" required />
+          </label>
+
+          <label data-i18n-careers="MODAL_LABEL_CERTIFICATES_LINK">Certificates Link
+            <input type="url" name="certificates_link" placeholder="https://drive.google.com/your-certificates.pdf" />
+          </label>
+
+          <button type="submit" class="btn" data-i18n-careers="MODAL_SUBMIT">Submit Application</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER NAVIGATION (shared) -->
   <div class="footer-nav">
     <div class="footer-container">
       <div class="footer-col">
-        <h3>SeAH Steel UAE LLC</h3>
-        <p>Al Ghail Industrial Area,<br>Ras Al Khaimah, UAE</p>
-        <p>Email: <a href="mailto:ssuae@seah.co.kr">ssuae@seah.co.kr</a></p>
-        <p>Phone: +971 7 258 9440</p>
+        <h3 data-i18n-common="FOOTER_HEADER1">SeAH Steel UAE LLC</h3>
+        <p data-i18n-common="FOOTER_ADDR_LINE1">Al Ghail Industrial Area,<br>Ras Al Khaimah, UAE</p>
+        <p>
+          <span data-i18n-common="FOOTER_EMAIL">Email:</span>
+          <a href="mailto:ssuae@seah.co.kr">ssuae@seah.co.kr</a>
+        </p>
+        <p>
+          <span data-i18n-common="FOOTER_PHONE">Phone:</span>
+          +971 7 258 9440
+        </p>
       </div>
       <div class="footer-col">
-        <h4>Quick Links</h4>
+        <h4 data-i18n-common="FOOTER_HEADER2">Quick Links</h4>
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="ceo.html">CEO Message</a></li>
-          <li><a href="products.html">Products</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="quality.html">Quality</a></li>
-          <li><a href="news.html">News</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="careers.html" class="active">Careers</a></li>
+          <li><a href="index.html" data-i18n-common="FOOTER_LINK1">Home</a></li>
+          <li><a href="about.html" data-i18n-common="FOOTER_LINK2">About</a></li>
+          <li><a href="ceo.html" data-i18n-common="FOOTER_LINK3">CEO Message</a></li>
+          <li><a href="products.html" data-i18n-common="FOOTER_LINK4">Products</a></li>
+          <li><a href="manufacturing.html" data-i18n-common="FOOTER_LINK5">How We Work</a></li>
+          <li><a href="projects.html" data-i18n-common="FOOTER_LINK6">Projects</a></li>
+          <li><a href="quality.html" data-i18n-common="FOOTER_LINK7">Quality</a></li>
+          <li><a href="news.html" data-i18n-common="FOOTER_LINK8">News</a></li>
+          <li><a href="contact.html" data-i18n-common="FOOTER_LINK9">Contact</a></li>
+          <li><a href="careers.html" class="active" data-i18n-common="TOP_CAREERS">Careers</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Connect With Us</h4>
+        <h4 data-i18n-common="FOOTER_HEADER3">Connect With Us</h4>
         <a href="https://wa.me/971XXXXXXXXX" target="_blank">
-          <img src="images/whatsapp-icon.png" alt="WhatsApp" class="footer-icon" /> WhatsApp
-        </a><br>
+          <img src="images/whatsapp-icon.png" alt="WhatsApp" class="footer-icon" />
+          <span data-i18n-common="FOOTER_WHATSAPP">WhatsApp</span>
+        </a>
+        <br>
         <a href="mailto:ssuae@seah.co.kr">
-          <img src="images/email-icon.png" alt="Email" class="footer-icon" /> Email Us
+          <img src="images/email-icon.png" alt="Email" class="footer-icon" />
+          <span data-i18n-common="FOOTER_EMAIL_US">Email Us</span>
         </a>
       </div>
     </div>
@@ -235,7 +251,7 @@
 
   <!-- COPYRIGHT -->
   <footer>
-    <p>&copy; 2025 SeAH Steel UAE LLC. All rights reserved.</p>
+    <p data-i18n-common="COPYRIGHT_TEXT">© 2025 SeAH Steel UAE LLC. All rights reserved.</p>
   </footer>
 
   <!-- WHATSAPP CHAT BUTTON -->
@@ -247,7 +263,7 @@
   <script type="text/javascript">
     var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
     (function(){
-      var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+      var s1=document.createElement("script"), s0=document.getElementsByTagName("script")[0];
       s1.async=true;
       s1.src='https://embed.tawk.to/682974268ec535190f11cf94/1irgurdt8';
       s1.charset='UTF-8';
@@ -256,53 +272,13 @@
     })();
   </script>
 
-  <!-- Application Modal -->
-  <div id="applicationModal" class="modal">
-    <div class="modal-content">
-      <span class="modal-close">&times;</span>
-      <h2>Apply for <span id="modalJobTitle"></span></h2>
-      <form id="applicationForm">
-        <input type="hidden" name="post" id="jobTitleInput">
-
-        <label>Full Name
-          <input type="text" name="name" required>
-        </label>
-        <label>Address
-          <input type="text" name="address" required>
-        </label>
-        <label>Date of Birth
-          <input type="date" name="dob" required>
-        </label>
-        <label>Gender
-          <select name="gender" required>
-            <option value="">– Select –</option>
-            <option>Male</option>
-            <option>Female</option>
-            <option>Other</option>
-          </select>
-        </label>
-        <label>Contact Phone
-          <input type="tel" name="phone" required>
-        </label>
-        <label>Contact Email
-          <input type="email" name="email" required>
-        </label>
-        <label>Education Details
-          <textarea name="education" rows="3" required></textarea>
-        </label>
-        <label>Experience Details
-          <textarea name="experience" rows="3" required></textarea>
-        </label>
-        <label>Expected Salary
-          <input type="text" name="salary" required>
-        </label>
-
-        <button type="submit" class="btn">Submit Application</button>
-      </form>
-    </div>
-  </div>
-
-  <script src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+  <!-- Your existing custom JS -->
   <script src="js/script.js"></script>
+
+  <!-- 1) Common translations (topbar/navbar/footer) -->
+  <script src="js/common-i18n.js"></script>
+
+  <!-- 2) Careers page–specific translations -->
+  <script src="js/careers-i18n.js"></script>
 </body>
 </html>

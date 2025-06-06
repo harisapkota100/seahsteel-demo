@@ -4,151 +4,182 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="google" content="notranslate">
-  <title>CEO Message | SeAH Steel UAE LLC</title>
-<link rel="icon" type="image/png" href="images/favicon.png" />
+
+  <!-- 1) Page title now uses a CEO‐specific key -->
+  <title data-i18n-ceo="CEO_PAGE_TITLE">CEO Message | SeAH Steel UAE LLC</title>
+
+  <link rel="icon" type="image/png" href="images/favicon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet"
+  >
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/modern.css" />
 </head>
 <body>
-<div class="topbar">
-  <ul>
-    <li><a href="careers.html">Careers</a></li>
-    <li><a href="downloads.html">Downloads</a></li>
-    <li><a href="globalseah.html">Global SeAH</a></li>
-  </ul>
-</div>
-  <!-- HEADER -->
+  <!-- ===== TOPBAR (shared) ===== -->
+  <div class="topbar">
+    <ul>
+      <li><a href="careers.html" data-i18n-common="TOP_CAREERS">Careers</a></li>
+      <li><a href="downloads.html" data-i18n-common="TOP_DOWNLOADS">Downloads</a></li>
+      <li><a href="globalseah.html" data-i18n-common="TOP_GLOBAL">Global SeAH</a></li>
+    </ul>
+  </div>
+
+  <!-- ===== HEADER + NAVBAR (shared) ===== -->
   <header class="main-header">
     <a href="index.html" class="logo">
-  <img src="images/logo.png" alt="SeAH Steel UAE LLC Logo" />
-</a>
+      <img src="images/logo.png" alt="SeAH Steel UAE LLC Logo" />
+    </a>
 
     <nav class="navbar">
       <ul>
-        <li><a href="index.html">Home</a></li>
-           <li><a href="ceo.html">CEO Message</a></li>
-         <li><a href="about.html" class="active">About</a></li>
-        <li><a href="products.html" class="active">Products</a></li>
- <li><a href="manufacturing.html" class="active">How We Work</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="quality.html" class="active">Quality</a></li>
-        <li><a href="news.html" class="active">News</a></li>
-          <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="index.html" data-i18n-common="NAV_HOME">Home</a></li>
+        <li><a href="ceo.html" class="active" data-i18n-common="NAV_CEO">CEO Message</a></li>
+        <li><a href="about.html" data-i18n-common="NAV_ABOUT">About</a></li>
+        <li><a href="products.html" data-i18n-common="NAV_PRODUCTS">Products</a></li>
+        <li><a href="manufacturing.html" data-i18n-common="NAV_MANUFACTURING">How We Work</a></li>
+        <li><a href="projects.html" data-i18n-common="NAV_PROJECTS">Projects</a></li>
+        <li><a href="quality.html" data-i18n-common="NAV_QUALITY">Quality</a></li>
+        <li><a href="news.html" data-i18n-common="NAV_NEWS">News</a></li>
+        <li><a href="contact.html" data-i18n-common="NAV_CONTACT">Contact</a></li>
       </ul>
     </nav>
+
     <form class="search-bar" onsubmit="return searchSite(event)">
-  <input type="text" id="searchInput" placeholder="Search..." />
-  <button type="submit">🔍</button>
-</form>
+      <input type="text" id="searchInput" placeholder="Search..." />
+      <button type="submit">🔍</button>
+    </form>
 
-   <a href="quote.html" class="quote-btn">Request Quote</a>
+    <a href="quote.html" class="quote-btn" data-i18n-common="NAV_QUOTE">Request Quote</a>
 
+    <!-- Language-switcher (shared) -->
+    <div class="lang-switcher">
+      <a href="#" id="lang-en">English</a> |
+      <a href="#" id="lang-ar">العربية</a> |
+      <a href="#" id="lang-ko">한국어</a>
+    </div>
   </header>
 
-  <!-- CEO MESSAGE SECTION -->
+  <!-- ===== CEO MESSAGE SECTION (page-specific) ===== -->
   <section class="ceo-message">
     <div class="ceo-container">
       <img src="images/ceo.jpeg" alt="CEO Photo" class="ceo-photo" />
       <div class="ceo-text">
-<h1>Message From CEO</h1>
-        <h2>Mr. Bong Yong Kong</h2>
-        <h4>Chief Executive Officer, SeAH Steel UAE LLC</h4>
-        <p>
-          Since the establishment of SeAH Steel UAE LLC in 2011, we have continuously strived to be more than just a manufacturer—we have worked with steadfast determination to become a name synonymous with trust, innovation, resilience, and excellence in the global steel industry. Situated in Ras Al Khaimah, United Arab Emirates, our presence in the Middle East marks an important chapter in the broader legacy of SeAH Steel Corp., a distinguished pioneer in steel production with a global reputation built over more than six decades.
+        <h1 data-i18n-ceo="HERO_TITLE">Message From CEO</h1>
+        <h2 data-i18n-ceo="HERO_NAME">Mr. Bong Yong Kong</h2>
+        <h4 data-i18n-ceo="HERO_POSITION">Chief Executive Officer, SeAH Steel UAE LLC</h4>
+
+        <p data-i18n-ceo="CEO_P1">
+          Since the establishment of SeAH Steel UAE LLC in 2011, we have continuously strived…
         </p>
-        <p>
-          Rooted in this proud heritage, our company has become a vital force in the region’s industrial development. Leveraging advanced South Korean technologies, industry-leading quality systems, and a team of passionate experts, SeAH Steel UAE LLC has been at the forefront of supplying premium welded pipe solutions for energy, construction, water transmission, and infrastructure development. We have contributed to some of the most critical and challenging projects across the UAE and beyond — delivering not just steel products, but confidence, durability, and long-term reliability.
+        <p data-i18n-ceo="CEO_P2">
+          Rooted in this proud heritage, our company has become a vital force…
         </p>
-        <p>
-          Our mission goes beyond output and efficiency. We believe that every product we manufacture is part of a larger purpose — a purpose to connect continents, empower economies, and support the dreams of those who build the future. Every steel plate we shape, every pipe we weld, and every shipment we dispatch represents our devotion to craftsmanship and our belief in the power of quality to transform industries.
+        <p data-i18n-ceo="CEO_P3">
+          Our mission goes beyond output and efficiency. We believe…
         </p>
-        <p>
-          At the heart of our operations lies a deeply held commitment to our core values — quality, safety, integrity, and sustainability. In a world that demands continuous adaptation, we have embedded a culture of relentless improvement. From sourcing to inspection, from technology integration to environmental responsibility, we ensure that each process aligns with international standards and the evolving needs of our clients. We are especially proud of our capabilities in non-destructive testing (NDT) and precision-based inspection systems — assuring that every product leaving our facility meets the highest global benchmarks.
+        <p data-i18n-ceo="CEO_P4">
+          At the heart of our operations lies a deeply held commitment…
         </p>
-        <p>
-          Moreover, our journey has been enriched by the diverse people who contribute to our shared success. I want to take this opportunity to express my heartfelt gratitude to our loyal clients for placing their trust in us, to our partners and stakeholders for their continued collaboration, and most importantly, to our team — a group of talented, hardworking individuals whose dedication forms the foundation of everything we achieve. Your efforts drive our ambition forward every single day.
+        <p data-i18n-ceo="CEO_P5">
+          Moreover, our journey has been enriched by the diverse people…
         </p>
-        <p>
-          As we step into the future, we recognize that the world around us is changing rapidly. Industrial expectations are shifting, sustainability is becoming non-negotiable, and technological disruption is redefining what is possible. At SeAH Steel UAE LLC, we welcome this evolution. We are actively investing in new capabilities, embracing smarter and cleaner manufacturing practices, and strengthening our digital infrastructure to ensure we remain competitive, responsible, and future-ready.
+        <p data-i18n-ceo="CEO_P6">
+          As we step into the future, we recognize that the world around us is changing rapidly…
         </p>
-        <p>
-          We envision a company that not only leads but uplifts — that not only manufactures but inspires. We seek to be a model of excellence in the steel industry, a trusted partner to governments and enterprises, and a responsible corporate citizen that contributes to the prosperity of the UAE and the broader region.
+        <p data-i18n-ceo="CEO_P7">
+          We envision a company that not only leads but uplifts…
         </p>
-        <p>
-          In closing, I reaffirm our promise to uphold the highest standards in everything we do. With clear vision, strong leadership, and a shared commitment to progress, SeAH Steel UAE LLC will continue to evolve, adapt, and lead — not only as a manufacturer of steel but as a builder of trust, opportunity, and lasting impact.
+        <p data-i18n-ceo="CEO_P8">
+          In closing, I reaffirm our promise to uphold the highest standards…
         </p>
-        <p>
-          Thank you for being an integral part of our journey. We look forward to achieving greater heights — together.
+        <p data-i18n-ceo="CEO_P9">
+          Thank you for being an integral part of our journey. We look forward…
         </p>
 
-        <p><strong>– Mr. Bong Yong Kong</strong></p>
+        <p data-i18n-ceo="CEO_SIGNOFF"><strong>– Mr. Bong Yong Kong</strong></p>
       </div>
     </div>
   </section>
-<!-- Enhanced Footer Navigation -->
-<div class="footer-nav">
-  <div class="footer-container">
 
-    <!-- Column 1: Company Info -->
-    <div class="footer-col">
-      <h3>SeAH Steel UAE LLC</h3>
-      <p>Al Ghail Industrial Area,<br>Ras Al Khaimah, UAE</p>
-      <p>Email: <a href="mailto:ssuae@seah.co.kr">ssuae@seah.co.kr</a></p>
-      <p>Phone: +971 7 258 9440</p>
+  <!-- ===== FOOTER (shared) ===== -->
+  <div class="footer-nav">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h3 data-i18n-common="FOOTER_HEADER1">SeAH Steel UAE LLC</h3>
+        <p data-i18n-common="FOOTER_ADDR_LINE1">Al Ghail Industrial Area,<br>Ras Al Khaimah, UAE</p>
+        <p>
+          <span data-i18n-common="FOOTER_EMAIL">Email:</span>
+          <a href="mailto:ssuae@seah.co.kr">ssuae@seah.co.kr</a>
+        </p>
+        <p>
+          <span data-i18n-common="FOOTER_PHONE">Phone:</span>
+          +971 7 258 9440
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4 data-i18n-common="FOOTER_HEADER2">Quick Links</h4>
+        <ul>
+          <li><a href="index.html" data-i18n-common="FOOTER_LINK1">Home</a></li>
+          <li><a href="about.html" data-i18n-common="FOOTER_LINK2">About</a></li>
+          <li><a href="ceo.html" data-i18n-common="FOOTER_LINK3">CEO Message</a></li>
+          <li><a href="products.html" data-i18n-common="FOOTER_LINK4">Products</a></li>
+          <li><a href="manufacturing.html" data-i18n-common="FOOTER_LINK5">How We Work</a></li>
+          <li><a href="projects.html" data-i18n-common="FOOTER_LINK6">Projects</a></li>
+          <li><a href="quality.html" data-i18n-common="FOOTER_LINK7">Quality</a></li>
+          <li><a href="news.html" data-i18n-common="FOOTER_LINK8">News</a></li>
+          <li><a href="contact.html" data-i18n-common="FOOTER_LINK9">Contact</a></li>
+          <li><a href="quote.html" data-i18n-common="FOOTER_LINK10">Request Quote</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 data-i18n-common="FOOTER_HEADER3">Connect With Us</h4>
+        <a href="https://wa.me/971XXXXXXXXX" target="_blank">
+          <img src="images/whatsapp-icon.png" alt="WhatsApp" class="footer-icon" />
+          <span data-i18n-common="FOOTER_WHATSAPP">WhatsApp</span>
+        </a><br>
+        <a href="mailto:ssuae@seah.co.kr">
+          <img src="images/email-icon.png" alt="Email" class="footer-icon" />
+          <span data-i18n-common="FOOTER_EMAIL_US">Email Us</span>
+        </a>
+      </div>
     </div>
-
-    <!-- Column 2: Quick Links -->
-    <div class="footer-col">
-      <h4>Quick Links</h4>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="ceo.html">CEO Message</a></li>
-        <li><a href="products.html">Products</a></li>
- <li><a href="manufacturing.html" class="active">How We Work</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="quality.html">Quality</a></li>
-        <li><a href="news.html">News</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="quote.html">Request Quote</a></li>
-      </ul>
-    </div>
-
-    <!-- Column 3: Social / WhatsApp -->
-    <div class="footer-col">
-      <h4>Connect With Us</h4>
-      <a href="https://wa.me/971XXXXXXXXX" target="_blank">
-        <img src="images/whatsapp-icon.png" alt="WhatsApp" class="footer-icon" /> WhatsApp
-      </a><br>
-      <a href="mailto:ssuae@seah.co.kr">
-        <img src="images/email-icon.png" alt="Email" class="footer-icon" /> Email Us
-      </a>
-    </div>
-
   </div>
-</div>
 
-  <!-- FOOTER -->
   <footer>
-    <p>&copy; 2025 SeAH Steel UAE LLC. All rights reserved.</p>
+    <p data-i18n-common="COPYRIGHT_TEXT">© 2025 SeAH Steel UAE LLC. All rights reserved.</p>
   </footer>
-<script src="js/script.js"></script>
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/682974268ec535190f11cf94/1irgurdt8';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
 
+  <!-- WhatsApp Chat Button -->
+  <a href="https://wa.me/971XXXXXXXXX" class="whatsapp-chat" target="_blank" title="Chat with us on WhatsApp">
+    <img src="images/whatsapp-icon.png" alt="WhatsApp" />
+  </a>
+
+  <!-- Tawk.to Script -->
+  <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+      var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+      s1.async=true;
+      s1.src='https://embed.tawk.to/682974268ec535190f11cf94/1irgurdt8';
+      s1.charset='UTF-8';
+      s1.setAttribute('crossorigin','*');
+      s0.parentNode.insertBefore(s1,s0);
+    })();
+  </script>
+
+  <!-- Your existing custom JS -->
+  <script src="js/script.js"></script>
+
+  <!-- 1) Common translations (topbar/navbar/footer) -->
+  <script src="js/common-i18n.js"></script>
+
+  <!-- 2) CEO page–specific translations -->
+  <script src="js/ceo-i18n.js"></script>
 </body>
 </html>

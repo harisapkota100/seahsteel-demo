@@ -80,3 +80,58 @@
   margin-bottom: 20px;
   color: #555;
 }
+/* mod overlay */
+.mod {
+  display: flex;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}	
+.mod.open {
+  display: flex;
+}
+
+/* mod content box */
+.mod-content {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 6px;
+  width: 90%;
+  max-width: 480px;
+  position: relative;
+}
+
+/* Close “×” button */
+.mod-close {
+  position: absolute;
+  top: .5rem;
+  right: .75rem;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+/* Form inside the mod */
+.mod-content label {
+  display: block;
+  margin-bottom: .75rem;
+}
+
+.mod-content input,
+.mod-content textarea,
+.mod-content select {
+  width: 100%;
+  margin-top: .25rem;
+  padding: .5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+/* Optional: adjust your .btn within the mod */
+.mod-content .btn {
+  width: 100%;
+  margin-top: 1rem;
+}

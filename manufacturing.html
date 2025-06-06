@@ -4,7 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="google" content="notranslate">
-  <title>SeAH Steel UAE LLC | How We Work</title>
+
+  <!-- 1) Page title now uses a manufacturing‐specific key -->
+  <title data-i18n-manufacturing="MAN_PAGE_TITLE">
+    How We Work | SeAH Steel UAE LLC
+  </title>
+
   <link rel="icon" type="image/png" href="images/favicon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,75 +46,92 @@
   </style>
 </head>
 <body>
-  <!-- TOPBAR -->
+  <!-- TOPBAR (shared) -->
   <div class="topbar">
     <ul>
-      <li><a href="careers.html">Careers</a></li>
-      <li><a href="downloads.html">Downloads</a></li>
-      <li><a href="globalseah.html">Global SeAH</a></li>
+      <li><a href="careers.html" data-i18n-common="TOP_CAREERS">Careers</a></li>
+      <li><a href="downloads.html" data-i18n-common="TOP_DOWNLOADS">Downloads</a></li>
+      <li><a href="globalseah.html" data-i18n-common="TOP_GLOBAL">Global SeAH</a></li>
     </ul>
   </div>
 
-  <!-- HEADER -->
+  <!-- HEADER (shared) -->
   <header class="main-header">
     <a href="index.html" class="logo">
       <img src="images/logo.png" alt="SeAH Steel UAE LLC Logo" />
     </a>
     <nav class="navbar">
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="ceo.html">CEO Message</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="products.html">Products</a></li>
-        <li><a href="manufacturing.html" class="active">How We Work</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="quality.html">Quality</a></li>
-        <li><a href="news.html">News</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="index.html" data-i18n-common="NAV_HOME">Home</a></li>
+        <li><a href="ceo.html" data-i18n-common="NAV_CEO">CEO Message</a></li>
+        <li><a href="about.html" data-i18n-common="NAV_ABOUT">About</a></li>
+        <li><a href="products.html" data-i18n-common="NAV_PRODUCTS">Products</a></li>
+        <li>
+          <a href="manufacturing.html" class="active" data-i18n-common="NAV_MANUFACTURING"
+            >How We Work</a
+          >
+        </li>
+        <li><a href="projects.html" data-i18n-common="NAV_PROJECTS">Projects</a></li>
+        <li><a href="quality.html" data-i18n-common="NAV_QUALITY">Quality</a></li>
+        <li><a href="news.html" data-i18n-common="NAV_NEWS">News</a></li>
+        <li><a href="contact.html" data-i18n-common="NAV_CONTACT">Contact</a></li>
       </ul>
     </nav>
     <form class="search-bar" onsubmit="return searchSite(event)">
       <input type="text" id="searchInput" placeholder="Search..." />
       <button type="submit">🔍</button>
     </form>
-    <a href="quote.html" class="quote-btn">Request Quote</a>
+    <a href="quote.html" class="quote-btn" data-i18n-common="NAV_QUOTE">Request Quote</a>
+
+    <!-- Language-switcher (shared) -->
+    <div class="lang-switcher">
+      <a href="#" id="lang-en">English</a> |
+      <a href="#" id="lang-ar">العربية</a> |
+      <a href="#" id="lang-ko">한국어</a>
+    </div>
   </header>
 
-  <!-- HERO SECTION -->
+  <!-- HERO SECTION (page-specific) -->
   <section class="about-hero">
     <div class="hero-content">
-      <h1>Manufacturing Procedure</h1>
-      <p>Step-by-step process visualization</p>
+      <h1 data-i18n-manufacturing="HERO_TITLE">Manufacturing Procedure</h1>
+      <p data-i18n-manufacturing="HERO_SUBTEXT">
+        Step-by-step process visualization
+      </p>
     </div>
   </section>
 
   <!-- MAIN CONTENT -->
   <main class="process-section">
-    <h2 class="section-title">MANUFACTURING PROCESS</h2>
+    <h2 class="section-title" data-i18n-manufacturing="SECTION_TITLE">
+      MANUFACTURING PROCESS
+    </h2>
     
     <!-- JCO(E) LINE -->
-    <h2 class="process-title">JCO(E) LINE</h2>
+    <h2 class="process-title" data-i18n-manufacturing="PROC1_TITLE">
+      JCO(E) LINE
+    </h2>
     <div class="process-grid zigzag">
       <!-- Row 1 -->
       <div class="row normal">
         <div class="step" onclick="openMachineModal('jco-edgemilling')">
-          <img src="images/edgemilling.jpg" alt="Edge Milling">
-          <p>Edge Milling</p>
+          <img src="images/edgemilling.jpg" alt="Edge Milling" />
+          <p data-i18n-manufacturing="STEP_EDGEMILLING">Edge Milling</p>
         </div>
         <div class="arrow">➡️</div>
         <div class="step" onclick="openMachineModal('jco-jcopress')">
-          <img src="images/jcopress.jpg" alt="JCO Press">
-          <p>JCO Press</p>
+          <img src="images/jcopress.jpg" alt="JCO Press" />
+          <p data-i18n-manufacturing="STEP_JCOPRESS">JCO Press</p>
         </div>
         <div class="arrow">➡️</div>
         <div class="step" onclick="openMachineModal('jco-tackwelding')">
-          <img src="images/tackwelding.jpg" alt="Tack Welding">
-          <p>Tack Welding</p>
+          <img src="images/tackwelding.jpg" alt="Tack Welding" />
+          <p data-i18n-manufacturing="STEP_TACKWELDING">Tack Welding</p>
         </div>
         <div class="arrow">➡️</div>
         <div class="step" onclick="openMachineModal('jco-insidewelding')">
-          <img src="images/insidewelding.jpg" alt="Inside Welding">
-          <p>Inside Welding</p>
+          <img src="images/insidewelding.jpg" alt="Inside Welding" />
+          <p data-i18n-manufacturing="STEP_INSIDEWELDING">Inside Welding</p>
         </div>
       </div>
       <div class="arrow-down">⬇️</div>
@@ -117,23 +139,23 @@
       <!-- Row 2 (reversed) -->
       <div class="row reverse">
         <div class="step" onclick="openMachineModal('jco-outsidewelding')">
-          <img src="images/outsidewelding.jpg" alt="Outside Welding">
-          <p>Outside Welding</p>
+          <img src="images/outsidewelding.jpg" alt="Outside Welding" />
+          <p data-i18n-manufacturing="STEP_OUTSIDEWELDING">Outside Welding</p>
         </div>
         <div class="arrow">⬅️</div>
         <div class="step" onclick="openMachineModal('jco-xray')">
-          <img src="images/xray.jpg" alt="X-ray Inspection">
-          <p>X-ray Inspection</p>
+          <img src="images/xray.jpg" alt="X-ray Inspection" />
+          <p data-i18n-manufacturing="STEP_XRAY_INSPECT">X-ray Inspection</p>
         </div>
         <div class="arrow">⬅️</div>
         <div class="step" onclick="openMachineModal('jco-expander')">
-          <img src="images/expander.jpg" alt="Cold Expanding">
-          <p>Cold Expanding</p>
+          <img src="images/expander.jpg" alt="Cold Expanding" />
+          <p data-i18n-manufacturing="STEP_COLD_EXPAND">Cold Expanding</p>
         </div>
         <div class="arrow">⬅️</div>
         <div class="step" onclick="openMachineModal('jco-hydro')">
-          <img src="images/hydro.jpg" alt="Hydro Testing">
-          <p>Hydro Testing</p>
+          <img src="images/hydro.jpg" alt="Hydro Testing" />
+          <p data-i18n-manufacturing="STEP_HYDRO_TEST">Hydro Testing</p>
         </div>
       </div>
       <div class="arrow-downs">⬇️</div>
@@ -141,50 +163,52 @@
       <!-- Row 3 -->
       <div class="row normal">
         <div class="step" onclick="openMachineModal('jco-ut')">
-          <img src="images/ut.jpg" alt="Automated UT">
-          <p>Automated UT</p>
+          <img src="images/ut.jpg" alt="Automated UT" />
+          <p data-i18n-manufacturing="STEP_AUTO_UT">Automated UT</p>
         </div>
         <div class="arrow">➡️</div>
         <div class="step" onclick="openMachineModal('jco-xray-test')">
-          <img src="images/xray-test.jpg" alt="Final X-ray Test">
-          <p>Final X-ray Test</p>
+          <img src="images/xray-test.jpg" alt="Final X-ray Test" />
+          <p data-i18n-manufacturing="STEP_FINAL_XRAY">Final X-ray Test</p>
         </div>
         <div class="arrow">➡️</div>
         <div class="step" onclick="openMachineModal('jco-furnace')">
-          <img src="images/furnace.jpg" alt="Heat Treatment">
-          <p>Heat Treatment</p>
+          <img src="images/furnace.jpg" alt="Heat Treatment" />
+          <p data-i18n-manufacturing="STEP_HEAT_TREAT">Heat Treatment</p>
         </div>
         <div class="arrow">➡️</div>
         <div class="step" onclick="openMachineModal('jco-inspection')">
-          <img src="images/inspection.jpg" alt="Final Inspection">
-          <p>Final Inspection</p>
+          <img src="images/inspection.jpg" alt="Final Inspection" />
+          <p data-i18n-manufacturing="STEP_FINAL_INSPECT">Final Inspection</p>
         </div>
       </div>
     </div>
 
     <!-- ROLL-BENDER LINE -->
-    <h2 class="process-title">ROLL-BENDER LINE</h2>
+    <h2 class="process-title" data-i18n-manufacturing="PROC2_TITLE">
+      ROLL-BENDER LINE
+    </h2>
     <div class="process-grid zigzag">
       <!-- Row 1 -->
       <div class="row normal">
         <div class="step" onclick="openMachineModal('rb-gascutting')">
-          <img src="images/gascutting.jpg" alt="Plate Gas Cutting">
-          <p>Plate Gas Cutting</p>
+          <img src="images/gascutting.jpg" alt="Plate Gas Cutting" />
+          <p data-i18n-manufacturing="STEP_PLATE_GASCUT">Plate Gas Cutting</p>
         </div>
         <div class="arrow">➡️</div>
         <div class="step" onclick="openMachineModal('rb-rollbending')">
-          <img src="images/rollbending.jpg" alt="3 Roll Bending">
-          <p>3 Roll Bending</p>
+          <img src="images/rollbending.jpg" alt="3 Roll Bending" />
+          <p data-i18n-manufacturing="STEP_3ROLL_BEND">3 Roll Bending</p>
         </div>
         <div class="arrow">➡️</div>
         <div class="step" onclick="openMachineModal('rb-tackwelding')">
-          <img src="images/tackweldingrb.jpg" alt="Tack Welding">
-          <p>Tack Welding</p>
+          <img src="images/tackweldingrb.jpg" alt="Tack Welding" />
+          <p data-i18n-manufacturing="STEP_TACKWELD_RB">Tack Welding</p>
         </div>
         <div class="arrow">➡️</div>
         <div class="step" onclick="openMachineModal('rb-12minside')">
-          <img src="images/12minside.jpg" alt="12M Inside Welding">
-          <p>12M Inside Welding</p>
+          <img src="images/12minside.jpg" alt="12M Inside Welding" />
+          <p data-i18n-manufacturing="STEP_12M_INSIDE">12M Inside Welding</p>
         </div>
       </div>
       <div class="arrow-down">⬇️</div>
@@ -192,23 +216,23 @@
       <!-- Row 2 (reversed) -->
       <div class="row reverse">
         <div class="step" onclick="openMachineModal('rb-12moutside')">
-          <img src="images/12moutside.jpg" alt="12M Outside Welding">
-          <p>12M Outside Welding</p>
+          <img src="images/12moutside.jpg" alt="12M Outside Welding" />
+          <p data-i18n-manufacturing="STEP_12M_OUTSIDE">12M Outside Welding</p>
         </div>
         <div class="arrow">⬅️</div>
         <div class="step" onclick="openMachineModal('rb-fittingup')">
-          <img src="images/fittingup.jpg" alt="Fitting Up">
-          <p>Fitting Up</p>
+          <img src="images/fittingup.jpg" alt="Fitting Up" />
+          <p data-i18n-manufacturing="STEP_FITTING_UP">Fitting Up</p>
         </div>
         <div class="arrow">⬅️</div>
         <div class="step" onclick="openMachineModal('rb-girthinside')">
-          <img src="images/girthwelding.jpg" alt="Girth Welding Inside">
-          <p>Girth Welding Inside</p>
+          <img src="images/girthwelding.jpg" alt="Girth Welding Inside" />
+          <p data-i18n-manufacturing="STEP_GIRTH_IN">Girth Welding Inside</p>
         </div>
         <div class="arrow">⬅️</div>
         <div class="step" onclick="openMachineModal('rb-girthoutside')">
-          <img src="images/girthweldingo.jpg" alt="Girth Welding Outside">
-          <p>Girth Welding Outside</p>
+          <img src="images/girthweldingo.jpg" alt="Girth Welding Outside" />
+          <p data-i18n-manufacturing="STEP_GIRTH_OUT">Girth Welding Outside</p>
         </div>
       </div>
       <div class="arrow-downs">⬇️</div>
@@ -216,23 +240,23 @@
       <!-- Row 3 -->
       <div class="row normal">
         <div class="step" onclick="openMachineModal('rb-120inhydro')">
-          <img src="images/120inhydro.jpg" alt="120&quot; Hydro Testing">
-          <p>120&quot; Hydro Testing</p>
+          <img src="images/120inhydro.jpg" alt="120&quot; Hydro Testing" />
+          <p data-i18n-manufacturing="STEP_120_HYDRO">120&quot; Hydro Testing</p>
         </div>
         <div class="arrow">➡️</div>
         <div class="step" onclick="openMachineModal('rb-xray')">
-          <img src="images/xray.jpg" alt="X-ray Test">
-          <p>X-ray Test</p>
+          <img src="images/xray.jpg" alt="X-ray Test" />
+          <p data-i18n-manufacturing="STEP_XRAY_RB">X-ray Test</p>
         </div>
         <div class="arrow">➡️</div>
         <div class="step" onclick="openMachineModal('rb-furnacerb')">
-          <img src="images/furnacerb.jpg" alt="Heat Treatment">
-          <p>Heat Treatment</p>
+          <img src="images/furnacerb.jpg" alt="Heat Treatment" />
+          <p data-i18n-manufacturing="STEP_HEAT_TREAT_RB">Heat Treatment</p>
         </div>
         <div class="arrow">➡️</div>
         <div class="step" onclick="openMachineModal('rb-inspectionrb')">
-          <img src="images/inspectionrb.jpg" alt="Final Inspection">
-          <p>Final Inspection</p>
+          <img src="images/inspectionrb.jpg" alt="Final Inspection" />
+          <p data-i18n-manufacturing="STEP_FINAL_INSPECT_RB">Final Inspection</p>
         </div>
       </div>
     </div>
@@ -247,16 +271,21 @@
     </div>
   </div>
 
-  <!-- FOOTER -->
+  <!-- FOOTER (shared) -->
   <footer>
-    <p>&copy; 2025 SeAH Steel UAE LLC. All rights reserved.</p>
+    <p data-i18n-common="COPYRIGHT_TEXT">
+      &copy; 2025 SeAH Steel UAE LLC. All rights reserved.
+    </p>
   </footer>
 
-
   <!-- SCRIPTS -->
-  <!-- keep your shared script for search/map/etc -->
   <script src="js/script.js"></script>
-  <!-- then the manufacturing-only modal logic -->
   <script src="js/manufacturing.js"></script>
+
+  <!-- 1) Common translations (topbar/navbar/footer) -->
+  <script src="js/common-i18n.js"></script>
+
+  <!-- 2) Manufacturing page–specific translations -->
+  <script src="js/manufacturing-i18n.js"></script>
 </body>
 </html>

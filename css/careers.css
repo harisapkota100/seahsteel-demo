@@ -135,3 +135,44 @@
   width: 100%;
   margin-top: 1rem;
 }
+/* hide by default */
+.mod {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* show when “open” */
+.mod.open {
+  display: flex;
+}
+
+.mod-content {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 6px;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.mod-close {
+  cursor: pointer;
+  font-size: 1.2rem;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.75rem;
+}
+
+
+.mod-close:hover,
+.mod-close:focus {
+  color: black;
+  text-decoration: none;
+}
+

@@ -8,6 +8,7 @@
   font-weight: bold;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
+
 /* Careers Page */
 
 .careers-apply,
@@ -80,63 +81,11 @@
   margin-bottom: 20px;
   color: #555;
 }
-/* mod overlay */
-.mod {
-  display: flex;
-  position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,0.6);
-  align-items: center;
-  justify-content: center;
-  z-index: 1000;
-}	
-.mod.open {
-  display: flex;
-}
 
-/* mod content box */
-.mod-content {
-  background: #fff;
-  padding: 1.5rem;
-  border-radius: 6px;
-  width: 90%;
-  max-width: 480px;
-  position: relative;
-}
+/* ——— Modal Styles ——— */
 
-/* Close “×” button */
-.mod-close {
-  position: absolute;
-  top: .5rem;
-  right: .75rem;
-  font-size: 1.4rem;
-  cursor: pointer;
-}
-
-/* Form inside the mod */
-.mod-content label {
-  display: block;
-  margin-bottom: .75rem;
-}
-
-.mod-content input,
-.mod-content textarea,
-.mod-content select {
-  width: 100%;
-  margin-top: .25rem;
-  padding: .5rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 1rem;
-}
-
-/* Optional: adjust your .btn within the mod */
-.mod-content .btn {
-  width: 100%;
-  margin-top: 1rem;
-}
-/* hide by default */
-.mod {
+/* Hide by default */
+.modal {
   display: none;
   position: fixed;
   top: 0; left: 0;
@@ -147,32 +96,56 @@
   z-index: 1000;
 }
 
-/* show when “open” */
-.mod.open {
+/* Show when “open” */
+.modal.open {
   display: flex;
 }
 
-.mod-content {
+/* Modal content box */
+.modal-content {
   background: #fff;
   padding: 1.5rem;
   border-radius: 6px;
   max-width: 500px;
   width: 90%;
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  position: relative;
 }
 
-.mod-close {
-  cursor: pointer;
-  font-size: 1.2rem;
+/* Close “×” button */
+.modal-close {
   position: absolute;
   top: 0.5rem;
   right: 0.75rem;
+  font-size: 1.2rem;
+  cursor: pointer;
 }
 
-
-.mod-close:hover,
-.mod-close:focus {
+.modal-close:hover,
+.modal-close:focus {
   color: black;
   text-decoration: none;
 }
 
+/* Inside the modal, style labels/inputs/textarea/select */
+.modal-content label {
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.modal-content input,
+.modal-content textarea,
+.modal-content select {
+  width: 100%;
+  margin-top: 0.25rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+/* If you want the Submit button inside modal to be full width: */
+.modal-content .btn {
+  width: 100%;
+  margin-top: 1rem;
+}

@@ -1,0 +1,82 @@
+.careers-btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #003366;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+/* Careers Page */
+
+.careers-apply,
+.vacancies {
+  padding: 60px 0;
+  background: #f9f9f9;
+}
+
+.careers-apply .section-title,
+.vacancies .section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: var(--primary-color);
+}
+
+/* Form Styles */
+.career-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.career-form .form-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.career-form label {
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #333;
+}
+.career-form input[type="text"],
+.career-form input[type="email"],
+.career-form input[type="tel"],
+.career-form input[type="file"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+/* Vacancy Cards */
+.vacancy-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+.vacancy-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+.vacancy-card:hover {
+  transform: translateY(-5px);
+}
+.vacancy-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: var(--primary-color);
+}
+.vacancy-card p {
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+  color: #555;
+}

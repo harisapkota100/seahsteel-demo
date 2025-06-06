@@ -113,6 +113,7 @@ function initUaeMap() {
 // "Apply Now" Modal & EmailJS
 // =======================
 document.addEventListener("DOMContentLoaded", function () {
+  emailjs.init("WtPAnXH9WZHENU4Ij");
   const applyButtons   = document.querySelectorAll(".apply-btn");
   const modal          = document.getElementById("applicationModal");
   const modalJobTitle  = document.getElementById("modalJobTitle");

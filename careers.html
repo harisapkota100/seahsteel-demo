@@ -11,7 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css"/>
   <link rel="stylesheet" href="css/modern.css" />
-   <link rel="stylesheet" href="css/careers.css" />
+  <link rel="stylesheet" href="css/careers.css" />
 </head>
 <body>
   <!-- TOPBAR -->
@@ -56,36 +56,35 @@
     </div>
   </section>
 
- <!-- SECTION 1: GENERAL CV SUBMISSION -->
-<section class="careers-apply">
-  <div class="container">
-    <h2 class="section-title">Submit Your CV</h2>
-    <form id="cvForm" class="career-form">
-      <div class="form-group">
-        <label for="cv_name">Full Name</label>
-        <input type="text" id="cv_name" name="name" required />
-      </div>
-      <div class="form-group">
-        <label for="cv_email">Email Address</label>
-        <input type="email" id="cv_email" name="email" required />
-      </div>
-      <div class="form-group">
-        <label for="cv_phone">Phone Number</label>
-        <input type="tel" id="cv_phone" name="phone" required />
-      </div>
-      <div class="form-group">
-        <label for="cv_resume">Upload Resume (PDF/DOC)</label>
-        <input type="file"
-               id="cv_resume"
-               name="resume"
-               accept=".pdf,.doc,.docx"
-               required />
-      </div>
-      <button type="submit" class="careers-btn">Submit</button>
-    </form>
-  </div>
-</section>
-
+  <!-- SECTION 1: GENERAL CV SUBMISSION -->
+  <section class="careers-apply">
+    <div class="container">
+      <h2 class="section-title">Submit Your CV</h2>
+      <form id="cvForm" class="career-form">
+        <div class="form-group">
+          <label for="cv_name">Full Name</label>
+          <input type="text" id="cv_name" name="name" required />
+        </div>
+        <div class="form-group">
+          <label for="cv_email">Email Address</label>
+          <input type="email" id="cv_email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="cv_phone">Phone Number</label>
+          <input type="tel" id="cv_phone" name="phone" required />
+        </div>
+        <div class="form-group">
+          <label for="cv_resume">Upload Resume (PDF/DOC)</label>
+          <input type="file"
+                 id="cv_resume"
+                 name="resume"
+                 accept=".pdf,.doc,.docx"
+                 required />
+        </div>
+        <button type="submit" class="careers-btn">Submit</button>
+      </form>
+    </div>
+  </section>
 
   <!-- SECTION 2: VACANCY ANNOUNCEMENTS -->
   <section class="vacancies">
@@ -96,18 +95,20 @@
         <div class="vacancy-card">
           <h3>Mechanical Engineer</h3>
           <p>Design, test and oversee manufacturing processes for steel pipe systems.</p>
-         <button class="btn apply-btn" data-job="Mechanical Engineer">Apply Now</button>
-
+          <button class="btn apply-btn" data-job="Mechanical Engineer">Apply Now</button>
         </div>
         <div class="vacancy-card">
           <h3>International Welding Engineer</h3>
           <p>Drive business development and manage key client relationships across the GCC.</p>
-           <button class="btn apply-btn" data-job="International Welding Engineer">Apply Now</button>
+          <button class="btn apply-btn" data-job="International Welding Engineer">Apply Now</button>
         </div>
         <!-- Add more .vacancy-card blocks as needed -->
       </div>
     </div>
   </section>
+
+  <!-- A place for form‐submission feedback (initially hidden) -->
+  <p id="formFeedback" style="display: none; margin-bottom: 1rem; color: red;"></p>
 
   <!-- FOOTER NAVIGATION -->
   <div class="footer-nav">
@@ -167,54 +168,53 @@
     })();
   </script>
 
-<!-- Application mod -->
-<div id="applicationmod" class="mod">
+  <!-- Application Modal -->
+  <div id="applicationModal" class="modal">
+    <div class="modal-content">
+      <span class="modal-close">&times;</span>
+      <h2>Apply for <span id="modalJobTitle"></span></h2>
+      <form id="applicationForm">
+        <input type="hidden" name="post" id="jobTitleInput">
 
-  <div class="mod-content">
-    <span class="mod-close">&times;</span>
-    <h2>Apply for <span id="modJobTitle"></span></h2>
-    <form id="applicationForm">
-      <input type="hidden" name="post" id="jobTitleInput">
+        <label>Full Name
+          <input type="text" name="name" required>
+        </label>
+        <label>Address
+          <input type="text" name="address" required>
+        </label>
+        <label>Date of Birth
+          <input type="date" name="dob" required>
+        </label>
+        <label>Gender
+          <select name="gender" required>
+            <option value="">– Select –</option>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+          </select>
+        </label>
+        <label>Contact Phone
+          <input type="tel" name="phone" required>
+        </label>
+        <label>Contact Email
+          <input type="email" name="email" required>
+        </label>
+        <label>Education Details
+          <textarea name="education" rows="3" required></textarea>
+        </label>
+        <label>Experience Details
+          <textarea name="experience" rows="3" required></textarea>
+        </label>
+        <label>Expected Salary
+          <input type="text" name="salary" required>
+        </label>
 
-      <label>Full Name
-        <input type="text" name="name" required>
-      </label>
-      <label>Address
-        <input type="text" name="address" required>
-      </label>
-      <label>Date of Birth
-        <input type="date" name="dob" required>
-      </label>
-      <label>Gender
-        <select name="gender" required>
-          <option value="">– Select –</option>
-          <option>Male</option>
-          <option>Female</option>
-          <option>Other</option>
-        </select>
-      </label>
-      <label>Contact Phone
-        <input type="tel" name="phone" required>
-      </label>
-      <label>Contact Email
-        <input type="email" name="email" required>
-      </label>
-      <label>Education Details
-        <textarea name="education" rows="3" required></textarea>
-      </label>
-      <label>Experience Details
-        <textarea name="experience" rows="3" required></textarea>
-      </label>
-      <label>Expected Salary
-        <input type="text" name="salary" required>
-      </label>
-
-      <button type="submit" class="btn">Submit Application</button>
-    </form>
+        <button type="submit" class="btn">Submit Application</button>
+      </form>
+    </div>
   </div>
-</div>
-<script src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
-  <script src="js/script.js"></script>
 
+  <script src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>

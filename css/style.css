@@ -1690,61 +1690,7 @@ font-weight: bold;
 }
 
 
-/* Modal overlay */
-.modal {
-  display: flex;
-  position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,0.6);
-  align-items: center;
-  justify-content: center;
-  z-index: 1000;
-}	
-.modal.open {
-  display: flex;
-}
 
-/* Modal content box */
-.modal-content {
-  background: #fff;
-  padding: 1.5rem;
-  border-radius: 6px;
-  width: 90%;
-  max-width: 480px;
-  position: relative;
-}
-
-/* Close “×” button */
-.modal-close {
-  position: absolute;
-  top: .5rem;
-  right: .75rem;
-  font-size: 1.4rem;
-  cursor: pointer;
-}
-
-/* Form inside the modal */
-.modal-content label {
-  display: block;
-  margin-bottom: .75rem;
-}
-
-.modal-content input,
-.modal-content textarea,
-.modal-content select {
-  width: 100%;
-  margin-top: .25rem;
-  padding: .5rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 1rem;
-}
-
-/* Optional: adjust your .btn within the modal */
-.modal-content .btn {
-  width: 100%;
-  margin-top: 1rem;
-}
 .step img {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }

@@ -74,12 +74,12 @@
           <input type="tel" id="cv_phone" name="phone" required />
         </div>
         <div class="form-group">
-          <label for="cv_resume">Upload Resume (PDF/DOC)</label>
-          <input type="file"
-                 id="cv_resume"
-                 name="resume"
-                 accept=".pdf,.doc,.docx"
-                 required />
+         <label for="cv_resume_link">Link to Your Resume (Google Drive, Dropbox, etc.)</label>
+<input type="url"
+       id="cv_resume_link"
+       name="resume_link"
+       placeholder="https://drive.google.com/your-resume.pdf"
+       required />
         </div>
         <button type="submit" class="careers-btn">Submit</button>
       </form>
@@ -106,7 +106,95 @@
       </div>
     </div>
   </section>
+<!-- ──────────────────────────────────────────────────────────────────────── -->
+<!-- APPLICATION MODAL (must be placed outside the .vacancies section)      -->
+<!-- ──────────────────────────────────────────────────────────────────────── -->
+<div id="applicationModal" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="modal-close">&times;</span>
+      <h2>Apply for <span id="modalJobTitle"></span></h2>
+    </div>
 
+    <!-- Wrap the form in a .modal-body as before -->
+    <div class="modal-body">
+      <form id="applicationForm">
+        <input type="hidden" name="post" id="jobTitleInput" />
+
+        <label>
+          Full Name
+          <input type="text" name="name" required />
+        </label>
+
+        <label>
+          Address
+          <input type="text" name="address" required />
+        </label>
+
+        <label>
+          Date of Birth
+          <input type="date" name="dob" required />
+        </label>
+
+        <label>
+          Gender
+          <select name="gender" required>
+            <option value="">– Select –</option>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+          </select>
+        </label>
+
+        <label>
+          Contact Phone
+          <input type="tel" name="phone" required />
+        </label>
+
+        <label>
+          Contact Email
+          <input type="email" name="email" required />
+        </label>
+
+        <label>
+          Education Details
+          <textarea name="education" rows="3" required></textarea>
+        </label>
+
+        <label>
+          Experience Details
+          <textarea name="experience" rows="3" required></textarea>
+        </label>
+
+        <label>
+          Expected Salary
+          <input type="text" name="salary" required />
+        </label>
+
+        <label>
+          CV Link
+          <input
+            type="url"
+            name="resume_link"
+            placeholder="https://drive.google.com/your-resume.pdf"
+            required
+          />
+        </label>
+
+        <label>
+          Certificates Link
+          <input
+            type="url"
+            name="certificates_link"
+            placeholder="https://drive.google.com/your-certificates.pdf"
+          />
+        </label>
+
+        <button type="submit" class="btn">Submit Application</button>
+      </form>
+    </div>
+  </div>
+</div>
   <!-- A place for form‐submission feedback (initially hidden) -->
   <p id="formFeedback" style="display: none; margin-bottom: 1rem; color: red;"></p>
 

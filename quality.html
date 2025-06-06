@@ -4,11 +4,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="google" content="notranslate">
-  <title>Quality & Certifications | SeAH Steel UAE LLC</title>
+
+  <!-- 1) Page title now uses a quality-specific key -->
+  <title data-i18n-quality="QUALITY_PAGE_TITLE">
+    Quality & Certifications | SeAH Steel UAE LLC
+  </title>
+
   <link rel="icon" type="image/png" href="images/favicon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet"
+  >
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/modern.css" />
   <style>
@@ -70,256 +78,362 @@
   </style>
 </head>
 <body>
+  <!-- TOPBAR (shared) -->
   <div class="topbar">
     <ul>
-      <li><a href="careers.html">Careers</a></li>
-      <li><a href="downloads.html">Downloads</a></li>
-      <li><a href="globalseah.html">Global SeAH</a></li>
+      <li><a href="careers.html" data-i18n-common="TOP_CAREERS">Careers</a></li>
+      <li><a href="downloads.html" data-i18n-common="TOP_DOWNLOADS">Downloads</a></li>
+      <li><a href="globalseah.html" data-i18n-common="TOP_GLOBAL">Global SeAH</a></li>
     </ul>
   </div>
 
-  <!-- HEADER -->
+  <!-- HEADER (shared) -->
   <header class="main-header">
     <a href="index.html" class="logo">
       <img src="images/logo.png" alt="SeAH Steel UAE LLC Logo" />
     </a>
     <nav class="navbar">
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="ceo.html">CEO Message</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="products.html">Products</a></li>
-        <li><a href="manufacturing.html">How We Work</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="quality.html" class="active">Quality</a></li>
-        <li><a href="news.html">News</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="index.html" data-i18n-common="NAV_HOME">Home</a></li>
+        <li><a href="ceo.html" data-i18n-common="NAV_CEO">CEO Message</a></li>
+        <li><a href="about.html" data-i18n-common="NAV_ABOUT">About</a></li>
+        <li><a href="products.html" data-i18n-common="NAV_PRODUCTS">Products</a></li>
+        <li><a href="manufacturing.html" data-i18n-common="NAV_MANUFACTURING">How We Work</a></li>
+        <li><a href="projects.html" data-i18n-common="NAV_PROJECTS">Projects</a></li>
+        <li><a href="quality.html" class="active" data-i18n-common="NAV_QUALITY">Quality</a></li>
+        <li><a href="news.html" data-i18n-common="NAV_NEWS">News</a></li>
+        <li><a href="contact.html" data-i18n-common="NAV_CONTACT">Contact</a></li>
       </ul>
     </nav>
     <form class="search-bar" onsubmit="return searchSite(event)">
       <input type="text" id="searchInput" placeholder="Search…" />
       <button type="submit">🔍</button>
     </form>
-    <a href="quote.html" class="quote-btn">Request Quote</a>
+    <a href="quote.html" class="quote-btn" data-i18n-common="NAV_QUOTE">Request Quote</a>
+    <!-- Language-switcher (shared) -->
+    <div class="lang-switcher">
+      <a href="#" id="lang-en">English</a> |
+      <a href="#" id="lang-ar">العربية</a> |
+      <a href="#" id="lang-ko">한국어</a>
+    </div>
   </header>
 
-  <!-- BANNER -->
+  <!-- BANNER (page-specific) -->
   <section class="quality-hero">
     <div class="hero-content">
-      <h1>Quality & Certifications</h1>
-      <p>Global standards. Local assurance.</p>
+      <h1 data-i18n-quality="HERO_TITLE">Quality & Certifications</h1>
+      <p data-i18n-quality="HERO_SUBTEXT">Global standards. Local assurance.</p>
     </div>
   </section>
 
-  <!-- QUALITY SECTION -->
+  <!-- QUALITY SECTION (page-specific) -->
   <section class="quality-section">
     <div class="container">
 
       <!-- 1. Our Commitment to Quality -->
       <div class="section-with-image">
         <div class="section-text">
-          <h2>Our Commitment to Quality</h2>
-          <p>
+          <h2 data-i18n-quality="COMMIT_TITLE">Our Commitment to Quality</h2>
+          <p data-i18n-quality="COMMIT_P">
             At SeAH Steel UAE LLC, quality is not just a promise — it is our process. We adhere strictly to international standards including ISO, API, CE and DNV. Our team is trained to ensure excellence in every phase of pipe production.
           </p>
         </div>
         <div class="section-img">
-          <img src="images/test.jpg" alt="Our Commitment to Quality">
+          <img src="images/test.jpg" alt="Our Commitment to Quality" />
         </div>
       </div>
 
       <!-- 2. Certifications -->
       <div class="section-with-image">
         <div class="section-text">
-          <h2>Certifications</h2>
+          <h2 data-i18n-quality="CERT_TITLE">Certifications</h2>
           <ul class="cert-list">
-            <li>✔ ISO 9001 – Quality Management System (Manufacturing of Longitudinally Welded Steel Pipe)</li>
-            <li>✔ ISO 14001 – Environmental Management System</li>
-            <li>✔ ISO 45001:2018 – Health &amp; Safety Management System</li>
-            <li>✔ ISO/IEC 17025:2017 – Laboratory Accreditation Certificate</li>
-            <li>✔ API Q1 – Quality Management for Manufacturing of Line Pipe</li>
-            <li>✔ API 5L – Line Pipe Specification</li>
-            <li>✔ API 2B – Structural Pipe Specification</li>
-            <li>✔ CE Marking – Regulation 305/2011/EU (Carbon Steel Pipe)</li>
-            <li>✔ DNV – Approval of Manufacturer</li>
+            <li data-i18n-quality="CERT_ITEM_ISO9001">✔ ISO 9001 – Quality Management System (Manufacturing of Longitudinally Welded Steel Pipe)</li>
+            <li data-i18n-quality="CERT_ITEM_ISO14001">✔ ISO 14001 – Environmental Management System</li>
+            <li data-i18n-quality="CERT_ITEM_ISO45001">✔ ISO 45001:2018 – Health &amp; Safety Management System</li>
+            <li data-i18n-quality="CERT_ITEM_ISO17025">✔ ISO/IEC 17025:2017 – Laboratory Accreditation Certificate</li>
+            <li data-i18n-quality="CERT_ITEM_APIQ1">✔ API Q1 – Quality Management for Manufacturing of Line Pipe</li>
+            <li data-i18n-quality="CERT_ITEM_API5L">✔ API 5L – Line Pipe Specification</li>
+            <li data-i18n-quality="CERT_ITEM_API2B">✔ API 2B – Structural Pipe Specification</li>
+            <li data-i18n-quality="CERT_ITEM_CE1090">✔ CE Marking – Regulation 305/2011/EU (Carbon Steel Pipe)</li>
+            <li data-i18n-quality="CERT_ITEM_DNV">✔ DNV – Approval of Manufacturer</li>
           </ul>
-          <button id="downloadBtn" class="btn">Download Certificates</button>
+          <button id="downloadBtn" class="btn" data-i18n-quality="DOWNLOAD_BUTTON">
+            Download Certificates
+          </button>
           <div id="certGrid" class="cert-grid hidden">
-            <div class="cert-item"><h3>ISO 9001</h3><a href="certificates/ISO9001.pdf" target="_blank">View</a><a href="certificates/ISO9001.pdf" download>Download</a></div>
-            <div class="cert-item"><h3>ISO 14001</h3><a href="certificates/ISO14001.pdf" target="_blank">View</a><a href="certificates/ISO14001.pdf" download>Download</a></div>
-            <div class="cert-item"><h3>ISO 45001:2018</h3><a href="certificates/ISO45001.pdf" target="_blank">View</a><a href="certificates/ISO45001.pdf" download>Download</a></div>
-            <div class="cert-item"><h3>ISO/IEC 17025:2017</h3><a href="certificates/ISO17025.pdf" target="_blank">View</a><a href="certificates/ISO17025.pdf" download>Download</a></div>
-            <div class="cert-item"><h3>API Q1</h3><a href="certificates/APIQ1.pdf" target="_blank">View</a><a href="certificates/APIQ1.pdf" download>Download</a></div>
-            <div class="cert-item"><h3>API 5L</h3><a href="certificates/API5L.pdf" target="_blank">View</a><a href="certificates/API5L.pdf" download>Download</a></div>
-            <div class="cert-item"><h3>API 2B</h3><a href="certificates/API2B.pdf" target="_blank">View</a><a href="certificates/API2B.pdf" download>Download</a></div>
-            <div class="cert-item"><h3>CE Marking EN-1090</h3><a href="certificates/CEMarking1090.pdf" target="_blank">View</a><a href="certificates/CEMarking1090.pdf" download>Download</a></div>
-            <div class="cert-item"><h3>CE Marking EN-10025</h3><a href="certificates/CEMarking10025.pdf" target="_blank">View</a><a href="certificates/CEMarking10025.pdf" download>Download</a></div>
-            <div class="cert-item"><h3>CE Marking EN-10210</h3><a href="certificates/CEMarking10210.pdf" target="_blank">View</a><a href="certificates/CEMarking10210.pdf" download>Download</a></div>
-            <div class="cert-item"><h3>CE Marking EN-10219</h3><a href="certificates/CEMarking10219.pdf" target="_blank">View</a><a href="certificates/CEMarking10219.pdf" download>Download</a></div>
-            <div class="cert-item"><h3>DNV Approval</h3><a href="certificates/DNV.pdf" target="_blank">View</a><a href="certificates/DNV.pdf" download>Download</a></div>
+            <div class="cert-item">
+              <h3>ISO 9001</h3>
+              <a href="certificates/ISO9001.pdf" target="_blank">View</a>
+              <a href="certificates/ISO9001.pdf" download>Download</a>
+            </div>
+            <div class="cert-item">
+              <h3>ISO 14001</h3>
+              <a href="certificates/ISO14001.pdf" target="_blank">View</a>
+              <a href="certificates/ISO14001.pdf" download>Download</a>
+            </div>
+            <div class="cert-item">
+              <h3>ISO 45001:2018</h3>
+              <a href="certificates/ISO45001.pdf" target="_blank">View</a>
+              <a href="certificates/ISO45001.pdf" download>Download</a>
+            </div>
+            <div class="cert-item">
+              <h3>ISO/IEC 17025:2017</h3>
+              <a href="certificates/ISO17025.pdf" target="_blank">View</a>
+              <a href="certificates/ISO17025.pdf" download>Download</a>
+            </div>
+            <div class="cert-item">
+              <h3>API Q1</h3>
+              <a href="certificates/APIQ1.pdf" target="_blank">View</a>
+              <a href="certificates/APIQ1.pdf" download>Download</a>
+            </div>
+            <div class="cert-item">
+              <h3>API 5L</h3>
+              <a href="certificates/API5L.pdf" target="_blank">View</a>
+              <a href="certificates/API5L.pdf" download>Download</a>
+            </div>
+            <div class="cert-item">
+              <h3>API 2B</h3>
+              <a href="certificates/API2B.pdf" target="_blank">View</a>
+              <a href="certificates/API2B.pdf" download>Download</a>
+            </div>
+            <div class="cert-item">
+              <h3>CE Marking EN-1090</h3>
+              <a href="certificates/CEMarking1090.pdf" target="_blank">View</a>
+              <a href="certificates/CEMarking1090.pdf" download>Download</a>
+            </div>
+            <div class="cert-item">
+              <h3>DNV Approval</h3>
+              <a href="certificates/DNV.pdf" target="_blank">View</a>
+              <a href="certificates/DNV.pdf" download>Download</a>
+            </div>
           </div>
         </div>
-       
       </div>
 
       <!-- 3. NDT & Testing Capabilities -->
       <div class="section-with-image">
         <div class="section-text">
-          <h2>NDT & Testing Capabilities</h2>
-          <p>We employ advanced Non-Destructive Testing techniques to ensure pipe integrity and customer trust:</p>
+          <h2 data-i18n-quality="NDT_TITLE">NDT & Testing Capabilities</h2>
+          <p data-i18n-quality="NDT_P">
+            We employ advanced Non-Destructive Testing techniques to ensure pipe integrity and customer trust:
+          </p>
           <ul class="cert-list">
-            <li>✔ Ultrasonic Testing (UT)</li>
-            <li>✔ Radiographic Testing (RT)</li>
-            <li>✔ Magnetic Particle Inspection (MT)</li>
-            <li>✔ Penetrant Testing (PT)</li>
-            <li>✔ Hydrostatic Pressure Testing</li>
+            <li data-i18n-quality="NDT_ITEM_UT">✔ Ultrasonic Testing (UT)</li>
+            <li data-i18n-quality="NDT_ITEM_RT">✔ Radiographic Testing (RT)</li>
+            <li data-i18n-quality="NDT_ITEM_MT">✔ Magnetic Particle Inspection (MT)</li>
+            <li data-i18n-quality="NDT_ITEM_PT">✔ Penetrant Testing (PT)</li>
+            <li data-i18n-quality="NDT_ITEM_HYDRO">✔ Hydrostatic Pressure Testing</li>
           </ul>
         </div>
         <div class="section-img">
-          <img src="images/lab3.jpg" alt="NDT & Testing">
+          <img src="images/lab3.jpg" alt="NDT & Testing" />
         </div>
       </div>
 
       <!-- 4. Inspection Equipment -->
       <div class="section-with-image">
         <div class="section-text">
-          <h2>Inspection Equipment</h2>
-          <p>We operate with high-end inspection tools including:</p>
+          <h2 data-i18n-quality="INSPECT_TITLE">Inspection Equipment</h2>
+          <p data-i18n-quality="INSPECT_P">
+            We operate with high-end inspection tools including:
+          </p>
           <ul class="cert-list">
-            <li>✔ Automated UT Equipment</li>
-            <li>✔ X-ray Rooms for RT</li>
-            <li>✔ Pipe Roundness Gauges</li>
-            <li>✔ Digital Wall Thickness Measurement</li>
+            <li data-i18n-quality="INSPECT_ITEM_AUTO_UT">✔ Automated UT Equipment</li>
+            <li data-i18n-quality="INSPECT_ITEM_XRAY">✔ X-ray Rooms for RT</li>
+            <li data-i18n-quality="INSPECT_ITEM_GAUGES">✔ Pipe Roundness Gauges</li>
+            <li data-i18n-quality="INSPECT_ITEM_THICK">✔ Digital Wall Thickness Measurement</li>
           </ul>
         </div>
         <div class="section-img">
-          <img src="images/lab.jpg" alt="Inspection Equipment">
+          <img src="images/lab.jpg" alt="Inspection Equipment" />
         </div>
       </div>
 
       <!-- 5. Quality Management -->
       <div class="section-with-image">
         <div class="section-text">
-          <h2>Quality Management</h2>
-          <p>
+          <h2 data-i18n-quality="QM_TITLE">Quality Management</h2>
+          <p data-i18n-quality="QM_P1">
             SeAH Steel UAE’s commitment to quality commences with its raw material sourcing strategy. The Company’s key manufacturing input is steel plate, which is reliably sourced under an existing supply agreement. Other input materials, such as welding consumables and related pipes, are all procured from industry-leading companies.
           </p>
-          <p>
+          <p data-i18n-quality="QM_P2">
             All procured materials are inspected upon delivery before processing. The benefit of this rigorous control is reflected in our world-class API and non-API production yields since 2011. High production yield is critical for cost-competitiveness and market growth in longitudinal welded pipes, while defect-free quality remains essential for oil and gas transmission applications. From 2010 onward, SeAH Steel UAE has recorded minimal customer claims, reinforcing our reputation as a supplier of choice within the SAWL segment.
           </p>
-          <p>
+          <p data-i18n-quality="QM_P3">
             We employ industry-leading quality control techniques and collaborate with customers to develop Manufacturing Procedure Specifications (MPS) and Inspection & Test Plans (ITP) before production begins. Initial trial runs validate process parameters, followed by ongoing inspections—both nondestructive (hydrostatic, ultrasonic, x-ray) and destructive (HIC, SSCC)—using our in-house laboratory equipment to assess chemical and mechanical properties.
           </p>
         </div>
-        
       </div>
 
       <!-- 6. Sample Quality Management Documents -->
       <div class="section-with-image">
         <div class="section-text">
-          <h2>Sample Quality Management Documents</h2>
-          <p>
+          <h2 data-i18n-quality="SAMPLE_TITLE">Sample Quality Management Documents</h2>
+          <p data-i18n-quality="SAMPLE_P">
             Our documentation suite includes Inspection Test Plans, Manufacturing Procedure Specifications, Material Test Certificates (MTC), and Inspection Reports, ensuring traceability and consistency throughout production.
           </p>
-          <button id="viewSamplesBtn" class="btn">View Samples</button>
+          <button id="viewSamplesBtn" class="btn" data-i18n-quality="VIEW_SAMPLES_BUTTON">
+            View Samples
+          </button>
           <div id="samplesGrid" class="cert-grid hidden">
-            <div class="cert-item"><h3>Sample 1</h3><a href="samples/sample1.png" target="_blank">View</a></div>
-            <div class="cert-item"><h3>Sample 2</h3><a href="samples/sample2.png" target="_blank">View</a></div>
-            <div class="cert-item"><h3>Sample 3</h3><a href="samples/sample3.png" target="_blank">View</a></div>
-            <div class="cert-item"><h3>Sample 4</h3><a href="samples/sample4.png" target="_blank">View</a></div>
-            <div class="cert-item"><h3>Sample 5</h3><a href="samples/sample5.png" target="_blank">View</a></div>
-            <div class="cert-item"><h3>Sample 6</h3><a href="samples/sample6.png" target="_blank">View</a></div>
-            <div class="cert-item"><h3>Sample 7</h3><a href="samples/sample7.png" target="_blank">View</a></div>
-            <div class="cert-item"><h3>Sample 8</h3><a href="samples/sample8.png" target="_blank">View</a></div>
-            <div class="cert-item"><h3>Sample 9</h3><a href="samples/sample9.png" target="_blank">View</a></div>
-            <div class="cert-item"><h3>Sample 10</h3><a href="samples/sample10.png" target="_blank">View</a></div>
-            <div class="cert-item"><h3>Sample 11</h3><a href="samples/sample11.png" target="_blank">View</a></div>
-            <div class="cert-item"><h3>Sample 12</h3><a href="samples/sample12.png" target="_blank">View</a></div>
-            <div class="cert-item"><h3>Sample 13</h3><a href="samples/sample13.png" target="_blank">View</a></div>
-            <div class="cert-item"><h3>Sample 14</h3><a href="samples/sample14.png" target="_blank">View</a></div>
-            <div class="cert-item"><h3>Sample 15</h3><a href="samples/sample15.png" target="_blank">View</a></div>
+            <div class="cert-item">
+              <h3>Sample 1</h3>
+              <a href="samples/sample1.png" target="_blank">View</a>
+            </div>
+            <div class="cert-item">
+              <h3>Sample 2</h3>
+              <a href="samples/sample2.png" target="_blank">View</a>
+            </div>
+            <div class="cert-item">
+              <h3>Sample 3</h3>
+              <a href="samples/sample3.png" target="_blank">View</a>
+            </div>
+            <div class="cert-item">
+              <h3>Sample 4</h3>
+              <a href="samples/sample4.png" target="_blank">View</a>
+            </div>
+            <div class="cert-item">
+              <h3>Sample 5</h3>
+              <a href="samples/sample5.png" target="_blank">View</a>
+            </div>
+            <div class="cert-item">
+              <h3>Sample 6</h3>
+              <a href="samples/sample6.png" target="_blank">View</a>
+            </div>
+            <div class="cert-item">
+              <h3>Sample 7</h3>
+              <a href="samples/sample7.png" target="_blank">View</a>
+            </div>
+            <div class="cert-item">
+              <h3>Sample 8</h3>
+              <a href="samples/sample8.png" target="_blank">View</a>
+            </div>
+            <div class="cert-item">
+              <h3>Sample 9</h3>
+              <a href="samples/sample9.png" target="_blank">View</a>
+            </div>
+            <div class="cert-item">
+              <h3>Sample 10</h3>
+              <a href="samples/sample10.png" target="_blank">View</a>
+            </div>
+            <div class="cert-item">
+              <h3>Sample 11</h3>
+              <a href="samples/sample11.png" target="_blank">View</a>
+            </div>
+            <div class="cert-item">
+              <h3>Sample 12</h3>
+              <a href="samples/sample12.png" target="_blank">View</a>
+            </div>
+            <div class="cert-item">
+              <h3>Sample 13</h3>
+              <a href="samples/sample13.png" target="_blank">View</a>
+            </div>
+            <div class="cert-item">
+              <h3>Sample 14</h3>
+              <a href="samples/sample14.png" target="_blank">View</a>
+            </div>
+            <div class="cert-item">
+              <h3>Sample 15</h3>
+              <a href="samples/sample15.png" target="_blank">View</a>
+            </div>
           </div>
         </div>
-   
       </div>
 
       <!-- 7. Pipe Tracking System -->
       <div class="section-with-image">
         <div class="section-text">
-          <h2>Pipe Tracking System</h2>
-          <p>
+          <h2 data-i18n-quality="PIPE_TITLE">Pipe Tracking System</h2>
+          <p data-i18n-quality="PIPE_P1">
             Traceability is maintained from plate reception to final inspection and storage using a real-time, proprietary ERP-linked tracking system. Plate details (heat number, grade, weight, size) are logged upon receipt. Non-conforming plates are removed, and each formed pipe is assigned a unique ERP-generated number. Stenciling applies complete product data (I.D., O.D., length) at four locations per customer specifications.
           </p>
-          <p>
+          <p data-i18n-quality="PIPE_P2">
             At each manufacturing station, operators record the pipe number, date, shift, and outcomes (accepted or non-conforming). Non-conforming pipes are routed to rework, then re-inspected before reintegration. Final inspection updates pipe length and confirms all dimensions and quality checks.
           </p>
         </div>
-        
       </div>
 
       <!-- 8. PQR & WPS Process -->
       <div class="section-with-image">
         <div class="section-text">
-          <h2>PQR & WPS Process</h2>
-          <p>We maintain a robust Procedure Qualification Record (PQR) and Welding Procedure Specification (WPS) workflow:</p>
+          <h2 data-i18n-quality="PQR_TITLE">PQR & WPS Process</h2>
+          <p data-i18n-quality="PQR_P">
+            We maintain a robust Procedure Qualification Record (PQR) and Welding Procedure Specification (WPS) workflow:
+          </p>
           <ul class="cert-list">
-            <li>Review customer request and select raw material</li>
-            <li>Set welding parameters and choose consumables</li>
-            <li>Prepare and weld specimens (GMAW / SAW)</li>
-            <li>Publish mechanical test reports from accredited labs</li>
-            <li>Request TPI witness and conduct Production Qualification (PQ) tests</li>
-            <li>Verify and accept specimens and welding status per TPI feedback</li>
+            <li data-i18n-quality="PQR_ITEM_REVIEW">Review customer request and select raw material</li>
+            <li data-i18n-quality="PQR_ITEM_PARAMS">Set welding parameters and choose consumables</li>
+            <li data-i18n-quality="PQR_ITEM_PREPARE">Prepare and weld specimens (GMAW / SAW)</li>
+            <li data-i18n-quality="PQR_ITEM_REPORTS">Publish mechanical test reports from accredited labs</li>
+            <li data-i18n-quality="PQR_ITEM_PQ">Request TPI witness and conduct Production Qualification (PQ) tests</li>
+            <li data-i18n-quality="PQR_ITEM_VERIFY">Verify and accept specimens and welding status per TPI feedback</li>
           </ul>
         </div>
-        
       </div>
 
       <!-- 9. Statistical Process Control -->
       <div class="section-with-image">
         <div class="section-text">
-          <h2>Statistical Process Control</h2>
-          <p>Our SPC program evaluates key parameters on a monthly or per-order basis:</p>
+          <h2 data-i18n-quality="SPC_TITLE">Statistical Process Control</h2>
+          <p data-i18n-quality="SPC_P">
+            Our SPC program evaluates key parameters on a monthly or per-order basis:
+          </p>
           <ul class="cert-list">
-            <li>Visual Inspection: pipe end diameter, wall thickness, straightness, squareness, bead height (inside/outside)</li>
-            <li>Laboratory Tests: Charpy impact, tensile, and other customer-specific tests</li>
+            <li data-i18n-quality="SPC_ITEM_VISUAL">
+              Visual Inspection: pipe end diameter, wall thickness, straightness, squareness, bead height (inside/outside)
+            </li>
+            <li data-i18n-quality="SPC_ITEM_LAB">
+              Laboratory Tests: Charpy impact, tensile, and other customer-specific tests
+            </li>
           </ul>
         </div>
-        
       </div>
 
     </div>
   </section>
 
-  <!-- FOOTER NAV -->
+  <!-- FOOTER NAV (shared) -->
   <div class="footer-nav">
     <div class="footer-container">
       <div class="footer-col">
-        <h3>SeAH Steel UAE LLC</h3>
-        <p>Al Ghail Industrial Area,<br>Ras Al Khaimah, UAE</p>
-        <p>Email: <a href="mailto:ssuae@seah.co.kr">ssuae@seah.co.kr</a></p>
-        <p>Phone: +971 7 258 9440</p>
+        <h3 data-i18n-common="FOOTER_HEADER1">SeAH Steel UAE LLC</h3>
+        <p data-i18n-common="FOOTER_ADDR_LINE1">
+          Al Ghail Industrial Area,<br />Ras Al Khaimah, UAE
+        </p>
+        <p>
+          <span data-i18n-common="FOOTER_EMAIL">Email:</span>
+          <a href="mailto:ssuae@seah.co.kr">ssuae@seah.co.kr</a>
+        </p>
+        <p>
+          <span data-i18n-common="FOOTER_PHONE">Phone:</span>
+          +971 7 258 9440
+        </p>
       </div>
       <div class="footer-col">
-        <h4>Quick Links</h4>
+        <h4 data-i18n-common="FOOTER_HEADER2">Quick Links</h4>
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="ceo.html">CEO Message</a></li>
-          <li><a href="products.html">Products</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="quality.html">Quality</a></li>
-          <li><a href="news.html">News</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="quote.html">Request Quote</a></li>
+          <li><a href="index.html" data-i18n-common="FOOTER_LINK1">Home</a></li>
+          <li><a href="about.html" data-i18n-common="FOOTER_LINK2">About</a></li>
+          <li><a href="ceo.html" data-i18n-common="FOOTER_LINK3">CEO Message</a></li>
+          <li><a href="products.html" data-i18n-common="FOOTER_LINK4">Products</a></li>
+          <li><a href="manufacturing.html" data-i18n-common="FOOTER_LINK5">How We Work</a></li>
+          <li><a href="projects.html" data-i18n-common="FOOTER_LINK6">Projects</a></li>
+          <li><a href="quality.html" data-i18n-common="FOOTER_LINK7">Quality</a></li>
+          <li><a href="news.html" data-i18n-common="FOOTER_LINK8">News</a></li>
+          <li><a href="contact.html" data-i18n-common="FOOTER_LINK9">Contact</a></li>
+          <li><a href="quote.html" data-i18n-common="FOOTER_LINK10">Request Quote</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Connect With Us</h4>
+        <h4 data-i18n-common="FOOTER_HEADER3">Connect With Us</h4>
         <a href="https://wa.me/971XXXXXXXXX" target="_blank">
-          <img src="images/whatsapp-icon.png" alt="WhatsApp" class="footer-icon" /> WhatsApp
-        </a><br>
+          <img src="images/whatsapp-icon.png" alt="WhatsApp" class="footer-icon" />
+          <span data-i18n-common="FOOTER_WHATSAPP">WhatsApp</span>
+        </a><br />
         <a href="mailto:ssuae@seah.co.kr">
-          <img src="images/email-icon.png" alt="Email" class="footer-icon" /> Email Us
+          <img src="images/email-icon.png" alt="Email" class="footer-icon" />
+          <span data-i18n-common="FOOTER_EMAIL_US">Email Us</span>
         </a>
       </div>
     </div>
@@ -327,34 +441,50 @@
 
   <!-- FOOTER -->
   <footer>
-    <p>&copy; 2025 SeAH Steel UAE LLC. All rights reserved.</p>
+    <p data-i18n-common="COPYRIGHT_TEXT">
+      © 2025 SeAH Steel UAE LLC. All rights reserved.
+    </p>
   </footer>
 
-  <!-- WhatsApp Chat Button -->
-  <a href="https://wa.me/971XXXXXXXXX" class="whatsapp-chat" target="_blank" title="Chat with us on WhatsApp">
+  <!-- WhatsApp Chat Button (shared) -->
+  <a
+    href="https://wa.me/971XXXXXXXXX"
+    class="whatsapp-chat"
+    target="_blank"
+    title="Chat with us on WhatsApp"
+  >
     <img src="images/whatsapp-icon.png" alt="WhatsApp" />
   </a>
 
-  <!-- Tawk.to Script -->
+  <!-- Tawk.to Script (shared) -->
   <script type="text/javascript">
-    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    var Tawk_API = Tawk_API || {},
+      Tawk_LoadStart = new Date();
     (function() {
-      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      var s1 = document.createElement("script"),
+        s0 = document.getElementsByTagName("script")[0];
       s1.async = true;
-      s1.src = 'https://embed.tawk.to/682974268ec535190f11cf94/1irgurdt8';
-      s1.charset = 'UTF-8';
-      s1.setAttribute('crossorigin', '*');
+      s1.src = "https://embed.tawk.to/682974268ec535190f11cf94/1irgurdt8";
+      s1.charset = "UTF-8";
+      s1.setAttribute("crossorigin", "*");
       s0.parentNode.insertBefore(s1, s0);
     })();
   </script>
+
   <script src="js/script.js"></script>
   <script>
-    document.getElementById('downloadBtn').addEventListener('click', function() {
-      document.getElementById('certGrid').classList.toggle('hidden');
+    document.getElementById("downloadBtn").addEventListener("click", function () {
+      document.getElementById("certGrid").classList.toggle("hidden");
     });
-    document.getElementById('viewSamplesBtn').addEventListener('click', function() {
-      document.getElementById('samplesGrid').classList.toggle('hidden');
+    document.getElementById("viewSamplesBtn").addEventListener("click", function () {
+      document.getElementById("samplesGrid").classList.toggle("hidden");
     });
   </script>
+
+  <!-- 1) Common translations (topbar/navbar/footer) -->
+  <script src="js/common-i18n.js"></script>
+
+  <!-- 2) Quality page–specific translations -->
+  <script src="js/quality-i18n.js"></script>
 </body>
 </html>

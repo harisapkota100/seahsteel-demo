@@ -196,6 +196,55 @@ document.addEventListener("DOMContentLoaded", function () {
       });
   });
 });
+document.addEventListener("DOMContentLoaded", function () {
+  // Assuming emailjs.init(...) is already called above
+
+  // Select CV form and inject a feedback <p>
+  const cvForm       = document.getElementById("cvForm");
+  const cvFeedbackEl = document.createElement("p");
+  cvFeedbackEl.id    = "cvFormFeedback";
+  cvFeedbackEl.style.display      = "none";
+  cvFeedbackEl.style.marginBottom = "1rem";
+  cvFeedbackEl.style.color        = "red";
+
+  if (cvForm && cvForm.parentNode) {
+    cvForm.parentNode.insertBefore(cvFeedbackEl, cvForm.nextSibling);
+  }
+
+  if (!cvForm) {
+    console.warn("script.js: Missing CV submission form (#cvForm).");
+    return;
+  }
+
+  cvForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    cvFeedbackEl.textContent = "Sending your CV…";
+    cvFeedbackEl.classList.remove("error");
+    cvFeedbackEl.style.display = "block";
+
+    // ← Use the CV‐specific Service & Template IDs you provided:
+    const cvServiceID  = "service_w79r1q";
+    const cvTemplateID = "template_s2l8fmp";
+
+    emailjs.sendForm(cvServiceID, cvTemplateID, cvForm)
+      .then((response) => {
+        console.log("CV SEND SUCCESS!", response.status, response.text);
+        cvFeedbackEl.textContent =
+          "Thank you! Your CV has been submitted successfully.";
+        cvFeedbackEl.classList.remove("error");
+        cvFeedbackEl.style.display = "block";
+        cvForm.reset();
+      })
+      .catch((error) => {
+        console.log("CV SEND FAILED…", error);
+        cvFeedbackEl.textContent =
+          "Oops! Something went wrong sending your CV. Please try again later.";
+        cvFeedbackEl.classList.add("error");
+        cvFeedbackEl.style.display = "block";
+      });
+  });
+});
 
 // =======================
 // Image Lightbox (Zoom & Pan)

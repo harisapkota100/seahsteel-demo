@@ -148,15 +148,31 @@
     >
   </header>
 
-  <!-- ===== HERO SECTION (page-specific) ===== -->
-  <section class="hero-section">
-    <h1 data-i18n-index="HERO_HEADING">
+ <!-- HERO VIDEO SECTION -->
+<!-- HERO VIDEO SECTION -->
+<section class="hero-section" style="position: relative; height: 100vh; overflow: hidden;">
+
+  <!-- 🔹 YouTube background video -->
+  <iframe
+  src="https://www.youtube.com/embed/7Zgrzlt2hiE?autoplay=1&mute=1&controls=0&loop=1&playlist=7Zgrzlt2hiE&modestbranding=1&showinfo=0&rel=0"
+  frameborder="0"
+  allow="autoplay"
+  allowfullscreen
+  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;">
+</iframe>
+
+
+  <!-- 🔹 Text Overlay -->
+  <div class="hero-overlay" style="position: relative; z-index: 2; text-align: center; padding-top: 25vh;">
+    <h1 style="color: #FFD700; font-size: 3rem; margin-bottom: 1rem; text-shadow: 2px 2px 8px rgba(0,0,0,0.6);">
       Forging the Future of Steel
     </h1>
-    <p data-i18n-index="HERO_SUBTEXT">
+    <p style="color: #FFD700; font-size: 1.5rem; text-shadow: 1px 1px 5px rgba(0,0,0,0.5);">
       Delivering high-performance steel pipes across the globe
     </p>
-  </section>
+  </div>
+
+</section>
 
   <!-- ===== COMPANY OVERVIEW (page-specific) ===== -->
   <section class="company-overview">

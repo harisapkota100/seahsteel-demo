@@ -50,8 +50,56 @@ body {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+   border-bottom: 1px solid #ccc;
   justify-content: space-between;
 }
+.header-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.header-logo {
+  flex: 0 0 auto;
+  padding-right: 2rem;
+}
+
+.header-logo img {
+  height: 60px;
+  width: auto;
+}
+/* RIGHT SIDE WRAPPER */
+.header-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* ROW 1: Careers, Downloads, Global SeAH & Languages */
+.top-links-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.top-links a {
+  margin-right: 1.2rem;
+  color: #003366;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.lang-switcher a {
+  margin-left: 0.5rem;
+  color: #003366;
+  font-weight: bold;
+  text-decoration: none;
+}
+
 header-row {
   display: flex;
   justify-content: space-between;
@@ -104,7 +152,13 @@ top-links li a {
   align-items: center;
   gap: 1rem;
 }
-
+.nav-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+}
 .navbar {
   background-color: #f0f0f0;
 }

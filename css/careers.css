@@ -47,7 +47,9 @@
 .career-form input[type="text"],
 .career-form input[type="email"],
 .career-form input[type="tel"],
-.career-form input[type="file"] {
+.career-form input[type="file"]
+.career-form input[type="url"]
+{
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -151,6 +153,7 @@
 .modal-content input,
 .modal-content textarea,
 .modal-content select {
+   display: block;
   width: 100%;
   margin-top: 0.25rem;
   padding: 0.5rem;

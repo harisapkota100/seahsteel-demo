@@ -163,8 +163,8 @@ const aboutTranslations = {
 
 // 2) Swap out each element with data-i18n-page="KEY"
 function setPageLanguage(langCode) {
-  document.querySelectorAll("[data-i18n-page]").forEach((el) => {
-    const key = el.getAttribute("data-i18n-page");
+  document.querySelectorAll("[data-i18n-about]").forEach((el) => {
+    const key = el.getAttribute("data-i18n-about");
     const translated = aboutTranslations[langCode][key];
     if (translated !== undefined) {
       // Use innerHTML when paragraphs include markup (like <strong>), else innerText

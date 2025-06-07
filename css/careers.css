@@ -47,7 +47,7 @@
 .career-form input[type="text"],
 .career-form input[type="email"],
 .career-form input[type="tel"],
-.career-form input[type="file"]
+.career-form input[type="file"],
 .career-form input[type="url"]
 {
   padding: 10px;

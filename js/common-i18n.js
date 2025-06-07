@@ -165,13 +165,13 @@ document.addEventListener("DOMContentLoaded", () => {
     window.setPageLanguage?.("en");
   });
 
-  document.getElementById("lang-ar")?.addEventListener((e) => {
+  document.getElementById("lang-ar")?.addEventListener("click", (e) => {
     e.preventDefault();
     setCommonLanguage("ar");
     window.setPageLanguage?.("ar");
   });
 
-  document.getElementById("lang-ko")?.addEventListener((e) => {
+  document.getElementById("lang-ko")?.addEventListener("click", (e) => {
     e.preventDefault();
     setCommonLanguage("ko");
     window.setPageLanguage?.("ko");

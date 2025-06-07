@@ -40,33 +40,28 @@ body {
 }
 
 .main-header {
-  /* Match the top bar background */
   background-color: #f0f0f0;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   position: sticky;
   top: 2.5rem;
   z-index: 1000;
   padding: 0.5rem 1rem;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-   border-bottom: 1px solid #ccc;
-  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
 }
 .header-container {
   display: flex;
+  gap: 2rem;
   align-items: flex-start;
-  justify-content: space-between;
-  flex-wrap: wrap;
 }
 
 .header-logo {
   flex: 0 0 auto;
-  padding-right: 2rem;
+  display: flex;
+  align-items: center;
 }
 
 .header-logo img {
-  height: 60px;
+  height: 70px;
   width: auto;
 }
 /* RIGHT SIDE WRAPPER */
@@ -74,14 +69,13 @@ body {
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 0.7rem;
 }
 
 /* ROW 1: Careers, Downloads, Global SeAH & Languages */
-.top-links-row {
+.top-row {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   flex-wrap: wrap;
 }
 
@@ -92,14 +86,50 @@ body {
   text-decoration: none;
   font-size: 0.95rem;
 }
-
 .lang-switcher a {
-  margin-left: 0.5rem;
   color: #003366;
-  font-weight: bold;
   text-decoration: none;
+  margin-left: 0.5rem;
+  font-weight: bold;
+}
+.bottom-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
 }
 
+.search-bar input {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  font-size: 0.9rem;
+}
+
+.search-bar button {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  background: #003366;
+  color: white;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.quote-btn {
+  background: #003366;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  white-space: nowrap;
+}
 header-row {
   display: flex;
   justify-content: space-between;
@@ -160,7 +190,10 @@ top-links li a {
   justify-content: space-between;
 }
 .navbar {
-  background-color: #f0f0f0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  flex: 1;
 }
 
 .navbar ul {
@@ -173,9 +206,10 @@ top-links li a {
 }
 
 .navbar a {
-  text-decoration: none;
   color: #003366;
-  font-weight: 600;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1rem;
 }
 
 .navbar a:hover {

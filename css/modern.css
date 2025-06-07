@@ -46,9 +46,10 @@ body {
   position: sticky;
   top: 2.5rem;
   z-index: 1000;
-  padding: 1rem 2rem;
+  padding: 0.5rem 1rem;
   display: flex;
   align-items: center;
+  gap: 0.5rem;
   justify-content: space-between;
 }
 header-row {
@@ -63,7 +64,45 @@ header-row {
 
 .logo img {
   /* Slightly smaller logo for consistency */
-  height: 30px;
+   height: 40px;
+  width: auto;
+}
+.top-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+}
+top-links li a {
+  color: #003366;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.topbar-right .lang-switcher {
+  font-weight: bold;
+}
+
+.topbar-right .lang-switcher a {
+  color: #003366;
+  text-decoration: none;
+  margin-left: 0.5rem;
+}
+
+.topbar-right .lang-switcher a:hover {
+  text-decoration: underline;
+  color: #C8102E;
+}
+
+/* ROW 2 */
+.row-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
 }
 
 .navbar {
@@ -73,7 +112,10 @@ header-row {
 .navbar ul {
   list-style: none;
   display: flex;
-  gap: 1.2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
 }
 
 .navbar a {

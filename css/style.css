@@ -9,6 +9,8 @@ body {
   font-family: 'Segoe UI', sans-serif;
   background: #f9f9f9;
   color: #333;
+  font-size: 18px; /* fallback */
+  font-size: clamp(16px, 2.5vw, 32px);
 }
 
 /* HEADER */
@@ -36,6 +38,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-size: 18px; /* fallback */
+  font-size: clamp(16px, 2.5vw, 32px);
 }
 
 .navbar ul {

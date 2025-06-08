@@ -58,6 +58,7 @@ body {
   flex: 0 0 auto;
   display: flex;
   align-items: center;
+  padding-left: 4rem;
 }
 
 .header-logo img {
@@ -86,12 +87,21 @@ body {
   text-decoration: none;
   font-size: 0.95rem;
 }
+.top-links a:hover {
+  color: #C8102E; /* SeAH red color on hover */
+  text-decoration: underline;
+}
 .lang-switcher a {
   color: #003366;
   text-decoration: none;
   margin-left: 0.5rem;
   font-weight: bold;
 }
+.lang-switcher a:hover {
+  color: #C8102E; /* SeAH red color on hover */
+  text-decoration: underline;
+}
+
 .bottom-row {
   display: flex;
   align-items: center;
@@ -148,7 +158,7 @@ header-row {
 .top-links {
   list-style: none;
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
   padding: 0;
   margin: 0;
 }
@@ -166,7 +176,7 @@ top-links li a {
 .topbar-right .lang-switcher a {
   color: #003366;
   text-decoration: none;
-  margin-left: 0.5rem;
+  margin-left: 1rem;
 }
 
 .topbar-right .lang-switcher a:hover {

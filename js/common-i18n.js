@@ -40,7 +40,7 @@ const translations = {
     FOOTER_LINK9:      "Contact",
 
  // Footer Column 3
-    FOOTER_HEADER2:    "Quick Links",
+    FOOTER_HEADER3:    "Quick Links",
     FOOTER_LINK10:      "Request Quote",
     FOOTER_LINK11:      "Careers",
     FOOTER_LINK12:      "Downloads",

@@ -62,7 +62,7 @@ body {
 
 .header-logo img {
   height: 40px;
-  width: 40px;
+  width: auto;
 }
 /* RIGHT SIDE WRAPPER */
 .header-right {

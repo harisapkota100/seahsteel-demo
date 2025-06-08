@@ -2,6 +2,8 @@
 body {
   font-family: 'Roboto', 'Segoe UI', Arial, sans-serif;
   line-height: 1.6;
+  font-size: 18px; /* fallback */
+  font-size: clamp(16px, 2.5vw, 32px);
 }
 
 .topbar {

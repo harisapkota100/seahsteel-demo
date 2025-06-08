@@ -9,8 +9,6 @@ body {
   font-family: 'Segoe UI', sans-serif;
   background: #f9f9f9;
   color: #333;
-  font-size: 18px; /* fallback */
-  font-size: clamp(16px, 2.5vw, 32px);
 }
 
 /* HEADER */
@@ -25,8 +23,6 @@ body {
   font-family: 'Segoe UI', sans-serif;
   background: #f9f9f9;
   color: #333;
-  font-size: 18px; /* fallback */
-  font-size: clamp(16px, 2.5vw, 32px);
 }
 
 /* HEADER */

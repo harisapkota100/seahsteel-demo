@@ -34,11 +34,6 @@ body {
   text-decoration: none;
   font-weight: 500;
 }
-
-.topbar ul li a:hover {
-  text-decoration: underline;
-}
-
 .main-header {
   background-color: #f0f0f0;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -50,7 +45,7 @@ body {
 }
 .header-container {
   display: flex;
-  gap: 2rem;
+  gap: 5rem;
   align-items: flex-start;
 }
 
@@ -58,7 +53,7 @@ body {
   flex: 0 0 auto;
   display: flex;
   align-items: center;
-  padding-left: 4rem;
+padding-left: 4rem;
 }
 
 .header-logo img {
@@ -70,7 +65,7 @@ body {
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 0.7rem;
+  gap: 0.75rem;
 }
 
 /* ROW 1: Careers, Downloads, Global SeAH & Languages */
@@ -87,6 +82,7 @@ body {
   text-decoration: none;
   font-size: 0.95rem;
 }
+/* Hover effect */
 .top-links a:hover {
   color: #C8102E; /* SeAH red color on hover */
   text-decoration: underline;
@@ -97,11 +93,11 @@ body {
   margin-left: 0.5rem;
   font-weight: bold;
 }
+/* Hover effect */
 .lang-switcher a:hover {
   color: #C8102E; /* SeAH red color on hover */
   text-decoration: underline;
 }
-
 .bottom-row {
   display: flex;
   align-items: center;
@@ -202,7 +198,7 @@ top-links li a {
 .navbar {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 3rem;
   flex: 1;
 }
 

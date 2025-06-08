@@ -44,6 +44,8 @@ body {
   z-index: 1000;
   padding: 0.5rem 1rem;
   border-bottom: 1px solid #ccc;
+  font-size: 18px; /* fallback */
+  font-size: clamp(16px, 2.5vw, 32px);
 }
 .header-container {
   display: flex;

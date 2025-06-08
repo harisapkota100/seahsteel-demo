@@ -28,7 +28,7 @@ const translations = {
     FOOTER_PHONE:      "Phone:",
 
     // Footer Column 2
-    FOOTER_HEADER2:    "Quick Links",
+    FOOTER_HEADER2:    "Navigation",
     FOOTER_LINK1:      "Home",
     FOOTER_LINK2:      "About",
     FOOTER_LINK3:      "CEO Message",
@@ -38,10 +38,16 @@ const translations = {
     FOOTER_LINK7:      "Quality",
     FOOTER_LINK8:      "News",
     FOOTER_LINK9:      "Contact",
-    FOOTER_LINK10:     "Request Quote",
 
-    // Footer Column 3
-    FOOTER_HEADER3:    "Connect With Us",
+ // Footer Column 3
+    FOOTER_HEADER2:    "Quick Links",
+    FOOTER_LINK10:      "Request Quote",
+    FOOTER_LINK11:      "Careers",
+    FOOTER_LINK12:      "Downloads",
+    FOOTER_LINK13:      "Global SeAH",
+    
+    // Footer Column 4
+    FOOTER_HEADER4:    "Connect With Us",
     FOOTER_WHATSAPP:   "WhatsApp",
     FOOTER_EMAIL_US:   "Email Us",
 
@@ -71,7 +77,7 @@ const translations = {
     FOOTER_EMAIL:      "البريد الإلكتروني:",
     FOOTER_PHONE:      "الهاتف:",
 
-    FOOTER_HEADER2:    "روابط سريعة",
+    FOOTER_HEADER2:    "تنقل",
     FOOTER_LINK1:      "الصفحة الرئيسية",
     FOOTER_LINK2:      "معلومات عنا",
     FOOTER_LINK3:      "كلمة المدير التنفيذي",
@@ -81,9 +87,14 @@ const translations = {
     FOOTER_LINK7:      "الجودة",
     FOOTER_LINK8:      "الأخبار",
     FOOTER_LINK9:      "اتصل بنا",
-    FOOTER_LINK10:     "طلب عرض سعر",
 
-    FOOTER_HEADER3:    "تواصل معنا",
+     FOOTER_HEADER3:    "روابط سريعة",
+     FOOTER_LINK10:     "طلب عرض سعر",
+     FOOTER_LINK11:      "وظائف",
+    FOOTER_LINK12:      "تنزيلات",
+    FOOTER_LINK13:      "جلوبال سي إيه إتش",
+    
+    FOOTER_HEADER4:    "تواصل معنا",
     FOOTER_WHATSAPP:   "واتساب",
     FOOTER_EMAIL_US:   "راسلنا",
 
@@ -112,7 +123,7 @@ const translations = {
     FOOTER_EMAIL:      "이메일:",
     FOOTER_PHONE:      "전화번호:",
 
-    FOOTER_HEADER2:    "빠른 링크",
+    FOOTER_HEADER2:    "내비게이션",
     FOOTER_LINK1:      "홈",
     FOOTER_LINK2:      "회사 소개",
     FOOTER_LINK3:      "CEO 메시지",
@@ -122,9 +133,14 @@ const translations = {
     FOOTER_LINK7:      "품질",
     FOOTER_LINK8:      "뉴스",
     FOOTER_LINK9:      "연락처",
+    
+    FOOTER_HEADER3:    "빠른 링크",
     FOOTER_LINK10:     "견적 요청",
-
-    FOOTER_HEADER3:    "연결하기",
+     FOOTER_LINK11:      "경력",
+    FOOTER_LINK12:      "다운로드",
+    FOOTER_LINK13:      "글로벌 세아",
+    
+    FOOTER_HEADER4:    "연결하기",
     FOOTER_WHATSAPP:   "WhatsApp",
     FOOTER_EMAIL_US:   "Email Us",
 

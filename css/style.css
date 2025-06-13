@@ -158,7 +158,14 @@ footer {
   border-radius: 6px;
   margin-bottom: 0.5rem;
 }
-
+.news-item {
+  aspect-ratio: 1 / 1; /* Makes the card square */
+  height: auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .news-preview span {
   display: block;
   font-weight: 600;

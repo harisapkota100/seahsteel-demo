@@ -60,10 +60,10 @@ const page17025Translations = {
   }
 };
 
-// 2) Swap out any element with data-i18n-page="KEY" for 17025.html
+// 2) Swap out any element with data-i18n-17025="KEY" for 17025.html
 function set17025Language(langCode) {
-  document.querySelectorAll("[data-i18n-page]").forEach((el) => {
-    const key = el.getAttribute("data-i18n-page");
+  document.querySelectorAll("[data-i18n-17025]").forEach((el) => {
+    const key = el.getAttribute("data-i18n-17025");
     const translated = page17025Translations[langCode][key];
     if (translated !== undefined) {
       el.innerHTML = translated; // use innerHTML because text contains <strong>

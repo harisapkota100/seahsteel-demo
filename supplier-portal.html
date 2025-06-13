@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="google" content="notranslate" />
+  <title data-i18n-common="NAV_SUPPLIER_PORTAL">Supplier Portal | SeAH Steel UAE LLC</title>
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/modern.css" />
+</head>
+
+<body>
+<header class="main-header">
+  <div class="header-container">
+    <!-- LEFT: Logo only -->
+    <div class="header-logo">
+      <a href="index.html">
+        <img src="images/logo.png" alt="SeAH Steel UAE LLC Logo" />
+      </a>
+    </div>
+
+    <!-- RIGHT: two rows -->
+    <div class="header-right">
+      <!-- ROW 1: Careers / Downloads / Global + Languages -->
+      <div class="top-row">
+        <div class="top-links">
+          <a href="careers.html" data-i18n-common="TOP_CAREERS">Careers</a>
+          <a href="downloads.html" data-i18n-common="TOP_DOWNLOADS">Downloads</a>
+          <a href="globalseah.html" data-i18n-common="TOP_GLOBAL">Global SeAH</a>
+        </div>
+        <div class="lang-switcher">
+          <a href="#" id="lang-en">English</a>
+          <a href="#" id="lang-ar">العربية</a>
+          <a href="#" id="lang-ko">한국어</a>
+        </div>
+      </div>
+
+      <!-- ROW 2: Navigation + Search + Quote (all one row) -->
+      <div class="bottom-row">
+        <nav class="navbar">
+          <a href="index.html" data-i18n-common="NAV_HOME">Home</a>
+          <a href="ceo.html" data-i18n-common="NAV_CEO">CEO Message</a>
+          <a href="about.html" data-i18n-common="NAV_ABOUT">About</a>
+          <a href="products.html" data-i18n-common="NAV_PRODUCTS">Products</a>
+          <a href="manufacturing.html" data-i18n-common="NAV_MANUFACTURING">How We Work</a>
+          <a href="projects.html" data-i18n-common="NAV_PROJECTS">Projects</a>
+          <a href="quality.html" data-i18n-common="NAV_QUALITY">Quality</a>
+          <a href="news.html" data-i18n-common="NAV_NEWS">News</a>
+          <a href="contact.html" data-i18n-common="NAV_CONTACT">Contact</a>
+          <a href="supplier-portal.html" class="active" data-i18n-common="NAV_SUPPLIER_PORTAL">Supplier Portal</a>
+        </nav>
+        <form class="search-bar" onsubmit="return searchSite(event)">
+          <input type="text" id="searchInput" placeholder="Search..." />
+          <button type="submit">🔍</button>
+        </form>
+        <a href="quote.html" class="quote-btn" data-i18n-common="NAV_QUOTE">Request Quote</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="section-content">
+  <div class="container" style="max-width: 900px; margin: auto; padding: 2rem;">
+    <h1 class="section-title" data-i18n-page="SUPPLIER_PORTAL_TITLE">Supplier Portal</h1>
+    <p class="lead-paragraph" data-i18n-page="SUPPLIER_PORTAL_INTRO">
+      Welcome to the Supplier Portal. Through this platform, you can:
+    </p>
+    <ul class="styled-list">
+      <li data-i18n-page="SUPPLIER_PORTAL_PO">📦 View Purchase Orders issued to you</li>
+      <li data-i18n-page="SUPPLIER_PORTAL_UPLOAD">📄 Upload Invoices and Delivery Notes</li>
+      <li data-i18n-page="SUPPLIER_PORTAL_PAYMENT">💰 Check Payment Status</li>
+      <li data-i18n-page="SUPPLIER_PORTAL_RECEIPT">🧾 Download Payment Receipts</li>
+    </ul>
+
+    <div class="login-box" style="background: #f4f4f4; padding: 2rem; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); margin-top: 2rem;">
+      <h2 data-i18n-page="SUPPLIER_LOGIN_HEADER">Login to Your Account</h2>
+      <form class="form-grid" style="display: grid; gap: 1rem; margin-top: 1rem;">
+        <div>
+          <label for="email" data-i18n-page="SUPPLIER_LOGIN_EMAIL_LABEL">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required />
+        </div>
+        <div>
+          <label for="password" data-i18n-page="SUPPLIER_LOGIN_PASSWORD_LABEL">Password</label>
+          <input type="password" id="password" name="password" placeholder="Enter your password" required />
+        </div>
+        <button type="submit" class="btn-primary" style="padding: 0.75rem 1.5rem;" data-i18n-page="SUPPLIER_LOGIN_BUTTON">Login</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- Shared footer content can go here, typically copied from index.html -->
+
+<footer>
+  <p data-i18n-common="COPYRIGHT_TEXT" style="text-align: center; padding: 1rem 0; background: #202c45; color: #fff;">
+    © 2025 SeAH Steel UAE LLC. All rights reserved.
+  </p>
+</footer>
+
+<!-- Language support script (assumes common-i18n.js + optional supplier-i18n.js) -->
+<script src="js/common-i18n.js"></script>
+
+</body>
+</html>

@@ -459,7 +459,7 @@ footer {
 /* QUALITY PAGE */
 
 .quality-hero {
-  background: url('../images/quality.jpg') no-repeat center center/cover;
+  background: url('../images/quality.png') no-repeat center center/cover;
   height: 600px;
   color: white;
   display: flex;
@@ -634,7 +634,7 @@ footer {
 /* CONTACT PAGE */
 
 .contact-hero {
-  background: url('../images/contact.jpg') no-repeat center center/cover;
+  background: url('../images/contact.png') no-repeat center center/cover;
   height: 600px;
   color: white;
   display: flex;

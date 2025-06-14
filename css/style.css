@@ -250,7 +250,33 @@ footer {
   line-height: 1.6;
 }
 /* ABOUT PAGE STYLES */
-
+.careers-hero {
+ background: url('../images/career.jpg') no-repeat center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #000; /* optional: fill background around image */
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+  .downloadss-hero {
+ background: url('../images/download.jpg') no-repeat center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #000; /* optional: fill background around image */
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+  
 .about-hero {
  background: url('../images/about.jpg') no-repeat center center;
   background-size: contain;

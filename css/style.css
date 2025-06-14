@@ -1948,8 +1948,8 @@ footer {
 }
 /* ABOUT PAGE STYLES */
 
-.about-hero {
- background: url('../images/about.jpg') no-repeat center center;
+.manufacturing-hero {
+ background: url('../images/manufacturing.jpg') no-repeat center center;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -1962,22 +1962,22 @@ footer {
   color: white;
 }
 
-.about-us {
+.manufacturing{
   background: #fff;
   padding: 3rem 2rem;
 }
 
-.about-us .container {
+.manufacturing .container {
   max-width: 1200px;
   margin: auto;
 }
 
-.about-us h2 {
+.manufacturing h2 {
   color: #003366;
   margin-bottom: 0.5rem;
 }
 
-.about-us p {
+.manufacturing p {
   margin-bottom: 1.5rem;
   line-height: 1.6;
 }

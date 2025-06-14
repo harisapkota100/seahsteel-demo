@@ -402,7 +402,7 @@ footer {
 /* PROJECTS PAGE */
 
 .projects-hero {
-  background: url('../images/projects-banner.jpg') no-repeat center center/cover;
+  background: url('../images/project.jpg') no-repeat center center/cover;
   height: 600px;
   color: white;
   display: flex;
@@ -459,7 +459,7 @@ footer {
 /* QUALITY PAGE */
 
 .quality-hero {
-  background: url('../images/quality.JPG') no-repeat center center/cover;
+  background: url('../images/quality.jpg') no-repeat center center/cover;
   height: 600px;
   color: white;
   display: flex;
@@ -634,7 +634,7 @@ footer {
 /* CONTACT PAGE */
 
 .contact-hero {
-  background: url('../images/contact.JPG') no-repeat center center/cover;
+  background: url('../images/contact.jpg') no-repeat center center/cover;
   height: 600px;
   color: white;
   display: flex;
@@ -2099,7 +2099,7 @@ footer {
 /* PROJECTS PAGE */
 
 .projects-hero {
-  background: url('../images/projects-banner.jpg') no-repeat center center/cover;
+  background: url('../images/project.jpg') no-repeat center center/cover;
   height: 600px;
   color: white;
   display: flex;
@@ -2331,7 +2331,7 @@ footer {
 /* CONTACT PAGE */
 
 .contact-hero {
-  background: url('../images/contact-banner.jpg') no-repeat center center/cover;
+  background: url('../images/contact.jpg') no-repeat center center/cover;
   height: 600px;
   color: white;
   display: flex;

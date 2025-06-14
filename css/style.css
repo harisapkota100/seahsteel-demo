@@ -219,12 +219,17 @@ footer {
 }
 
 .ceo-photo {
- width: 100%;
+  width: 100%;
   max-width: 300px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transform: translate(-10px, 10px); /* Move 10px left, 10px down */
+  transform: translate(-100px, 100px); /* slight position shift */
+  transition: transform 0.3s ease;
+  cursor: zoom-in;
 }
+.ceo-photo:hover {
+ scale(1.05); /* keep position, just zoom */
+
 
 .ceo-text {
   flex: 1;

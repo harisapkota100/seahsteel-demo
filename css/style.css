@@ -228,8 +228,8 @@ footer {
   cursor: zoom-in;
 }
 .ceo-photo:hover {
- scale(1.05); /* keep position, just zoom */
-
+ scale: (1.05); /* keep position, just zoom */
+}
 
 .ceo-text {
   flex: 1;
@@ -251,44 +251,32 @@ footer {
 }
 /* ABOUT PAGE STYLES */
 .careers-hero {
- background: url('../images/career.jpg') no-repeat center center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #000; /* optional: fill background around image */
+  background: url('../images/career.png') no-repeat center center/cover;
   height: 600px;
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: white;
 }
   .download-hero {
- background: url('../images/download.jpg') no-repeat center center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #000; /* optional: fill background around image */
+ background: url('../images/download.png') no-repeat center center/cover;
   height: 600px;
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: white;
 }
   
 .about-hero {
- background: url('../images/about.jpg') no-repeat center center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #000; /* optional: fill background around image */
+ background: url('../images/about.png') no-repeat center center/cover;
   height: 600px;
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: white;
 }
 
 .about-us {
@@ -400,8 +388,13 @@ footer {
 .product-desc {
   display: -webkit-box;
   -webkit-line-clamp: 5;
+  line-clamp: 5;
+  line-clamp: 5;
+  line-clamp: 5;
+  line-clamp: 5;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  line-clamp: 5; /* Standard property for compatibility */
 }
 
 
@@ -621,6 +614,7 @@ footer {
   margin-bottom: 0.75rem;
    display: -webkit-box;
   -webkit-line-clamp: 4;
+  line-clamp: 4;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }  
@@ -1129,8 +1123,8 @@ footer {
   height: 3px;
   background-color: #C8102E;
   margin: 0.5rem auto 0;
-  border-radius: 2px;*/
-}
+  border-radius: 2px;
+}*/
 .video-wrapper {
   position: absolute;
   top: 0;
@@ -1768,14 +1762,14 @@ font-weight: bold;
   cursor: pointer;
 }
 
-
+/*
   background: #d3d3d3;
   color:  #002244;
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
+}*/
 
 .navbar ul {
   list-style: none;
@@ -1975,17 +1969,13 @@ footer {
 /* ABOUT PAGE STYLES */
 
 .manufacturing-hero {
- background: url('../images/manufacturing.jpg') no-repeat center center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #000; /* optional: fill background around image */
+ background: url('../images/manufacturing.jpg') no-repeat center center/cover;
   height: 600px;
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: white;
 }
 
 .manufacturing{
@@ -2097,6 +2087,7 @@ footer {
 .product-desc {
   display: -webkit-box;
   -webkit-line-clamp: 5;
+  line-clamp: 5;   
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
@@ -2182,7 +2173,7 @@ footer {
 /* QUALITY PAGE */
 
 .quality-hero {
-  background: url('../images/quality.jpg') no-repeat center center/cover;
+  background: url('../images/quality.png') no-repeat center center/cover;
   height: 600px;
   color: white;
   display: flex;
@@ -2318,6 +2309,7 @@ footer {
   margin-bottom: 0.75rem;
    display: -webkit-box;
   -webkit-line-clamp: 4;
+  line-clamp: 4;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }  
@@ -2746,8 +2738,8 @@ footer {
   height: 3px;
   background-color: #C8102E;
   margin: 0.5rem auto 0;
-  border-radius: 2px;*/
-}
+  border-radius: 2px;
+}*/
 .video-wrapper {
   position: absolute;
   top: 0;

@@ -133,7 +133,7 @@
 
       <div class="footer-col">
         <h4 data-i18n-common="FOOTER_HEADER4">Connect With Us</h4>
-        <a href="https://wa.me/971XXXXXXXXX" target="_blank">
+        <a href="php/redirect.php" target="_blank">
           <img
             src="images/whatsapp-icon.png"
             alt="WhatsApp"
@@ -161,11 +161,34 @@
   <!-- SCRIPTS -->
   <script src="js/script.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6jeni5WjsZMffUdFjNe5TGUmC1C-FDWU&callback=initGlobalMap" async defer></script>
+ 
+<!-- ===== WHATSAPP CHAT BUTTON ===== -->
+ <a href="php/redirect.php" class="whatsapp-chat" target="_blank">
+    <img src="images/whatsapp-icon.png" alt="WhatsApp" />
+  </a>
+
+
+  <!-- ===== Tawk.to Script ===== -->
+  <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+      var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+      s1.async=true;
+      s1.src='https://embed.tawk.to/682974268ec535190f11cf94/1irgurdt8';
+      s1.charset='UTF-8';
+      s1.setAttribute('crossorigin','*');
+      s0.parentNode.insertBefore(s1,s0);
+    })();
+  </script>
+
+  <!-- Your existing custom JS -->
+  <script src="js/script.js"></script>
 
   <!-- 1) Common translations (topbar/navbar/footer) -->
   <script src="js/common-i18n.js"></script>
 
-  <!-- 2) Global SeAH page–specific translations -->
-  <script src="js/globalseah-i18n.js"></script>
+  <!-- 2) Downloads page–specific translations -->
+  <script src="js/downloads-i18n.js"></script>
 </body>
 </html>
+

@@ -2321,6 +2321,32 @@ footer {
   border-bottom: 2px solid #003366;
   overflow: visible;  /* ✅ allows full content to appear */
 }
+.news-ticker-section .marquee-content {
+  display: flex;
+  align-items: stretch;    /* keep items top-aligned */
+ justify-content: flex-start;
+}
+.news-ticker-section .news-item {
+   flex: 0 0 auto;                     /* keep natural width */
+  align-self: stretch !important;     /* fill the full height of the row */
+  display: flex;
+  flex-direction: column;  
+}
+
+.news-ticker-section .news-item img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;                /* show entire head/top of photo */
+  object-position: top center;  
+}
+
+/* ─── NEWS TICKER CAPTION ─────────────────────────────────────────── */
+.news-ticker-section .news-item span {
+   margin-top: auto;                   /* auto margin in a column flex pushes it to bottom */
+  padding: 0.5rem 0;                  /* optional breathing room */
+  text-align: center;
+}
+
 .section-title {
   text-align: center;
   font-size: 2rem;

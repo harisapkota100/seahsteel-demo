@@ -49,10 +49,33 @@ const visit_i18n = {
   }
 };
 
-if (window.registerPageTranslations) {
-  window.registerPageTranslations("visit", visit_i18n);
-} else {
-  document.addEventListener("DOMContentLoaded", () => {
-    applyTranslations("visit", visit_i18n);
+// after you load both common_i18n and visit_i18n into a single `translations` object…
+
+function applyTranslations(lang) {
+  // look for both common *and* visit markers
+  document.querySelectorAll("[data-i18n-common], [data-i18n-visit]").forEach(el => {
+    // whichever attribute is present becomes the lookup key
+    const key =
+      el.getAttribute("data-i18n-common") ||
+      el.getAttribute("data-i18n-visit");
+    const text = translations[lang]?.[key];
+    if (text) el.innerText = text;
   });
+
+  // also swap <title>
+  const titleEl = document.querySelector("title[data-i18n-visit]");
+  if (titleEl) {
+    const titleKey = titleEl.getAttribute("data-i18n-visit");
+    document.title = translations[lang]?.[titleKey] || document.title;
+  }
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  // wire your lang toggles exactly as before
+  document.getElementById("lang-en").onclick = () => applyTranslations("en");
+  document.getElementById("lang-ar").onclick = () => applyTranslations("ar");
+  document.getElementById("lang-ko").onclick = () => applyTranslations("ko");
+  applyTranslations("en"); // initial
+});
+
 }

@@ -35,6 +35,7 @@ const indexTranslations = {
     IND4:               "Energy",
 
     NEWS_TITLE:          "Latest News",
+    NEWS_ITEM0_TEXT:     "President Mr. Joo Sung Lee's Visit",
     NEWS_ITEM1_TEXT:     "SeAH Steel UAE at Make It In The Emirates",
     NEWS_ITEM2_TEXT:     "SeAH Steel UAE Obtained ISO-17025 Certificate",
     NEWS_ITEM3_TEXT:     "Historic Inauguration Ceremony",
@@ -74,6 +75,7 @@ const indexTranslations = {
     IND4:               "الطاقة",
 
     NEWS_TITLE:          "آخر الأخبار",
+    NEWS_ITEM0_TEXT:     "زيارة الرئيس السيد جو سونغ لي",
     NEWS_ITEM1_TEXT:     "سي إيه إتش ستيل الإمارات في فعالية اصنعها في الإمارات",
     NEWS_ITEM2_TEXT:     "حصلت سي إيه إتش ستيل الإمارات على شهادة ISO-17025",
     NEWS_ITEM3_TEXT:     "حفل الافتتاح التاريخي",
@@ -113,6 +115,7 @@ const indexTranslations = {
     IND4:               "에너지",
 
     NEWS_TITLE:          "최신 뉴스",
+    NEWS_ITEM1_TEXT:     "이주성 사장님의 방문",
     NEWS_ITEM1_TEXT:     "세아스틸 UAE, 메이크 잇 인 디 에미리트 참가",
     NEWS_ITEM2_TEXT:     "세아스틸 UAE, ISO-17025 인증 획득",
     NEWS_ITEM3_TEXT:     "역사적인 개소식",

@@ -1197,6 +1197,7 @@ footer {
 
 .news-item.visible {
   display: block; /* Show only when marked visible */
+  hight: 20px;
 }
 /* Home Page News Marquee */
 .home-marquee .marquee-wrapper {

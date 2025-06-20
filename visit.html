@@ -1,150 +1,221 @@
+<!-- visit.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SeAH President Mr. Joo Sung Lee's Visit to SeAH Steel UAE</title>
+  <title data-i18n-visit="VISIT_PAGE_TITLE">
+    SeAH President Mr. Joo Sung Lee's Visit to SeAH Steel UAE
+  </title>
+
   <link rel="icon" type="image/png" href="images/favicon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet"
+  />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/modern.css" />
 </head>
 <body>
-<header class="main-header">
-  <div class="header-container">
-    <div class="header-logo">
-      <a href="index.html">
-        <img src="images/logo.png" alt="SeAH Steel UAE LLC Logo" />
-      </a>
-    </div>
-    <div class="header-right">
-      <div class="top-row">
-        <div class="top-links">
-          <a href="careers.html">Careers</a>
-          <a href="downloads.html">Downloads</a>
-          <a href="globalseah.html">Global SeAH</a>
+  <!-- HEADER -->
+  <header class="main-header">
+    <div class="header-container">
+      <div class="header-logo">
+        <a href="index.html">
+          <img src="images/logo.png" alt="SeAH Steel UAE LLC Logo" />
+        </a>
+      </div>
+      <div class="header-right">
+        <div class="top-row">
+          <div class="top-links">
+            <a href="careers.html" data-i18n-common="TOP_CAREERS">Careers</a>
+            <a href="downloads.html" data-i18n-common="TOP_DOWNLOADS">Downloads</a>
+            <a href="globalseah.html" data-i18n-common="TOP_GLOBAL">Global SeAH</a>
+          </div>
+          <div class="lang-switcher">
+            <a href="#" id="lang-en">English</a>
+            <a href="#" id="lang-ar">العربية</a>
+            <a href="#" id="lang-ko">한국어</a>
+          </div>
         </div>
-        <div class="lang-switcher">
-          <a href="#" id="lang-en">English</a>
-          <a href="#" id="lang-ar">العربية</a>
-          <a href="#" id="lang-ko">한국어</a>
+        <div class="bottom-row">
+          <nav class="navbar">
+            <a href="index.html" data-i18n-common="NAV_HOME">Home</a>
+            <a href="ceo.html" data-i18n-common="NAV_CEO">CEO Message</a>
+            <a href="about.html" data-i18n-common="NAV_ABOUT">About</a>
+            <a href="products.html" data-i18n-common="NAV_PRODUCTS">Products</a>
+            <a href="manufacturing.html" data-i18n-common="NAV_MANUFACTURING">How We Work</a>
+            <a href="projects.html" data-i18n-common="NAV_PROJECTS">Projects</a>
+            <a href="quality.html" data-i18n-common="NAV_QUALITY">Quality</a>
+            <a href="news.html" data-i18n-common="NAV_NEWS">News</a>
+            <a href="contact.html" data-i18n-common="NAV_CONTACT">Contact</a>
+          </nav>
+          <form class="search-bar" onsubmit="return searchSite(event)">
+            <input type="text" id="searchInput" placeholder="Search..." />
+            <button type="submit">🔍</button>
+          </form>
+          <a href="quote.html" class="quote-btn" data-i18n-common="NAV_QUOTE">
+            Request Quote
+          </a>
         </div>
       </div>
-      <div class="bottom-row">
-        <nav class="navbar">
-          <a href="index.html">Home</a>
-          <a href="ceo.html">CEO Message</a>
-          <a href="about.html">About</a>
-          <a href="products.html">Products</a>
-          <a href="manufacturing.html">How We Work</a>
-          <a href="projects.html">Projects</a>
-          <a href="quality.html">Quality</a>
-          <a href="news.html">News</a>
-          <a href="contact.html">Contact</a>
-        </nav>
-        <form class="search-bar" onsubmit="return searchSite(event)">
-          <input type="text" id="searchInput" placeholder="Search..." />
-          <button type="submit">🔍</button>
-        </form>
-        <a href="quote.html" class="quote-btn">Request Quote</a>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section
+    class="news-hero">
+    <div class="hero-content">
+      <h1 data-i18n-visit="HERO_TITLE">
+        SeAH President Mr. Joo Sung Lee's Visit to SeAH Steel UAE
+      </h1>
+      <p data-i18n-visit="HERO_SUBTEXT">
+        Strengthening global partnerships through on-site engagement at our Ras Al
+        Khaimah facility.
+      </p>
+    </div>
+  </section>
+
+  <!-- NEWS CONTENT -->
+  <section class="news-section">
+    <div class="container" style="max-width:800px; margin:auto; padding:2rem;">
+      <img
+        src="images/11.JPG"
+        alt="SeAH President Joo Sung Lee addressing employees at SeAH Steel UAE"
+        style="width:100%; border-radius:10px; margin-bottom:2rem;"
+      />
+      <h2
+        data-i18n-visit="VISIT_HEADLINE"
+        style="color:#003366; text-align:center; margin-bottom:1rem;"
+      ></h2>
+      <p
+        data-i18n-visit="VISIT_P1"
+        style="text-align:justify; font-size:1.1rem; line-height:1.8;"
+      ></p>
+      <p
+        data-i18n-visit="VISIT_P2"
+        style="text-align:justify; font-size:1.1rem; line-height:1.8;"
+      ></p>
+      <p
+        data-i18n-visit="VISIT_P3"
+        style="text-align:justify; font-size:1.1rem; line-height:1.8;"
+      ></p>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery-section">
+    <h2 class="gallery-title" data-i18n-visit="GALLERY_TITLE">Gallery</h2>
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img
+          src="images/1.JPG"
+          alt="Arrival of Mr. Joo Sung Lee at factory entrance"
+          onclick="enlargeImage(this)"
+        />
+      </div>
+      <div class="gallery-item">
+        <img
+          src="images/2.JPG"
+          alt="Welcome ceremony with local management team"
+          onclick="enlargeImage(this)"
+        />
+      </div>
+      <div class="gallery-item">
+        <img
+          src="images/3.JPG"
+          alt="Factory floor tour and equipment overview"
+          onclick="enlargeImage(this)"
+        />
+      </div>
+      <div class="gallery-item">
+        <img
+          src="images/4.JPG"
+          alt="Ribbon-cutting ceremony for new extrusion line"
+          onclick="enlargeImage(this)"
+        />
+      </div>
+      <div class="gallery-item">
+        <img
+          src="images/5.JPG"
+          alt="Mr. Lee interacting with production staff"
+          onclick="enlargeImage(this)"
+        />
+      </div>
+      <div class="gallery-item">
+        <img
+          src="images/6.JPG"
+          alt="Discussion on process optimizations in meeting room"
+          onclick="enlargeImage(this)"
+        />
+      </div>
+      <div class="gallery-item">
+        <img
+          src="images/7.JPG"
+          alt="Quality assurance briefing with technical team"
+          onclick="enlargeImage(this)"
+        />
+      </div>
+      <div class="gallery-item">
+        <img
+          src="images/8.JPG"
+          alt="Safety demonstration on the shop floor"
+          onclick="enlargeImage(this)"
+        />
+      </div>
+      <div class="gallery-item">
+        <img
+          src="images/9.JPG"
+          alt="Tour of material handling and logistics area"
+          onclick="enlargeImage(this)"
+        />
+      </div>
+      <div class="gallery-item">
+        <img
+          src="images/10.JPG"
+          alt="Presentation of future investment plans"
+          onclick="enlargeImage(this)"
+        />
+      </div>
+      <div class="gallery-item">
+        <img
+          src="images/11.JPG"
+          alt="Group photo with SeAH Steel UAE leadership"
+          onclick="enlargeImage(this)"
+        />
+      </div>
+      <div class="gallery-item">
+        <img
+          src="images/12.JPG"
+          alt="Media interview on company expansion"
+          onclick="enlargeImage(this)"
+        />
+      </div>
+      <div class="gallery-item">
+        <img
+          src="images/13.JPG"
+          alt="Cutting the celebratory cake with employees"
+          onclick="enlargeImage(this)"
+        />
+      </div>
+      <div class="gallery-item">
+        <img
+          src="images/14.JPG"
+          alt="Closing luncheon with the entire team"
+          onclick="enlargeImage(this)"
+        />
       </div>
     </div>
-  </div>
-</header>
+  </section>
 
-<!-- HERO SECTION -->
-<section class="news-hero">
-  <div class="hero-content">
-    <h1>SeAH President Mr. Joo Sung Lee's Visit to SeAH Steel UAE</h1>
-    <p>Strengthening global partnerships through on-site engagement at our Ras Al Khaimah facility.</p>
+  <!-- LIGHTBOX -->
+  <div id="lightbox" onclick="this.style.display='none'">
+    <img id="lightbox-img" src="" />
   </div>
-</section>
 
-<!-- NEWS CONTENT SECTION -->
-<section class="news-section">
-  <div class="container" style="max-width:800px; margin:auto; padding:2rem;">
-    <img
-      src="images/11.JPG"
-      alt="SeAH President Joo Sung Lee addressing employees at SeAH Steel UAE"
-      style="width:100%; border-radius:10px; margin-bottom:2rem;"
-    />
-    <h2 style="color:#003366; text-align:center; margin-bottom:1rem;">SeAH President Engages with UAE Team to Drive Future Growth</h2>
-    <p style="text-align:justify; font-size:1.1rem; line-height:1.8;">
-      On May 29, 2025, Mr. Joo Sung Lee, President of SeAH Steel, visited the SeAH Steel UAE facility in Ras Al Khaimah. The visit began with a formal welcome ceremony led by local management and included an overview of the plant’s operational capabilities and recent production milestones. Mr. Lee emphasized the importance of the UAE region in the company’s global strategy and commended the team for maintaining high quality standards.    
-    </p>
-    <p style="text-align:justify; font-size:1.1rem; line-height:1.8;">
-      During the tour, he engaged one-on-one with production staff on the factory floor, discussing process optimizations and safety enhancements. The president also held a strategic meeting with the management team to outline future investment plans and explore opportunities for local workforce development.  
-    </p>
-    <p style="text-align:justify; font-size:1.1rem; line-height:1.8;">
-      The visit concluded with a luncheon hosted by SeAH Steel UAE leadership, where Mr. Lee expressed gratitude to all employees for their dedication and invited open dialogue on how to further strengthen collaboration between the UAE and the global SeAH network. He reaffirmed the company’s commitment to sustainable growth, innovation, and supporting the local community in Ras Al Khaimah.   
-    </p>
-  </div>
-</section>
-
-<!-- GALLERY SECTION -->
-<section class="gallery-section">
-  <h2 class="gallery-title">Gallery</h2>
-  <div class="gallery-grid">
-    <div class="gallery-item">
-      <img src="images/1.JPG" alt="Arrival of Mr. Joo Sung Lee at factory entrance" onclick="enlargeImage(this)" />
-    </div>
-    <div class="gallery-item">
-      <img src="images/2.JPG" alt="Welcome ceremony with local management team" onclick="enlargeImage(this)" />
-    </div>
-    <div class="gallery-item">
-      <img src="images/3.JPG" alt="Factory floor tour and equipment overview" onclick="enlargeImage(this)" />
-    </div>
-    <div class="gallery-item">
-      <img src="images/4.JPG" alt="Ribbon-cutting ceremony for new extrusion line" onclick="enlargeImage(this)" />
-    </div>
-    <div class="gallery-item">
-      <img src="images/5.JPG" alt="Mr. Lee interacting with production staff" onclick="enlargeImage(this)" />
-    </div>
-    <div class="gallery-item">
-      <img src="images/6.JPG" alt="Discussion on process optimizations in meeting room" onclick="enlargeImage(this)" />
-    </div>
-    <div class="gallery-item">
-      <img src="images/7.JPG" alt="Quality assurance briefing with technical team" onclick="enlargeImage(this)" />
-    </div>
-    <div class="gallery-item">
-      <img src="images/8.JPG" alt="Safety demonstration on the shop floor" onclick="enlargeImage(this)" />
-    </div>
-    <div class="gallery-item">
-      <img src="images/9.JPG" alt="Tour of material handling and logistics area" onclick="enlargeImage(this)" />
-    </div>
-    <div class="gallery-item">
-      <img src="images/10.JPG" alt="Presentation of future investment plans" onclick="enlargeImage(this)" />
-    </div>
-    <div class="gallery-item">
-      <img src="images/11.JPG" alt="Group photo with SeAH Steel UAE leadership" onclick="enlargeImage(this)" />
-    </div>
-    <div class="gallery-item">
-      <img src="images/12.JPG" alt="Media interview on company expansion" onclick="enlargeImage(this)" />
-    </div>
-    <div class="gallery-item">
-      <img src="images/13.JPG" alt="Cutting the celebratory cake with employees" onclick="enlargeImage(this)" />
-    </div>
-    <div class="gallery-item">
-      <img src="images/14.JPG" alt="Closing luncheon with the entire team" onclick="enlargeImage(this)" />
-    </div>
-  </div>
-</section>
-
-<!-- LIGHTBOX -->
-<div id="lightbox" onclick="this.style.display='none'">
-  <img id="lightbox-img" src="" />
-</div>
-
-<!-- FOOTER -->
-<div class="footer-nav">
-  <!-- (same footer content as original) -->
-  <div class="footer-container">
-    <!-- footer columns -->
-  </div>
-</div>
-    <!-- ===== FOOTER (shared) ===== -->
+  <!-- FOOTER -->
   <div class="footer-nav">
     <div class="footer-container">
       <div class="footer-col">
@@ -156,90 +227,57 @@
           <a href="mailto:ssuae@seah.co.kr">ssuae@seah.co.kr</a>
         </p>
         <p>
-          <span data-i18n-common="FOOTER_PHONE">Phone:</span>
-          +971 7 258 9440
+          <span data-i18n-common="FOOTER_PHONE">Phone:</span> +971 7 258 9440
         </p>
       </div>
-
       <div class="footer-col">
         <h4 data-i18n-common="FOOTER_HEADER2">Navigation</h4>
         <ul>
-          <li>
-            <a href="index.html" data-i18n-common="FOOTER_LINK1">Home</a>
-          </li>
-          <li>
-            <a href="about.html" data-i18n-common="FOOTER_LINK2">About</a>
-          </li>
-          <li>
-            <a href="ceo.html" data-i18n-common="FOOTER_LINK3">CEO Message</a>
-          </li>
-          <li>
-            <a href="products.html" data-i18n-common="FOOTER_LINK4">Products</a>
-          </li>
-          <li>
-            <a href="manufacturing.html" data-i18n-common="FOOTER_LINK5">How We Work</a>
-          </li>
-          <li>
-            <a href="projects.html" data-i18n-common="FOOTER_LINK6">Projects</a>
-          </li>
-          <li>
-            <a href="quality.html" data-i18n-common="FOOTER_LINK7">Quality</a>
-          </li>
-          <li>
-            <a href="news.html" data-i18n-common="FOOTER_LINK8">News</a>
-          </li>
-          <li>
-            <a href="contact.html" data-i18n-common="FOOTER_LINK9">Contact</a>
-          </li>
+          <li><a href="index.html" data-i18n-common="FOOTER_LINK1">Home</a></li>
+          <li><a href="about.html" data-i18n-common="FOOTER_LINK2">About</a></li>
+          <li><a href="ceo.html" data-i18n-common="FOOTER_LINK3">CEO Message</a></li>
+          <li><a href="products.html" data-i18n-common="FOOTER_LINK4">Products</a></li>
+          <li><a href="manufacturing.html" data-i18n-common="FOOTER_LINK5">How We Work</a></li>
+          <li><a href="projects.html" data-i18n-common="FOOTER_LINK6">Projects</a></li>
+          <li><a href="quality.html" data-i18n-common="FOOTER_LINK7">Quality</a></li>
+          <li><a href="news.html" data-i18n-common="FOOTER_LINK8">News</a></li>
+          <li><a href="contact.html" data-i18n-common="FOOTER_LINK9">Contact</a></li>
         </ul>
       </div>
- <div class="footer-col">
+      <div class="footer-col">
         <h4 data-i18n-common="FOOTER_HEADER3">Quick Links</h4>
         <ul>
           <li>
             <a href="quote.html" data-i18n-common="FOOTER_LINK10">Request Quote</a>
           </li>
-           <li> <a href="careers.html" data-i18n-common="TOP_CAREERS">Careers</a> </li>
-          <li> <a href="downloads.html" data-i18n-common="TOP_DOWNLOADS">Downloads</a> </li>
-           <li><a href="globalseah.html" data-i18n-common="TOP_GLOBAL">Global SeAH</a> </li>
+          <li><a href="careers.html" data-i18n-common="TOP_CAREERS">Careers</a></li>
+          <li><a href="downloads.html" data-i18n-common="TOP_DOWNLOADS">Downloads</a></li>
+          <li><a href="globalseah.html" data-i18n-common="TOP_GLOBAL">Global SeAH</a></li>
         </ul>
       </div>
-
       <div class="footer-col">
         <h4 data-i18n-common="FOOTER_HEADER4">Connect With Us</h4>
         <a href="php/redirect.php" class="whatsapp-chat" target="_blank">
-          <img
-            src="images/whatsapp-icon.png"
-            alt="WhatsApp"
-            class="footer-icon"
-          />
+          <img src="images/whatsapp-icon.png" alt="WhatsApp" class="footer-icon" />
           <span data-i18n-common="FOOTER_WHATSAPP">WhatsApp</span>
         </a>
         <br />
         <a href="mailto:ssuae@seah.co.kr">
-          <img
-            src="images/email-icon.png"
-            alt="Email"
-            class="footer-icon"
-          />
+          <img src="images/email-icon.png" alt="Email" class="footer-icon" />
           <span data-i18n-common="FOOTER_EMAIL_US">Email Us</span>
         </a>
       </div>
     </div>
   </div>
-<footer>
-  <p>© 2025 SeAH Steel UAE LLC. All rights reserved.</p>
-</footer>
+  <footer>
+    <p data-i18n-common="COPYRIGHT_TEXT">
+      © 2025 SeAH Steel UAE LLC. All rights reserved.
+    </p>
+  </footer>
 
-<!-- Chats & Scripts -->
-<a href="php/redirect.php" class="whatsapp-chat" target="_blank">
-  <img src="images/whatsapp-icon.png" alt="WhatsApp Chat" />
-</a>
-<script src="js/script.js"></script>
-  <!-- 1) Common translations (topbar/navbar/footer) -->
+  <!-- SCRIPTS -->
+  <script src="js/script.js"></script>
   <script src="js/common-i18n.js"></script>
-
-  <!-- 2) Quote page–specific translations -->
   <script src="js/visit-i18n.js"></script>
 </body>
 </html>

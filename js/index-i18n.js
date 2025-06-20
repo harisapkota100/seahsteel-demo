@@ -115,7 +115,7 @@ const indexTranslations = {
     IND4:               "에너지",
 
     NEWS_TITLE:          "최신 뉴스",
-    NEWS_ITEM1_TEXT:     "이주성 사장님의 방문",
+    NEWS_ITEM0_TEXT:     "이주성 사장님의 방문",
     NEWS_ITEM1_TEXT:     "세아스틸 UAE, 메이크 잇 인 디 에미리트 참가",
     NEWS_ITEM2_TEXT:     "세아스틸 UAE, ISO-17025 인증 획득",
     NEWS_ITEM3_TEXT:     "역사적인 개소식",

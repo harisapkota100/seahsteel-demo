@@ -1,10 +1,9 @@
-// js/visit-i18n.js
-const visit_i18n = {
+// ================= js/visit-i18n.js =================
+// 1) visit.html-specific dictionary
+const visitTranslations = {
   en: {
-    VISIT_PAGE_TITLE:
-      "SeAH President Mr. Joo Sung Lee's Visit to SeAH Steel UAE",
-    HERO_TITLE:
-      "SeAH President Mr. Joo Sung Lee's Visit to SeAH Steel UAE",
+    VISIT_PAGE_TITLE: "SeAH President Mr. Joo Sung Lee's Visit to SeAH Steel UAE",
+    HERO_TITLE: "SeAH President Mr. Joo Sung Lee's Visit to SeAH Steel UAE",
     HERO_SUBTEXT:
       "Strengthening global partnerships through on-site engagement at our Ras Al Khaimah facility.",
     VISIT_HEADLINE:
@@ -49,33 +48,31 @@ const visit_i18n = {
   }
 };
 
-// after you load both common_i18n and visit_i18n into a single `translations` object…
 
-function applyTranslations(lang) {
-  // look for both common *and* visit markers
-  document.querySelectorAll("[data-i18n-common], [data-i18n-visit]").forEach(el => {
-    // whichever attribute is present becomes the lookup key
-    const key =
-      el.getAttribute("data-i18n-common") ||
-      el.getAttribute("data-i18n-visit");
-    const text = translations[lang]?.[key];
-    if (text) el.innerText = text;
+// 2) Swap out any element with data-i18n-miite="KEY"
+function setVisitLanguage(langCode) {
+  document.querySelectorAll("[data-i18n-visit]").forEach((el) => {
+    const key = el.getAttribute("data-i18n-visit");
+    const translated = visitTranslations[langCode][key];
+    if (translated !== undefined) {
+      el.innerText = translated;
+    }
   });
 
-  // also swap <title>
-  const titleEl = document.querySelector("title[data-i18n-visit]");
-  if (titleEl) {
-    const titleKey = titleEl.getAttribute("data-i18n-visit");
-    document.title = translations[lang]?.[titleKey] || document.title;
-  }
+  // Also update <title> if annotated
+  document.querySelectorAll("title[data-i18n-visit]").forEach((el) => {
+    const key = el.getAttribute("data-i18n-visit");
+    const translated = visitTranslations[langCode][key];
+    if (translated !== undefined) {
+      el.innerText = translated;
+    }
+  });
 }
 
+// 3) Expose globally so common-i18n.js can call it on language switch
+window.setPageLanguage = setVisitLanguage;
+
+// 4) On DOMContentLoaded, default Miite page content to English
 document.addEventListener("DOMContentLoaded", () => {
-  // wire your lang toggles exactly as before
-  document.getElementById("lang-en").onclick = () => applyTranslations("en");
-  document.getElementById("lang-ar").onclick = () => applyTranslations("ar");
-  document.getElementById("lang-ko").onclick = () => applyTranslations("ko");
-  applyTranslations("en"); // initial
+  setVisitLanguage("en");
 });
-
-}

@@ -76,6 +76,6 @@ window.setPageLanguage = set17025Language;
 
 // On load, default to English for this page
 document.addEventListener("DOMContentLoaded", () => {
-  // common-i18n already set common to English
+  // common-i18n already set common to English  
   set17025Language("en");
 });

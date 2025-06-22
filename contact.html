@@ -147,50 +147,55 @@
           </ul>
         </div>
 
-        <!-- Contact Form -->
-        <div class="contact-form">
-          <h2 data-i18n-contact="CONTACT_FORM_TITLE">Send Us a Message</h2>
-          <form>
-            <input
-              type="text"
-              placeholder=""
-              data-i18n-contact="CONTACT_PLACEHOLDER_NAME"
-              value="Your Name"
-              onfocus="if(this.value==='Your Name')this.value=''"
-              onblur="if(this.value==='')this.value='Your Name'"
-              required
-            />
-            <input
-              type="email"
-              placeholder=""
-              data-i18n-contact="CONTACT_PLACEHOLDER_EMAIL"
-              value="Your Email"
-              onfocus="if(this.value==='Your Email')this.value=''"
-              onblur="if(this.value==='')this.value='Your Email'"
-              required
-            />
-            <input
-              type="text"
-              placeholder=""
-              data-i18n-contact="CONTACT_PLACEHOLDER_SUBJECT"
-              value="Subject"
-              onfocus="if(this.value==='Subject')this.value=''"
-              onblur="if(this.value==='')this.value='Subject'"
-            />
-            <textarea
-              rows="5"
-              placeholder=""
-              data-i18n-contact="CONTACT_PLACEHOLDER_MESSAGE"
-              onfocus="if(this.innerText==='Your Message')this.innerText=''"
-              onblur="if(this.innerText==='')this.innerText='Your Message'"
-              required
-            >Your Message</textarea>
-            <button type="submit" class="contact-btn" data-i18n-contact="CONTACT_BUTTON_SUBMIT">
-              Submit
-            </button>
-          </form>
-        </div>
-      </div>
+        <!-- CONTACT FORM -->
+<div class="contact-form">
+  <h2 data-i18n-contact="CONTACT_FORM_TITLE">Send Us a Message</h2>
+  <form id="contactForm">
+    <input
+      type="text"
+      name="from_name"
+      placeholder=""
+      data-i18n-contact="CONTACT_PLACEHOLDER_NAME"
+      value="Your Name"
+      onfocus="if(this.value==='Your Name')this.value=''"
+      onblur="if(this.value==='')this.value='Your Name'"
+      required
+    />
+    <input
+      type="email"
+      name="from_email"
+      placeholder=""
+      data-i18n-contact="CONTACT_PLACEHOLDER_EMAIL"
+      value="Your Email"
+      onfocus="if(this.value==='Your Email')this.value=''"
+      onblur="if(this.value==='')this.value='Your Email'"
+      required
+    />
+    <input
+      type="text"
+      name="subject"
+      placeholder=""
+      data-i18n-contact="CONTACT_PLACEHOLDER_SUBJECT"
+      value="Subject"
+      onfocus="if(this.value==='Subject')this.value=''"
+      onblur="if(this.value==='')this.value='Subject'"
+    />
+    <textarea
+      name="message"
+      rows="5"
+      placeholder=""
+      data-i18n-contact="CONTACT_PLACEHOLDER_MESSAGE"
+      onfocus="if(this.innerText==='Your Message')this.innerText=''"
+      onblur="if(this.innerText==='')this.innerText='Your Message'"
+      required
+    >Your Message</textarea>
+    <button type="submit" class="contact-btn" data-i18n-contact="CONTACT_BUTTON_SUBMIT">
+      Submit
+    </button>
+  </form>
+</div>
+
+
 
       <!-- Google Map -->
       <section class="map-section">
@@ -316,7 +321,12 @@
     async
     defer
   ></script>
-
+<!-- load EmailJS & your script at the end of the body -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  // initialize with YOUR public key
+  emailjs.init('YprLT2qfRoQvPINPYg');
+</script>
   <!-- ===== Your existing custom JS ===== -->
   <script src="js/script.js"></script>
 

@@ -320,3 +320,49 @@ function updateTransform() {
 // Machine Modal Data & Functions
 // =======================
 // (… remainder of your existing machineDetails object and functions …)
+// =======================
+// Gallery Next/Prev & Keyboard Nav
+// =======================
+(function() {
+  // collect all gallery thumbnails
+  const imgs         = Array.from(document.querySelectorAll('.gallery-item img'));
+  if (!imgs.length) return;
+
+  let currentIndex   = 0;
+  const lb           = document.getElementById('lightbox');
+  const lbImg        = document.getElementById('lightbox-img');
+  const btnPrev      = lb.querySelector('.lb-prev');
+  const btnNext      = lb.querySelector('.lb-next');
+  const btnClose     = lb.querySelector('.lb-close');
+  const backdrop     = lb.querySelector('.lb-backdrop');
+
+  // open lightbox & set index
+  imgs.forEach((img, i) => {
+    img.style.cursor = 'pointer';
+    img.addEventListener('click', () => {
+      currentIndex = i;
+      lbImg.src    = img.src;
+      lb.classList.remove('hidden');
+    });
+  });
+
+  // wraparound show
+  function show(idx) {
+    currentIndex = (idx + imgs.length) % imgs.length;
+    lbImg.src     = imgs[currentIndex].src;
+  }
+
+  // button handlers
+  btnPrev .addEventListener('click', () => show(currentIndex - 1));
+  btnNext .addEventListener('click', () => show(currentIndex + 1));
+  btnClose.addEventListener('click', () => lb.classList.add('hidden'));
+  backdrop.addEventListener('click', () => lb.classList.add('hidden'));
+
+  // keyboard navigation
+  document.addEventListener('keydown', e => {
+    if (lb.classList.contains('hidden')) return;
+    if (e.key === 'ArrowLeft')  show(currentIndex - 1);
+    if (e.key === 'ArrowRight') show(currentIndex + 1);
+    if (e.key === 'Escape')     lb.classList.add('hidden');
+  });
+})();

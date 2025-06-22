@@ -229,10 +229,17 @@
     </div>
   </section>
 
-  <!-- LIGHTBOX -->
-  <div id="lightbox" onclick="this.style.display='none'">
-    <img id="lightbox-img" src="" />
+  <!-- New Lightbox Overlay -->
+<div id="lightbox" class="hidden">
+  <div class="lb-backdrop"></div>
+  <div class="lb-content">
+    <button class="lb-nav lb-prev">&#10094;</button>
+    <img id="lightbox-img" src="" alt="Gallery image" />
+    <button class="lb-nav lb-next">&#10095;</button>
   </div>
+  <button class="lb-close">&times;</button>
+</div>
+
 
   <!-- FOOTER -->
   <div class="footer-nav">

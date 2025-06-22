@@ -2317,16 +2317,16 @@ footer {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }  
-/* ——————————————————————————
-   Override the square‐card rule for News page
-—————————————————————————— */
 .news-section .news-grid .news-item {
-  /* cancel the 1:1 aspect ratio so height grows with content */
+  /* cancel square‐card */
   aspect-ratio: auto !important;
-  /* ensure we stack image + title */
+  /* stack things */
   display: flex;
   flex-direction: column;
+  /* ensure enough room */
+  min-height: 300px;   /* or whatever fits your image + two‐line title */
 }
+
 
 /* ——————————————————————————
    Force the image into a fixed‐height box,
@@ -2375,7 +2375,9 @@ footer {
   object-position: top center;  
 }
 
-
+.home-marquee .news-item.visible {
+  height: auto !important;
+}
 
 
 .section-title {

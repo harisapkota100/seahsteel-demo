@@ -74,37 +74,49 @@
   </section>
 
   <!-- SECTION 1: GENERAL CV SUBMISSION (page-specific) -->
-  <section class="careers-apply">
-    <div class="container">
-      <h2 class="section-title" data-i18n-careers="CV_TITLE">Submit Your CV</h2>
-      <form id="cvForm" class="career-form">
-        <div class="form-group">
-          <label for="cv_name" data-i18n-careers="CV_LABEL_NAME">Full Name</label>
-          <input type="text" id="cv_name" name="name" required />
-        </div>
-        <div class="form-group">
-          <label for="cv_email" data-i18n-careers="CV_LABEL_EMAIL">Email Address</label>
-          <input type="email" id="cv_email" name="email" required />
-        </div>
-        <div class="form-group">
-          <label for="cv_phone" data-i18n-careers="CV_LABEL_PHONE">Phone Number</label>
-          <input type="tel" id="cv_phone" name="phone" required />
-        </div>
-        <div class="form-group">
-          <label for="cv_resume_link" data-i18n-careers="CV_LABEL_RESUME_LINK">
-            Link to Your Resume (Google Drive, Dropbox, etc.)
-          </label>
-          <input
-            type="url"
-            id="cv_resume_link"
-            name="resume_link"
-            placeholder="https://drive.google.com/your-resume.pdf"
-            required
-          />
-        </div>
-        <button type="submit" class="careers-btn" data-i18n-careers="CV_BUTTON">Submit</button>
-      </form>
-    </div>
+<section class="careers-apply">
+  <div class="container">
+    <h2 class="section-title" data-i18n-careers="CV_TITLE">Submit Your CV</h2>
+    <form id="cvForm" class="career-form">
+      <div class="form-group">
+        <label for="cv_name" data-i18n-careers="CV_LABEL_NAME">Full Name</label>
+        <input type="text" id="cv_name" name="name" required />
+      </div>
+      <div class="form-group">
+        <label for="cv_email" data-i18n-careers="CV_LABEL_EMAIL">Email Address</label>
+        <input type="email" id="cv_email" name="email" required />
+      </div>
+      <div class="form-group">
+        <label for="cv_phone" data-i18n-careers="CV_LABEL_PHONE">Phone Number</label>
+        <input type="tel" id="cv_phone" name="phone" required />
+      </div>
+      <div class="form-group">
+        <label for="cv_resume_link" data-i18n-careers="CV_LABEL_RESUME_LINK">
+          Link to Your Resume (Google Drive, Dropbox, etc.)
+        </label>
+        <input
+          type="url"
+          id="cv_resume_link"
+          name="resume_link"
+          placeholder="https://drive.google.com/your-resume.pdf"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="cv_message" data-i18n-careers="CV_LABEL_MESSAGE">Cover Message</label>
+        <textarea
+          id="cv_message"
+          name="message"
+          rows="5"
+          placeholder="Briefly tell us why you’d be a great fit…"
+          required
+        ></textarea>
+      </div>
+      <button type="submit" class="careers-btn" data-i18n-careers="CV_BUTTON">Submit</button>
+    </form>
+  </div>
+</section>
+
 
     <!-- Feedback paragraph (initially hidden) -->
     <p id="formFeedback" style="display:none; margin-top:1rem; color: green;"></p>

@@ -384,7 +384,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // 2) data placeholders — replace these with real figures
   const productionData = [
-    2011: 500, 2012: 600, 2013: 700, 2014: 800, 2015: 900
+    2011: 5000, 2012: 6000, 2013: 7000, 2014: 8000, 2015: 9000
   ];
   const salesData = [
     2011: 450, 2012: 550, 2013: 650, 2014: 750, 2015: 850

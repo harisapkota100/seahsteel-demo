@@ -280,3 +280,22 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 });
+document.addEventListener('DOMContentLoaded', () => {
+  const contactForm = document.getElementById('contactForm');
+  if (!contactForm || !window.emailjs) return;
+
+  contactForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    // send the form via EmailJS
+    emailjs.sendForm('service_9bkx5k3', 'template_2oni1wg', this)
+      .then(() => {
+        alert('Thank you! Your message has been sent.');
+        contactForm.reset();
+      })
+      .catch((err) => {
+        console.error('EmailJS error:', err);
+        alert('Oops—something went wrong. Please try again later.');
+      });
+  });
+});

@@ -403,32 +403,54 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   // 4) Production chart
-  const ctxProd = document.getElementById('productionChart').getContext('2d');
-  new Chart(ctxProd, {
-    type: 'bar',
-    data: {
-      labels: years,
-      datasets: [{
-        label: 'Quantity Produced',
-        data: productionData,
-        backgroundColor: 'rgba(54, 162, 235, 0.6)'
-      }]
-    },
-    options: commonOptions
-  });
+const ctxProd = document.getElementById('productionChart').getContext('2d');
+new Chart(ctxProd, {
+  type: 'bar',
+  data: {
+    labels: years,
+    datasets: [{
+      label: 'Quantity Produced',
+      data: productionData,
+      backgroundColor: 'rgba(54, 162, 235, 0.6)'
+    }]
+  },
+  options: {
+    ...commonOptions,
+    plugins: {
+      title: {
+        display: true,
+        text: 'Total Quantity Produced (2011–2025)',
+        position: 'bottom',      // <-- here
+        padding: { top: 10 }
+      },
+      legend: { display: false } // hide the default legend
+    }
+  }
+});
 
-  // 5) Sales chart
-  const ctxSales = document.getElementById('salesChart').getContext('2d');
-  new Chart(ctxSales, {
-    type: 'bar',
-    data: {
-      labels: years,
-      datasets: [{
-        label: 'Quantity Sold',
-        data: salesData,
-        backgroundColor: 'rgba(255, 159, 64, 0.6)'
-      }]
-    },
-    options: commonOptions
-  });
+// 5) Sales chart
+const ctxSales = document.getElementById('salesChart').getContext('2d');
+new Chart(ctxSales, {
+  type: 'bar',
+  data: {
+    labels: years,
+    datasets: [{
+      label: 'Quantity Sold',
+      data: salesData,
+      backgroundColor: 'rgba(255, 159, 64, 0.6)'
+    }]
+  },
+  options: {
+    ...commonOptions,
+    plugins: {
+      title: {
+        display: true,
+        text: 'Total Quantity Sold (2011–2025)',
+        position: 'bottom',
+        padding: { top: 10 }
+      },
+      legend: { display: false }
+    }
+  }
+});
 });

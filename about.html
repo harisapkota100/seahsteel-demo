@@ -105,39 +105,21 @@
     </div>
   </section>
 
-  <!-- PHOTO GALLERY (page-specific) -->
-  <section class="photo-gallery">
+    <!-- PRODUCTION & SALES CHARTS -->
+  <section class="charts-section">
     <div class="container">
-      <h2 data-i18n-about="GALLERY_TITLE">Our Journey in Photos</h2>
-      <p data-i18n-about="GALLERY_SUBTEXT">Take a closer look at our plant operations, milestones, and achievements.</p>
-      <div class="gallery-grid">
-        <div class="gallery-item">
-          <img src="images/factory1.jpg" alt="Production Line" onclick="enlargeImage(this)" />
-          <p data-i18n-about="GALLERY_CAPTION1">Production Line</p>
+      <h2>Production & Sales (2011–2025(till date))</h2>
+      <div class="charts-grid">
+        <div class="chart-card">
+          <canvas id="productionChart"></canvas>
         </div>
-        <div class="gallery-item">
-          <img src="images/team.jpg" alt="Team Collaboration" onclick="enlargeImage(this)" />
-          <p data-i18n-about="GALLERY_CAPTION2">Team Collaboration</p>
-        </div>
-        <div class="gallery-item">
-          <img src="images/export.jpg" alt="Export Shipment" onclick="enlargeImage(this)" />
-          <p data-i18n-about="GALLERY_CAPTION3">Export Shipment</p>
-        </div>
-        <div class="gallery-item">
-          <img src="images/ndt-testing.jpg" alt="NDT Testing" onclick="enlargeImage(this)" />
-          <p data-i18n-about="GALLERY_CAPTION4">Advanced Testing Lab</p>
-        </div>
-        <div class="gallery-item">
-          <img src="images/certificates.jpg" alt="Certifications" onclick="enlargeImage(this)" />
-          <p data-i18n-about="GALLERY_CAPTION5">API & ISO Certifications</p>
-        </div>
-        <div class="gallery-item">
-          <img src="images/erp.jpg" alt="ERP Integration" onclick="enlargeImage(this)" />
-          <p data-i18n-about="GALLERY_CAPTION6">Digital ERP System</p>
+        <div class="chart-card">
+          <canvas id="salesChart"></canvas>
         </div>
       </div>
     </div>
   </section>
+
 
   <!-- ===== FOOTER (shared) ===== -->
   <div class="footer-nav">
@@ -246,6 +228,9 @@
   </script>
 
   <!-- Your existing custom JS -->
+     <!-- Chart.js from CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
   <script src="js/script.js"></script>
 
   <!-- 1) Common translations (topbar/navbar/footer) -->

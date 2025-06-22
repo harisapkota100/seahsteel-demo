@@ -3512,5 +3512,27 @@ font-weight: bold;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
+/* Charts section */
+.charts-section {
+  padding: 3rem 0;
+}
+.charts-section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.charts-grid {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.chart-card {
+  flex: 1 1 300px;
+  max-width: 500px;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
 
 

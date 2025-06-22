@@ -375,3 +375,56 @@ function updateTransform() {
     if (e.key === 'Escape')     lb.style.display = 'none';
   });
 })();
+
+// === Production & Sales Charts (2011–2025) ===
+document.addEventListener('DOMContentLoaded', () => {
+  // 1) years array
+  const years = [];
+  for (let y = 2011; y <= 2025; y++) years.push(y.toString());
+
+  // 2) data placeholders — replace these with real figures
+  const productionData = [
+    2011: 500, 2012: 600, 2013: 700, 2014: 800, 2015: 900
+  ];
+  const salesData = [
+    2011: 450, 2012: 550, 2013: 650, 2014: 750, 2015: 850
+  ];
+
+  // 3) common options
+  const commonOptions = {
+    responsive: true,
+    scales: {
+      y: { beginAtZero: true }
+    }
+  };
+
+  // 4) Production chart
+  const ctxProd = document.getElementById('productionChart').getContext('2d');
+  new Chart(ctxProd, {
+    type: 'bar',
+    data: {
+      labels: years,
+      datasets: [{
+        label: 'Quantity Produced',
+        data: productionData,
+        backgroundColor: 'rgba(54, 162, 235, 0.6)'
+      }]
+    },
+    options: commonOptions
+  });
+
+  // 5) Sales chart
+  const ctxSales = document.getElementById('salesChart').getContext('2d');
+  new Chart(ctxSales, {
+    type: 'bar',
+    data: {
+      labels: years,
+      datasets: [{
+        label: 'Quantity Sold',
+        data: salesData,
+        backgroundColor: 'rgba(255, 159, 64, 0.6)'
+      }]
+    },
+    options: commonOptions
+  });
+});

@@ -382,8 +382,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const years = Array.from({length: 2025 - 2011 + 1}, (_, i) => (2011 + i).toString());
 
   // 2) your real data
-  const productionData = [313, 150, 168, 135, 264, 166, 400, 78, 474, 113, 231, 178, 280, 270, 696];
-  const salesData      = [244, 108, 176, 133, 266, 166, 391, 87, 409, 158, 231, 173, 278, 220, 680];
+ const productionData = [31304, 15026, 16864, 13553, 26471, 16625, 40061, 7880, 47486, 11326, 23195, 17856, 28067, 27079, 69620];
+  const salesData      = [24484, 10807, 17633, 13364, 26679, 16617, 39181, 8702, 40989, 15837, 23117, 17329, 27880, 22024, 68063];
 
   // 3) common config
   const commonOptions = {

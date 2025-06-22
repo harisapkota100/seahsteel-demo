@@ -277,34 +277,40 @@ let offsetY = 0;
 let isDragging = false;
 let startX, startY;
 
-// Zoom on mouse wheel
+// Zoom on mouse wheel (allow 0.5× → 5×)
 document.getElementById('lightbox-img').addEventListener('wheel', function (e) {
   e.preventDefault();
-  const scaleStep = 0.1;
+  const step = 0.1;
   if (e.deltaY < 0) {
-    zoomLevel += scaleStep; // zoom in
+    zoomLevel = Math.min(5, zoomLevel + step);    // zoom in
   } else {
-    zoomLevel = Math.max(1, zoomLevel - scaleStep); // zoom out
+    zoomLevel = Math.max(0.5, zoomLevel - step);  // zoom out below 1×
     if (zoomLevel === 1) {
-      offsetX = 0;
-      offsetY = 0;
+      offsetX = 0; offsetY = 0;                   // recenter at 1×
     }
   }
   updateTransform();
 });
+// Double-click to reset to 1× and centered
+const lightboxImgEl = document.getElementById('lightbox-img');
+lightboxImgEl.addEventListener('dblclick', () => {
+  zoomLevel = 1;
+  offsetX = 0;
+  offsetY = 0;
+  updateTransform();
+});
 
-// Mouse drag to pan
-const lightboxImg = document.getElementById('lightbox-img');
-lightboxImg.addEventListener('mousedown', function (e) {
+// Mouse-drag to pan when zoomed
+lightboxImgEl.addEventListener('mousedown', function (e) {
   if (zoomLevel <= 1) return;
   isDragging = true;
-  startX = e.clientX - offsetX;
-  startY = e.clientY - offsetY;
-  lightboxImg.style.cursor = 'grabbing';
+  startX      = e.clientX - offsetX;
+  startY      = e.clientY - offsetY;
+  lightboxImgEl.style.cursor = 'grabbing';
 });
 window.addEventListener('mouseup', function () {
   isDragging = false;
-  lightboxImg.style.cursor = 'zoom-in';
+  lightboxImgEl.style.cursor = 'zoom-in';
 });
 window.addEventListener('mousemove', function (e) {
   if (!isDragging) return;
@@ -313,8 +319,10 @@ window.addEventListener('mousemove', function (e) {
   updateTransform();
 });
 function updateTransform() {
-  lightboxImg.style.transform = `scale(${zoomLevel}) translate(${offsetX}px, ${offsetY}px)`;
+  lightboxImgEl.style.transform = 
+    `scale(${zoomLevel}) translate(${offsetX}px, ${offsetY}px)`;
 }
+
 
 // =======================
 // Machine Modal Data & Functions
@@ -324,7 +332,6 @@ function updateTransform() {
 // Gallery Next/Prev & Keyboard Nav
 // =======================
 (function() {
-  // collect all gallery thumbnails
   const imgs         = Array.from(document.querySelectorAll('.gallery-item img'));
   if (!imgs.length) return;
 
@@ -336,33 +343,35 @@ function updateTransform() {
   const btnClose     = lb.querySelector('.lb-close');
   const backdrop     = lb.querySelector('.lb-backdrop');
 
-  // open lightbox & set index
+  // Open lightbox & record index
   imgs.forEach((img, i) => {
     img.style.cursor = 'pointer';
     img.addEventListener('click', () => {
       currentIndex = i;
       lbImg.src    = img.src;
-      lb.classList.remove('hidden');
+      lb.style.display = 'flex';
     });
   });
 
-  // wraparound show
+  // Show with wrap-around
   function show(idx) {
     currentIndex = (idx + imgs.length) % imgs.length;
     lbImg.src     = imgs[currentIndex].src;
   }
 
-  // button handlers
+  // Button handlers
   btnPrev .addEventListener('click', () => show(currentIndex - 1));
   btnNext .addEventListener('click', () => show(currentIndex + 1));
-  btnClose.addEventListener('click', () => lb.classList.add('hidden'));
-  backdrop.addEventListener('click', () => lb.classList.add('hidden'));
 
-  // keyboard navigation
+  // Close handlers (now using style.display to actually hide)
+  btnClose.addEventListener('click', () => lb.style.display = 'none');
+  backdrop.addEventListener('click',  () => lb.style.display = 'none');
+
+  // Keyboard nav
   document.addEventListener('keydown', e => {
-    if (lb.classList.contains('hidden')) return;
+    if (lb.style.display !== 'flex') return;
     if (e.key === 'ArrowLeft')  show(currentIndex - 1);
     if (e.key === 'ArrowRight') show(currentIndex + 1);
-    if (e.key === 'Escape')     lb.classList.add('hidden');
+    if (e.key === 'Escape')     lb.style.display = 'none';
   });
 })();

@@ -404,7 +404,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }]
     },
     options: {
-      ...commonOptions,
+      commonOptions,
       plugins: {
         title: {
           display: true,

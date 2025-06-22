@@ -2381,6 +2381,22 @@ footer {
   padding: 0.5rem 0;                  /* optional breathing room */
   text-align: center;
 }
+/* ─── Homepage “Latest News” tweaks ─── */
+
+/* 1) Shrink the section’s vertical padding so it doesn’t tower over the cards */
+.home-marquee.news-ticker-section {
+  /* override the 3rem top/bottom to something more compact */
+  padding: 1rem 1rem !important;
+}
+
+/* 2) (Optional) If you prefer to keep the section tall, give each news‐item more vertical “meat” */
+.home-marquee .marquee-content .news-item.visible {
+  /* bump padding from 1rem → 2rem (or whatever feels right) */
+  padding: 2rem !important;
+  /* and if you want a minimum height instead: */
+  /* min-height: 200px; */
+}
+
 
 .section-title {
   text-align: center;

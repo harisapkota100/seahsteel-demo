@@ -3514,8 +3514,18 @@ font-weight: bold;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
-.charts-grid .chart-card canvas {
-  width: 100% !important;
-  height: 400px !important;  /* your new chart height */
+/* ─── Wider & Taller Charts ─── */
+.charts-grid .chart-card {
+  /* Make each card about half the width of its parent (2 cards/row) */
+  flex: 1 1 45%;
+  max-width: 45%;
+  min-height: 500px;        /* taller card if you want more vertical space */
 }
+
+.charts-grid .chart-card canvas {
+  /* Fill the card’s width, and set an explicit height */
+  width: 100% !important;
+  height: 450px !important; /* increase this for even taller charts */
+}
+
 

@@ -124,7 +124,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // 2) EmailJS & "Apply Now" Modal
   if (window.emailjs) {
-    emailjs.init("WtPAnXH9WZHENU4Ij");
+    emailjs.init("prLT2qfRoQvPINPYg");
     const applyButtons = document.querySelectorAll(".apply-btn");
     const modal = document.getElementById("applicationModal");
     const modalJobTitle = document.getElementById("modalJobTitle");
@@ -145,7 +145,7 @@ document.addEventListener('DOMContentLoaded', function() {
       window.addEventListener('click', e => { if (e.target === modal) modal.classList.remove('open'); });
       applicationForm.addEventListener('submit', function(e) {
         e.preventDefault();
-        emailjs.sendForm('service_r7829om', 'template_ztdooje', applicationForm)
+        emailjs.sendForm('service_eirv15c', 'template_2oni1wg', applicationForm)
           .then(response => {
             alert('Application submitted!');
             setTimeout(() => modal.classList.remove('open'), 2000);
@@ -166,7 +166,7 @@ document.addEventListener('DOMContentLoaded', function() {
       e.preventDefault();
       cvFeedbackEl.textContent = 'Sending your CV…';
       cvFeedbackEl.style.display = 'block';
-      emailjs.sendForm('service_w79r1qy', 'template_s2l8fmp', cvForm)
+      emailjs.sendForm('service_9bkx5k3', 'template_fpmi9bs', cvForm)
         .then(() => {
           cvFeedbackEl.textContent = 'Thank you! Your CV has been submitted.';
           cvForm.reset();
